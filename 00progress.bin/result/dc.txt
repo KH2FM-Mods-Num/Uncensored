@@ -1,0 +1,222 @@
+3000 DC_DC_OPEN_L:
+	Raise Flag:
+		3001 DC_START
+		3C05 WM_EVENT_DC_OPEN
+	[END]
+
+3001 DC_START:
+	World Map: 00 01
+	Spawn ID Change:
+		Room 03: 00 00 00
+		Room 04: 00 00 00
+		Room 05: 00 00 00
+		Room 06: 00 00 01
+		Room 00: 00 00 00
+		Room 01: 00 00 00
+		Room 02: 00 00 00
+	Raise Flag:
+		300B DC_SCENARIO_1_OPEN
+	[END]
+
+3002 DC_102_END:
+	World Map: 01 01
+	Spawn ID Change:
+		Room 03: -1 -1 01
+		Room 06: -1 -1 16
+	Raise Flag:
+		3010 DC_SCENARIO_1_START
+	[END]
+
+3003 DC_103_END:
+	BGM Set: 2
+	Spawn ID Change:
+		Room 03: -1 01 00
+		Room 01: -1 -1 01
+		Room 02: 01 01 -1
+	[END]
+
+3004 DC_104_END:
+	Block: World 0C Room 06
+	Block: World 0C Room 03
+	Spawn ID Change:
+		Room 01: 01 01 16
+		Room 02: 02 02 01
+	Lower Flag:
+		3005 DC_MINNIE_CANCEL
+	Raise Flag:
+		301D DC_MINNIE_GET
+	[END]
+
+3005 DC_MINNIE_CANCEL:
+	Unblock: World 0C Room 06
+	Unblock: World 0C Room 03
+	Spawn ID Change:
+		Room 01: 00 00 15
+		Room 02: 01 01 00
+	Lower Flag:
+		3004 DC_104_END
+	[END]
+
+3006 DC_105_END:
+	Unblock: World 0C Room 00
+	Block: World 0C Room 03
+	Spawn ID Change:
+		Room 00: 02 -1 01
+		Room 01: 01 01 14
+		Room 02: 03 03 02
+	[END]
+
+3007:
+	[SKIP]
+
+3008 DC_106_END:
+	Unblock: World 0C Room 00
+	Unblock: World 0C Room 06
+	Unblock: World 0C Room 03
+	Spawn ID Change:
+		Room 00: -1 -1 00
+	[END]
+
+3009 DC_107_END_L:
+	Spawn ID Change:
+		Room 04: 01 -1 01
+		Room 00: 01 01 -1
+	[END]
+
+300A DC_108_END:
+	BGM Set: 3
+	Spawn ID Change:
+		Room 04: -1 -1 16
+		Room 06: -1 -1 14
+		Room 01: 00 00 -1
+		Room 02: 00 01 -1
+	Raise Flag:
+		102F HB_dc_108_END
+	[END]
+
+300B DC_SCENARIO_1_OPEN:
+	Raise Flag:
+		3001 DC_START
+	[END]
+
+300C DC_109_END:
+	Spawn ID Change:
+		Room 04: 02 -1 03
+		Room 06: -1 -1 13
+	[END]
+
+300D DC_110_END:
+	Spawn ID Change:
+		Room 03: 01 -1 -1
+		Room 04: 00 -1 00
+		Room 00: 03 -1 -1
+		Room 01: -1 -1 13
+		Room 02: 04 -1 -1
+	Raise Flag:
+		1070 HB_dc_END
+		3400 WI_START
+	[END]
+
+300E DC_WI_CLEAR:
+	Spawn ID Change:
+		Room 05: -1 -1 01
+		Room 00: 04 -1 -1
+	[END]
+
+300F DC_111_END:
+	Unblock: World 0C Room 05
+	BGM Set: 1
+	World Map: 02 01
+	Spawn ID Change:
+		Room 03: -1 00 -1
+		Room 05: -1 -1 00
+		Room 06: -1 -1 15
+		Room 00: -1 00 -1
+		Room 01: -1 -1 12
+		Room 02: -1 00 -1
+	Raise Flag:
+		3012 DC_SCENARIO_1_END
+		3C06 WM_DC_CLEAR
+	[END]
+
+3010 DC_SCENARIO_1_START:
+	Raise Flag:
+		3002 DC_102_END
+	[END]
+
+3011 DC_HB_MERLIN_MEET:
+	Spawn ID Change:
+		Room 04: -1 -1 02
+	[END]
+
+3012 DC_SCENARIO_1_END:
+	Raise Flag:
+		300F DC_111_END
+	[END]
+
+3013 DC_INIT:
+	Spawn ID Change:
+		Room 03: 00 00 00
+		Room 04: 00 00 00
+		Room 05: 00 00 00
+		Room 06: 00 00 00
+		Room 00: 00 00 00
+		Room 01: 00 00 00
+		Room 02: 00 00 00
+	[END]
+
+3014:
+	[SKIP]
+
+3015:
+	[SKIP]
+
+3016:
+	[SKIP]
+
+3017:
+	[SKIP]
+
+3018:
+	[SKIP]
+
+3019:
+	[SKIP]
+
+301A:
+	[SKIP]
+
+301B:
+	[SKIP]
+
+301C:
+	[SKIP]
+
+301D DC_MINNIE_GET:
+	[SKIP]
+
+301E DC_105_OUT:
+	Spawn ID Change:
+		Room 02: -1 04 00
+	[END]
+
+301F DC_FM_NAZO_ON:
+	Spawn ID Change:
+		Room 05: -1 -1 02
+		Room 06: -1 -1 12
+		Room 01: -1 -1 11
+	[END]
+
+3020:
+	[SKIP]
+
+3021 DC_FM_NAZO_BTL_READY:
+	Spawn ID Change:
+		Room 05: 01 -1 15
+	[END]
+
+3022 DC_FM_NAZO_BTL_CLEAR:
+	Spawn ID Change:
+		Room 05: 02 -1 14
+	[END]
+

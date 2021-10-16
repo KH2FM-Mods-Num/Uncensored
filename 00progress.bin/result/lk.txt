@@ -1,0 +1,380 @@
+2800 LK_START:
+	World Map: 00 01
+	Raise Flag:
+		282B LK_SCENARIO_1_OPEN
+	[END]
+
+2801 LK_101_END:
+	World Map: 01 01
+	Spawn ID Change:
+		Room 0B: -1 -1 01
+		Room 10: -1 -1 00
+	Raise Flag:
+		282C LK_SCENARIO_1_START
+	[END]
+
+2802 LK_102_END:
+	Spawn ID Change:
+		Room 0B: -1 -1 00
+		Room 06: -1 -1 01
+	[END]
+
+2803 LK_103_END:
+	Spawn ID Change:
+		Room 05: -1 -1 01
+		Room 06: 01 -1 13
+	[END]
+
+2804 LK_104_END:
+	Spawn ID Change:
+		Room 05: -1 -1 00
+		Room 06: -1 -1 00
+	[END]
+
+2805 LK_lk05_ms101:
+	Block: World 0A Room 03
+	Spawn ID Change:
+		Room 04: -1 01 -1
+		Room 05: -1 01 -1
+		Room 06: -1 -1 16
+		Room 00: 01 -1 01
+	[END]
+
+2806 LK_106_END:
+	Block: World 0A Room 02
+	Block: World 0A Room 06
+	Spawn ID Change:
+		Room 06: 00 -1 00
+		Room 00: -1 -1 02
+	[END]
+
+2807 LK_107_END:
+	Spawn ID Change:
+		Room 04: -1 -1 01
+		Room 00: 00 -1 00
+	[END]
+
+2808 LK_108_END:
+	Unblock: World 0A Room 03
+	Block: World 0A Room 00
+	Unblock: World 0A Room 06
+	Block: World 0A Room 01
+	Spawn ID Change:
+		Room 04: -1 -1 02
+		Room 09: -1 -1 01
+	[END]
+
+2809 LK_109_END:
+	Spawn ID Change:
+		Room 03: -1 -1 02
+		Room 04: -1 -1 00
+		Room 09: -1 -1 00
+	[END]
+
+280A LK_110_END:
+	Spawn ID Change:
+		Room 03: -1 01 03
+		Room 00: -1 -1 03
+		Room 08: -1 01 -1
+		Room 07: -1 01 -1
+	[END]
+
+280B LK_111_END:
+	Spawn ID Change:
+		Room 03: -1 -1 04
+		Room 00: -1 -1 00
+		Room 01: 00 -1 -1
+	[END]
+
+280C LK_112_END:
+	Spawn ID Change:
+		Room 03: -1 -1 00
+		Room 09: -1 -1 02
+	[END]
+
+280D LK_113_END:
+	Spawn ID Change:
+		Room 08: -1 -1 01
+		Room 09: 01 -1 12
+	[END]
+
+280E LK_114_END:
+	Spawn ID Change:
+		Room 08: -1 -1 00
+		Room 09: 00 -1 03
+	[END]
+
+280F LK_115_END:
+	Spawn ID Change:
+		Room 09: -1 -1 04
+	[END]
+
+2810 LK_116_END:
+	Spawn ID Change:
+		Room 0C: -1 -1 01
+		Room 09: -1 -1 00
+	[END]
+
+2811 LK_117_END:
+	Spawn ID Change:
+		Room 03: -1 02 -1
+		Room 04: -1 02 03
+		Room 0C: -1 -1 00
+		Room 05: -1 02 -1
+		Room 08: -1 02 -1
+		Room 07: -1 02 -1
+		Room 09: -1 -1 15
+	[END]
+
+2812 LK_118_END:
+	Block: World 0A Room 02
+	Unblock: World 0A Room 00
+	Unblock: World 0A Room 01
+	Spawn ID Change:
+		Room 04: -1 -1 00
+		Room 00: -1 -1 04
+		Room 01: -1 -1 16
+		Room 09: -1 -1 13
+	[END]
+
+2813 LK_119_END:
+	Unblock: World 0A Room 02
+	Spawn ID Change:
+		Room 00: 03 -1 10
+	[END]
+
+2814 LK_lk02_ms102:
+	Spawn ID Change:
+		Room 0D: -1 -1 01
+		Room 00: 00 -1 0F
+		Room 02: -1 -1 14
+	[END]
+
+2815 LK_121_END:
+	Spawn ID Change:
+		Room 0D: -1 -1 00
+	[END]
+
+2816 LK_lk14_ms103:
+	Spawn ID Change:
+		Room 00: -1 -1 05
+	[END]
+
+2817:
+	[SKIP]
+
+2818 LK_START2:
+	World Map: 00 02
+	Spawn ID Change:
+		Room 03: 00 00 00
+		Room 0F: 00 00 00
+		Room 0B: 00 00 00
+		Room 04: 00 00 0A
+		Room 0C: 00 00 00
+		Room 05: 00 00 00
+		Room 0D: 01 0A 00
+		Room 06: 00 00 00
+		Room 00: 00 00 00
+		Room 0E: 00 00 00
+		Room 01: 00 00 00
+		Room 08: 00 00 00
+		Room 07: 00 00 00
+		Room 10: 00 00 00
+		Room 02: 00 00 00
+		Room 0A: 00 00 00
+		Room 09: 00 00 13
+	Raise Flag:
+		282E LK_SCENARIO_2_OPEN
+	[END]
+
+2819 LK_201_END:
+	World Map: 01 02
+	Spawn ID Change:
+		Room 04: -1 -1 00
+		Room 00: 02 -1 0A
+		Room 01: -1 -1 14
+	Raise Flag:
+		282F LK_SCENARIO_2_START
+	[END]
+
+281A LK_202_END:
+	Block: World 0A Room 04
+	Spawn ID Change:
+		Room 03: -1 0A -1
+		Room 04: -1 0A -1
+		Room 05: -1 0A -1
+		Room 00: -1 -1 0B
+		Room 08: -1 0A -1
+		Room 07: -1 0A -1
+	[END]
+
+281B LK_203_END:
+	Spawn ID Change:
+		Room 00: 00 -1 15
+		Room 02: -1 -1 0A
+	[END]
+
+281C LK_204_END:
+	Spawn ID Change:
+		Room 00: -1 -1 14
+		Room 01: -1 -1 0A
+		Room 02: -1 -1 13
+	[END]
+
+281D LK_205_END:
+	Block: World 0A Room 03
+	Unblock: World 0A Room 04
+	Spawn ID Change:
+		Room 05: 01 -1 0A
+		Room 00: -1 -1 13
+		Room 01: -1 -1 13
+	[END]
+
+281E LK_206_END:
+	Spawn ID Change:
+		Room 05: -1 -1 00
+	[END]
+
+281F:
+	[SKIP]
+
+2820 LK_208_END:
+	Unblock: World 0A Room 03
+	Spawn ID Change:
+		Room 00: -1 -1 12
+		Room 01: -1 -1 12
+		Room 07: -1 -1 0A
+		Room 02: -1 -1 00
+		Room 09: -1 -1 0A
+	[END]
+
+2821 LK_209_END:
+	Spawn ID Change:
+		Room 07: -1 -1 00
+		Room 09: -1 -1 0B
+	[END]
+
+2822 LK_210_END:
+	Spawn ID Change:
+		Room 00: 02 -1 0D
+		Room 01: -1 -1 10
+		Room 09: -1 -1 13
+	[END]
+
+2823 LK_211_END:
+	Spawn ID Change:
+		Room 03: -1 -1 06
+		Room 0F: -1 -1 0A
+		Room 05: -1 -1 06
+		Room 00: 00 -1 06
+	[END]
+
+2824:
+	[SKIP]
+
+2825 LK_212_END:
+	Spawn ID Change:
+		Room 03: -1 -1 00
+		Room 0F: -1 -1 00
+		Room 05: -1 -1 00
+	[END]
+
+2826:
+	[SKIP]
+
+2827 LK_123_END:
+	World Map: 02 01
+	Spawn ID Change:
+		Room 00: -1 -1 16
+		Room 01: -1 -1 15
+		Room 02: -1 -1 16
+		Room 09: -1 -1 16
+	Raise Flag:
+		282D LK_SCENARIO_1_END
+	[END]
+
+2828 LK_lk05_ms201:
+	Spawn ID Change:
+		Room 06: -1 -1 15
+		Room 00: -1 -1 0C
+	[END]
+
+2829:
+	[SKIP]
+
+282A LK_INIT:
+	Spawn ID Change:
+		Room 03: 00 00 00
+		Room 0F: 00 00 00
+		Room 0B: 00 00 00
+		Room 04: 00 00 00
+		Room 0C: 00 00 00
+		Room 05: 00 00 00
+		Room 0D: 00 00 00
+		Room 06: 00 00 00
+		Room 00: 00 00 00
+		Room 0E: 00 00 00
+		Room 01: 02 00 00
+		Room 08: 00 00 00
+		Room 07: 00 00 00
+		Room 10: 00 00 01
+		Room 02: 00 00 00
+		Room 0A: 00 00 00
+		Room 09: 00 00 00
+	[END]
+
+282B LK_SCENARIO_1_OPEN:
+	Raise Flag:
+		2800 LK_START
+	[END]
+
+282C LK_SCENARIO_1_START:
+	Raise Flag:
+		2801 LK_101_END
+	[END]
+
+282D LK_SCENARIO_1_END:
+	Raise Flag:
+		2827 LK_123_END
+	[END]
+
+282E LK_SCENARIO_2_OPEN:
+	Raise Flag:
+		2818 LK_START2
+	[END]
+
+282F LK_SCENARIO_2_START:
+	Raise Flag:
+		2819 LK_201_END
+	[END]
+
+2830 LK_SCENARIO_2_END:
+	Raise Flag:
+		2833 LK_lk15_ms202
+	[END]
+
+2831 LK_214_END:
+	Spawn ID Change:
+		Room 03: -1 0B -1
+		Room 04: -1 0B -1
+		Room 05: -1 0B -1
+		Room 06: -1 -1 14
+		Room 00: -1 -1 11
+		Room 01: 01 -1 11
+		Room 08: -1 0B -1
+		Room 07: -1 0B -1
+		Room 02: -1 -1 15
+		Room 09: -1 -1 14
+	[END]
+
+2832 LK_lk06_ms100:
+	[SKIP]
+
+2833 LK_lk15_ms202:
+	World Map: 02 02
+	Spawn ID Change:
+		Room 00: -1 -1 0E
+	Raise Flag:
+		2830 LK_SCENARIO_2_END
+	[END]
+

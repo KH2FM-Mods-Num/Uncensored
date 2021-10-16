@@ -1,0 +1,399 @@
+4400 TR_START:
+	World Map: 00 01
+	Raise Flag:
+		442E TR_SCENARIO_1_OPEN
+	[END]
+
+4401 TR_101_END:
+	World Map: 01 01
+	Spawn ID Change:
+		Room 00: -1 02 01
+		Room 01: -1 -1 00
+	Raise Flag:
+		442F TR_SCENARIO_1_START
+	[END]
+
+4402 TR_102_END:
+	Spawn ID Change:
+		Room 00: -1 01 02
+	[END]
+
+4403 TR_103_END:
+	Spawn ID Change:
+		Room 00: 01 00 03
+	[END]
+
+4404 TR_104_END:
+	Block: World 11 Room 03
+	Spawn ID Change:
+		Room 00: -1 -1 13
+		Room 01: -1 -1 02
+	[END]
+
+4405 TR_105_END:
+	Spawn ID Change:
+		Room 01: -1 -1 00
+	[END]
+
+4406 TR_tr01_ms101:
+	Block: World 11 Room 03
+	Spawn ID Change:
+		Room 00: 02 -1 04
+		Room 01: 01 -1 00
+	Lower Flag:
+		4434 TR_tr01_ms101_EXIT
+	[END]
+
+4407 TR_107_END:
+	Block: World 11 Room 03
+	Spawn ID Change:
+		Room 00: -1 -1 15
+		Room 01: -1 -1 00
+	Raise Flag:
+		1013 HB_tr_107_END
+	Minigame: 25
+	[END]
+
+4408:
+	[SKIP]
+
+4409 TR_108_END:
+	Spawn ID Change:
+		Room 02: -1 -1 01
+	[END]
+
+440A TR_109_END:
+	Spawn ID Change:
+		Room 02: -1 -1 00
+	[END]
+
+440B:
+	[SKIP]
+
+440C TR_110_END:
+	Unblock: World 11 Room 03
+	Spawn ID Change:
+		Room 03: 02 -1 01
+		Room 00: 03 -1 16
+		Room 01: -1 01 -1
+	[END]
+
+440D TR_111_END:
+	Spawn ID Change:
+		Room 03: -1 -1 00
+		Room 00: -1 -1 05
+	[END]
+
+440E TR_tr03_ms103:
+	Spawn ID Change:
+		Room 03: 03 -1 16
+		Room 04: 01 01 -1
+		Room 05: 01 -1 01
+		Room 06: -1 01 -1
+		Room 00: 02 -1 -1
+		Room 01: 03 -1 -1
+		Room 02: -1 01 -1
+	Raise Flag:
+		4436 TR_RTN_ON
+	[END]
+
+440F TR_113_END:
+	Spawn ID Change:
+		Room 03: 01 01 00
+		Room 04: -1 -1 01
+		Room 05: 02 -1 16
+	Raise Flag:
+		1097 HB_RTN_ON_OFF
+	Minigame: 26
+	[END]
+
+4410 TR_114_END:
+	Spawn ID Change:
+		Room 04: -1 -1 00
+	[END]
+
+4411 TR_tr04_ms104:
+	Spawn ID Change:
+		Room 05: 00 -1 02
+	[END]
+
+4412 TR_116_END:
+	Block: World 11 Room 04
+	Spawn ID Change:
+		Room 04: -1 02 -1
+		Room 05: -1 -1 03
+	[END]
+
+4413 TR_117_END:
+	Unblock: World 11 Room 04
+	World Map: 02 01
+	Spawn ID Change:
+		Room 05: 00 -1 05
+		Room 00: -1 -1 0D
+		Room 01: 05 -1 -1
+	Raise Flag:
+		1018 HB_tr_117_END
+		4430 TR_SCENARIO_1_END
+	Minigame: 08
+	Command 9: 09
+	[END]
+
+4414 TR_START2:
+	World Map: 00 02
+	Spawn ID Change:
+		Room 03: 01 00 00
+		Room 0B: 00 00 00
+		Room 04: 01 00 00
+		Room 05: 00 00 00
+		Room 06: 01 00 00
+		Room 00: 03 00 00
+		Room 01: 05 00 0A
+		Room 08: 00 00 00
+		Room 07: 00 00 00
+		Room 02: 00 00 00
+		Room 0A: 00 00 00
+		Room 09: 00 00 00
+	Raise Flag:
+		4431 TR_SCENARIO_2_OPEN
+	[END]
+
+4415 TR_201_END:
+	World Map: 01 02
+	Spawn ID Change:
+		Room 00: -1 -1 0A
+		Room 01: -1 -1 00
+	Raise Flag:
+		4432 TR_SCENARIO_2_START
+	[END]
+
+4416 TR_202_END:
+	Block: World 11 Room 04
+	Spawn ID Change:
+		Room 03: -1 0A -1
+		Room 04: -1 0A -1
+		Room 06: -1 0A -1
+		Room 00: -1 -1 0B
+		Room 01: -1 0A -1
+	Raise Flag:
+		104D HB_TR_202_END
+	Minigame: 44 08
+	[END]
+
+4417 TR_203_END:
+	Spawn ID Change:
+		Room 00: -1 -1 00
+		Room 02: -1 -1 00
+	[END]
+
+4418 TR_tr02_ms210:
+	Spawn ID Change:
+		Room 00: -1 -1 0C
+	[END]
+
+4419 TR_204_END:
+	Unblock: World 11 Room 04
+	Spawn ID Change:
+		Room 00: 02 -1 14
+		Room 01: -1 -1 0B
+	Raise Flag:
+		108A HB_hb_event_502
+	Minigame: 45
+	[END]
+
+441A TR_205_END:
+	Spawn ID Change:
+		Room 04: -1 -1 00
+		Room 01: -1 -1 00
+	[END]
+
+441B TR_tr04_ms202:
+	Raise Flag:
+		1051 HB_TR_tr04_ms202
+	[END]
+
+441C TR_206_END:
+	Spawn ID Change:
+		Room 04: 00 0B -1
+		Room 05: 03 -1 15
+		Room 06: 00 0B -1
+		Room 0A: -1 -1 0A
+	Raise Flag:
+		108F HB_TR05_HIDDEN_ON
+	Minigame: 26
+	[END]
+
+441D TR_207_END:
+	Spawn ID Change:
+		Room 05: 00 -1 12
+		Room 07: -1 -1 0A
+		Room 0A: -1 -1 16
+	Raise Flag:
+		1090 HB_TR05_HIDDEN_OFF
+	[END]
+
+441E TR_208_END:
+	Spawn ID Change:
+		Room 07: 01 -1 00
+	[END]
+
+441F TR_tr07_ms203:
+	Spawn ID Change:
+		Room 08: -1 -1 0A
+	[END]
+
+4420 TR_209_END:
+	Spawn ID Change:
+		Room 08: -1 -1 16
+		Room 09: -1 -1 0A
+	Raise Flag:
+		1091 HB_TR08_HIDDEN_ON
+	Minigame: 27
+	[END]
+
+4421 TR_210_END:
+	Spawn ID Change:
+		Room 09: -1 -1 00
+	Raise Flag:
+		1092 HB_TR08_HIDDEN_OFF
+	[END]
+
+4422 TR_tr09_ms204:
+	[SKIP]
+
+4423 TR_tr09_ms205:
+	World Map: 02 02
+	Spawn ID Change:
+		Room 06: 02 -1 -1
+		Room 08: 01 -1 00
+		Room 07: 02 -1 -1
+		Room 0A: 01 -1 15
+	Raise Flag:
+		1053 HB_TR_tr09_ms205
+		4433 TR_SCENARIO_2_END
+	[END]
+
+4424 TR_hb_304_END:
+	Spawn ID Change:
+		Room 00: -1 -1 06
+	[END]
+
+4425:
+	[SKIP]
+
+4426 TR_117_tr05_jump:
+	Spawn ID Change:
+		Room 05: -1 -1 04
+	[END]
+
+4427:
+	[SKIP]
+
+4428 TR_hb_501_END:
+	Spawn ID Change:
+		Room 02: -1 -1 0A
+	[END]
+
+4429 TR_hb_502_END:
+	Spawn ID Change:
+		Room 04: -1 -1 0A
+	[END]
+
+442A TR_503_END:
+	Spawn ID Change:
+		Room 05: -1 -1 0A
+	[END]
+
+442B TR_tr02_ms102a:
+	[SKIP]
+
+442C TR_tr02_ms102b:
+	Spawn ID Change:
+		Room 00: -1 -1 07
+	[END]
+
+442D TR_INIT:
+	Spawn ID Change:
+		Room 03: 00 00 00
+		Room 0B: 00 00 00
+		Room 04: 00 00 00
+		Room 05: 00 00 00
+		Room 06: 01 00 00
+		Room 00: 00 00 00
+		Room 01: 02 00 01
+		Room 08: 00 00 00
+		Room 07: 00 00 00
+		Room 02: 00 00 00
+		Room 0A: 00 00 00
+		Room 09: 00 00 00
+	[END]
+
+442E TR_SCENARIO_1_OPEN:
+	Raise Flag:
+		4400 TR_START
+	[END]
+
+442F TR_SCENARIO_1_START:
+	Raise Flag:
+		4401 TR_101_END
+	[END]
+
+4430 TR_SCENARIO_1_END:
+	Raise Flag:
+		4413 TR_117_END
+	[END]
+
+4431 TR_SCENARIO_2_OPEN:
+	Raise Flag:
+		4414 TR_START2
+	[END]
+
+4432 TR_SCENARIO_2_START:
+	Raise Flag:
+		4415 TR_201_END
+	[END]
+
+4433 TR_SCENARIO_2_END:
+	Raise Flag:
+		4423 TR_tr09_ms205
+	[END]
+
+4434 TR_tr01_ms101_EXIT:
+	Spawn ID Change:
+		Room 01: 02 -1 03
+	Lower Flag:
+		4406 TR_tr01_ms101
+	[END]
+
+4435:
+	[SKIP]
+
+4436 TR_RTN_ON:
+	Raise Flag:
+		108C HB_RTN_ON
+	[END]
+
+4437 TR_113_OUT:
+	Block: World 11 Room 04
+	Lower Flag:
+		4438 TR_113_IN
+	[END]
+
+4438 TR_113_IN:
+	Unblock: World 11 Room 04
+	Lower Flag:
+		4437 TR_113_OUT
+	[END]
+
+4439:
+	[SKIP]
+
+443A TR_HB05_HIDDEN_OFF:
+	Spawn ID Change:
+		Room 05: -1 -1 00
+		Room 00: -1 -1 14
+	[END]
+
+443B TR_FRAG_OFF:
+	Command 9: 25 26 27
+	[END]
+

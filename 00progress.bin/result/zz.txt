@@ -1,0 +1,104 @@
+0000 ZZ_START:
+	World Map: 00 01
+	Spawn ID Change:
+		Room 0F: 01 00 01
+		Room 11: 01 00 01
+		Room 12: 01 00 01
+		Room 00: 01 00 01
+		Room 13: 01 00 01
+		Room 08: 01 00 01
+		Room 0A: 01 00 01
+	Raise Flag:
+		000D ZZ_SCENARIO_1_OPEN
+	Minigame: 00
+	[END]
+
+0001 ZZ_E_003_A17_IN:
+	BGM Set: 1
+	World Map: 01 01
+	Spawn ID Change:
+		Room 00: 00 -1 -1
+	Raise Flag:
+		000E ZZ_SCENARIO_1_START
+	Command 9: 00
+	[END]
+
+0002 ZZ_E_005_A10_IN:
+	Spawn ID Change:
+		Room 11: 00 -1 -1
+	Lower Flag:
+		0001 ZZ_E_003_A17_IN
+	[END]
+
+0003 ZZ_E_009_END:
+	Spawn ID Change:
+		Room 0A: 02 -1 -1
+	[END]
+
+0004 ZZ_E_010_END:
+	Spawn ID Change:
+		Room 0F: 00 -1 -1
+		Room 0A: 03 -1 -1
+	[END]
+
+0005 ZZ_E_012_END:
+	Spawn ID Change:
+		Room 0F: -1 -1 02
+	[END]
+
+0006 ZZ_E_013_END:
+	Spawn ID Change:
+		Room 0A: 04 -1 -1
+	[END]
+
+0007 ZZ_E_014_END:
+	Spawn ID Change:
+		Room 0F: -1 01 00
+		Room 11: -1 01 00
+		Room 0A: 00 01 00
+	[END]
+
+0008 ZZ_E_015_END:
+	Spawn ID Change:
+		Room 12: 00 -1 -1
+	[END]
+
+0009 ZZ_E_018_END:
+	Spawn ID Change:
+		Room 13: 00 -1 -1
+	[END]
+
+000A ZZ_E_021_END:
+	Spawn ID Change:
+		Room 12: -1 01 00
+		Room 13: -1 01 00
+	[END]
+
+000B ZZ_S_BTL_SEIFER:
+	Spawn ID Change:
+		Room 0F: 16 16 16
+	[END]
+
+000C ZZ_START2:
+	World Map: 00 01
+	Raise Flag:
+		000D ZZ_SCENARIO_1_OPEN
+	[END]
+
+000D ZZ_SCENARIO_1_OPEN:
+	[SKIP]
+
+000E ZZ_SCENARIO_1_START:
+	Raise Flag:
+		0001 ZZ_E_003_A17_IN
+	[END]
+
+000F ZZ_ALL_WORLD_LV99:
+	[SKIP]
+
+0010 ZZ_NEW_MICKEY_COME:
+	[SKIP]
+
+0011 ZZ_ALL_WORLD_LV60:
+	[SKIP]
+

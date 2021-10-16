@@ -1,0 +1,481 @@
+2C00 LM_START:
+	World Map: 00 01
+	Spawn ID Change:
+		Room 07: 00 00 01
+	Raise Flag:
+		2C30 LM_SCENARIO_1_OPEN
+	[END]
+
+2C01 LM_101_END:
+	Block: World 0B Room 00
+	World Map: 01 01
+	Spawn ID Change:
+		Room 07: -1 -1 00
+		Room 02: 01 -1 01
+	Raise Flag:
+		2C2F LM_SCENARIO_1_START
+	[END]
+
+2C02 LM_102_END:
+	Spawn ID Change:
+		Room 02: -1 -1 00
+	[END]
+
+2C03 LM_103_END_L:
+	Lower Flag:
+		2C48 LM_lm02_ms102_failed
+	[END]
+
+2C04 LM_START_1:
+	Spawn ID Change:
+		Room 04: -1 -1 01
+	Lower Flag:
+		2C3E LM_lm04_ms103_failed
+	[END]
+
+2C05:
+	[SKIP]
+
+2C06:
+	[SKIP]
+
+2C07:
+	[SKIP]
+
+2C08 LM_107_END:
+	Spawn ID Change:
+		Room 06: -1 -1 00
+		Room 02: -1 -1 03
+	[END]
+
+2C09 LM_108_END:
+	Spawn ID Change:
+		Room 05: 01 -1 01
+		Room 02: -1 -1 00
+	[END]
+
+2C0A LM_START_2:
+	Spawn ID Change:
+		Room 03: 00 00 00
+		Room 04: 00 00 00
+		Room 05: 00 00 02
+		Room 06: 00 00 00
+		Room 00: 00 00 00
+		Room 01: 00 00 00
+		Room 08: 00 00 00
+		Room 07: 00 00 00
+		Room 02: 02 -1 -1
+		Room 09: 00 00 00
+	[END]
+
+2C0B LM_201_END:
+	World Map: 01 02
+	Spawn ID Change:
+		Room 05: -1 -1 00
+		Room 01: -1 -1 01
+	Lower Flag:
+		2C3F LM_lm01_ms201_failed
+	Raise Flag:
+		2C32 LM_SCENARIO_2_START
+	[END]
+
+2C0C LM_202_END:
+	Spawn ID Change:
+		Room 01: -1 -1 00
+	[END]
+
+2C0D LM_203_END_L:
+	Spawn ID Change:
+		Room 00: -1 -1 01
+	Minigame: 1D
+	[END]
+
+2C0E LM_204_END:
+	Spawn ID Change:
+		Room 00: -1 -1 00
+		Room 02: -1 -1 05
+	[END]
+
+2C0F LM_205_END:
+	World Map: 02 02
+	Spawn ID Change:
+		Room 00: -1 -1 15
+		Room 02: 03 -1 06
+	Raise Flag:
+		2C34 LM_SCENARIO_2_END
+	[END]
+
+2C10 LM_START_3:
+	Spawn ID Change:
+		Room 03: 00 00 01
+		Room 04: 00 00 00
+		Room 05: 00 00 00
+		Room 06: 00 00 00
+		Room 00: -1 -1 15
+		Room 01: 00 00 00
+		Room 08: 00 00 00
+		Room 07: 00 00 00
+		Room 02: 03 -1 -1
+		Room 09: 00 00 00
+	[END]
+
+2C11 LM_301_END:
+	World Map: 01 03
+	Spawn ID Change:
+		Room 03: -1 -1 00
+	Lower Flag:
+		2C40 LM_lm03_ms301_failed
+	Raise Flag:
+		2C35 LM_SCENARIO_3_START
+	[END]
+
+2C12 LM_302_END_L:
+	Spawn ID Change:
+		Room 06: -1 -1 02
+	Minigame: 1E
+	[END]
+
+2C13 LM_303_END:
+	World Map: 02 03
+	Spawn ID Change:
+		Room 06: -1 -1 00
+		Room 00: -1 -1 14
+		Room 02: 04 -1 07
+	Raise Flag:
+		2C37 LM_SCENARIO_3_END
+	[END]
+
+2C14 LM_START_4:
+	Spawn ID Change:
+		Room 03: 00 00 00
+		Room 04: 00 00 00
+		Room 05: 00 00 00
+		Room 06: 00 00 00
+		Room 00: 00 00 -1
+		Room 01: 00 00 02
+		Room 08: 00 00 00
+		Room 07: 00 00 00
+		Room 02: 04 -1 -1
+		Room 09: 00 00 00
+	[END]
+
+2C15 LM_401_END:
+	World Map: 01 04
+	Spawn ID Change:
+		Room 01: -1 -1 00
+		Room 02: -1 -1 08
+	Raise Flag:
+		2C38 LM_SCENARIO_4_START
+	[END]
+
+2C16 LM_402_END:
+	Spawn ID Change:
+		Room 07: -1 -1 02
+		Room 02: -1 -1 00
+	[END]
+
+2C17 LM_403_END:
+	Spawn ID Change:
+		Room 07: -1 -1 00
+		Room 02: -1 -1 09
+	[END]
+
+2C18 LM_404_END:
+	Spawn ID Change:
+		Room 06: -1 -1 03
+		Room 00: -1 -1 0E
+		Room 02: -1 -1 0A
+	[END]
+
+2C19:
+	[SKIP]
+
+2C1A LM_405_END:
+	Spawn ID Change:
+		Room 07: -1 -1 03
+	Lower Flag:
+		2C41 LM_lm09_ms401_failed
+	[END]
+
+2C1B LM_406_END:
+	Spawn ID Change:
+		Room 08: -1 -1 01
+		Room 07: -1 -1 00
+	[END]
+
+2C1C:
+	[SKIP]
+
+2C1D LM_408_END:
+	[SKIP]
+
+2C1E:
+	[SKIP]
+
+2C1F LM_START_5:
+	Spawn ID Change:
+		Room 03: 00 00 00
+		Room 04: 00 00 02
+		Room 05: 00 00 00
+		Room 06: 00 00 00
+		Room 00: 00 00 00
+		Room 01: 00 00 00
+		Room 08: 00 00 00
+		Room 07: 00 00 00
+		Room 02: 05 -1 -1
+		Room 09: 00 00 00
+	[END]
+
+2C20 LM_501_END:
+	World Map: 01 05
+	Spawn ID Change:
+		Room 04: -1 -1 00
+	Lower Flag:
+		2C42 LM_lm04_ms501_failed
+	Raise Flag:
+		2C3B LM_SCENARIO_5_START
+	[END]
+
+2C21 LM_502_END_L:
+	World Map: 02 05
+	Spawn ID Change:
+		Room 00: -1 -1 12
+		Room 02: 00 -1 0D
+	Raise Flag:
+		2C3D LM_SCENARIO_5_END
+	Minigame: 20
+	[END]
+
+2C22 LM_104_END_L:
+	Spawn ID Change:
+		Room 02: -1 -1 02
+	[END]
+
+2C23 LM_105_END:
+	Spawn ID Change:
+		Room 04: -1 -1 00
+	[END]
+
+2C24 LM_106_END_L:
+	Spawn ID Change:
+		Room 06: -1 -1 01
+	[END]
+
+2C25 LM_109_END:
+	Unblock: World 0B Room 00
+	World Map: 02 01
+	Spawn ID Change:
+		Room 05: -1 -1 00
+		Room 00: -1 -1 16
+		Room 02: 02 -1 04
+	Raise Flag:
+		2C31 LM_SCENARIO_1_END
+	[END]
+
+2C26 LM_GET_ITEM_2:
+	World Map: 00 02
+	Spawn ID Change:
+		Room 00: -1 -1 11
+		Room 02: -1 -1 16
+	Raise Flag:
+		2C33 LM_SCENARIO_2_OPEN
+	[END]
+
+2C27 LM_GET_ITEM_3:
+	World Map: 00 03
+	Spawn ID Change:
+		Room 00: -1 -1 10
+		Room 02: -1 -1 15
+	Raise Flag:
+		2C36 LM_SCENARIO_3_OPEN
+	[END]
+
+2C28 LM_GET_ITEM_4:
+	World Map: 00 04
+	Spawn ID Change:
+		Room 00: -1 -1 0F
+		Room 02: -1 -1 14
+	Raise Flag:
+		2C39 LM_SCENARIO_4_OPEN
+	[END]
+
+2C29 LM_407_END:
+	Spawn ID Change:
+		Room 05: -1 -1 03
+		Room 08: -1 -1 00
+	[END]
+
+2C2A LM_409_END_L:
+	Spawn ID Change:
+		Room 07: -1 -1 04
+	Minigame: 1F
+	[END]
+
+2C2B LM_410_END:
+	Spawn ID Change:
+		Room 07: -1 -1 00
+		Room 02: -1 -1 0B
+	[END]
+
+2C2C LM_411_END:
+	World Map: 02 04
+	Spawn ID Change:
+		Room 00: -1 -1 13
+		Room 02: 05 -1 0C
+	Raise Flag:
+		2C3A LM_SCENARIO_4_END
+	[END]
+
+2C2D LM_GET_ITEM_5:
+	World Map: 00 05
+	Spawn ID Change:
+		Room 00: -1 -1 0D
+		Room 02: -1 -1 13
+	Raise Flag:
+		2C3C LM_SCENARIO_5_OPEN
+	[END]
+
+2C2E LM_INIT:
+	Spawn ID Change:
+		Room 03: 00 00 00
+		Room 04: 00 00 00
+		Room 05: 00 00 00
+		Room 06: 00 00 00
+		Room 00: 00 00 00
+		Room 01: 00 00 00
+		Room 08: 00 00 00
+		Room 07: 00 00 00
+		Room 02: 00 00 00
+		Room 09: 00 00 00
+	[END]
+
+2C2F LM_SCENARIO_1_START:
+	Raise Flag:
+		2C01 LM_101_END
+	[END]
+
+2C30 LM_SCENARIO_1_OPEN:
+	Raise Flag:
+		2C00 LM_START
+	[END]
+
+2C31 LM_SCENARIO_1_END:
+	Raise Flag:
+		2C25 LM_109_END
+	[END]
+
+2C32 LM_SCENARIO_2_START:
+	Raise Flag:
+		2C0B LM_201_END
+	[END]
+
+2C33 LM_SCENARIO_2_OPEN:
+	Raise Flag:
+		2C26 LM_GET_ITEM_2
+	[END]
+
+2C34 LM_SCENARIO_2_END:
+	Raise Flag:
+		2C0F LM_205_END
+	[END]
+
+2C35 LM_SCENARIO_3_START:
+	Raise Flag:
+		2C11 LM_301_END
+	[END]
+
+2C36 LM_SCENARIO_3_OPEN:
+	Raise Flag:
+		2C27 LM_GET_ITEM_3
+	[END]
+
+2C37 LM_SCENARIO_3_END:
+	Raise Flag:
+		2C13 LM_303_END
+	[END]
+
+2C38 LM_SCENARIO_4_START:
+	Raise Flag:
+		2C15 LM_401_END
+	[END]
+
+2C39 LM_SCENARIO_4_OPEN:
+	Raise Flag:
+		2C28 LM_GET_ITEM_4
+	[END]
+
+2C3A LM_SCENARIO_4_END:
+	Raise Flag:
+		2C2C LM_411_END
+	[END]
+
+2C3B LM_SCENARIO_5_START:
+	Raise Flag:
+		2C20 LM_501_END
+	[END]
+
+2C3C LM_SCENARIO_5_OPEN:
+	Raise Flag:
+		2C2D LM_GET_ITEM_5
+	[END]
+
+2C3D LM_SCENARIO_5_END:
+	Raise Flag:
+		2C21 LM_502_END_L
+	[END]
+
+2C3E LM_lm04_ms103_failed:
+	Lower Flag:
+		2C04 LM_START_1
+		2C23 LM_105_END
+	[END]
+
+2C3F LM_lm01_ms201_failed:
+	Lower Flag:
+		2C0A LM_START_2
+		2C0B LM_201_END
+		2C0C LM_202_END
+	[END]
+
+2C40 LM_lm03_ms301_failed:
+	Lower Flag:
+		2C10 LM_START_3
+		2C11 LM_301_END
+	[END]
+
+2C41 LM_lm09_ms401_failed:
+	Lower Flag:
+		2C1A LM_405_END
+		2C1B LM_406_END
+		2C29 LM_407_END
+		2C1D LM_408_END
+	[END]
+
+2C42 LM_lm04_ms501_failed:
+	Lower Flag:
+		2C1F LM_START_5
+		2C20 LM_501_END
+	[END]
+
+2C43 LM_lm04_ms103_FREE:
+	[SKIP]
+
+2C44 LM_lm01_ms201_FREE:
+	[SKIP]
+
+2C45 LM_lm03_ms301_FREE:
+	[SKIP]
+
+2C46 LM_lm09_ms401_FREE:
+	[SKIP]
+
+2C47 LM_lm04_ms501_FREE:
+	[SKIP]
+
+2C48 LM_lm02_ms102_failed:
+	Spawn ID Change:
+		Room 02: -1 -1 0E
+	Lower Flag:
+		2C03 LM_103_END_L
+	[END]
+

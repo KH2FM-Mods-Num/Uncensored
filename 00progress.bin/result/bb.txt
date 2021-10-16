@@ -1,0 +1,493 @@
+1400 BB_START:
+	World Map: 00 01
+	Raise Flag:
+		140C BB_SCENARIO_1_OPEN
+	[END]
+
+1401 BB_101_END:
+	World Map: 01 01
+	Spawn ID Change:
+		Room 00: -1 -1 00
+		Room 01: 01 -1 01
+	Raise Flag:
+		140D BB_SCENARIO_1_START
+	[END]
+
+1402 BB_102_END:
+	Spawn ID Change:
+		Room 01: -1 -1 00
+	[END]
+
+1403:
+	[SKIP]
+
+1404:
+	[SKIP]
+
+1405 BB_bb05_ms104a:
+	[SKIP]
+
+1406 BB_bb05_ms104b:
+	Spawn ID Change:
+		Room 0E: -1 -1 01
+	[END]
+
+1407 BB_124_END:
+	Spawn ID Change:
+		Room 00: -1 -1 05
+		Room 07: 01 -1 -1
+		Room 02: -1 -1 02
+	[END]
+
+1408 BB_108_END:
+	Spawn ID Change:
+		Room 0B: -1 -1 00
+	[END]
+
+1409 BB_104_END:
+	Spawn ID Change:
+		Room 00: -1 -1 00
+		Room 08: 06 00 02
+		Room 07: 00 01 -1
+		Room 02: 00 -1 16
+	[END]
+
+140A BB_bb15_ms203:
+	Spawn ID Change:
+		Room 06: -1 -1 0B
+	[END]
+
+140B BB_INIT:
+	Spawn ID Change:
+		Room 03: 00 00 00
+		Room 0F: 00 00 00
+		Room 0B: 00 00 00
+		Room 04: 00 00 00
+		Room 0C: 00 00 00
+		Room 05: 00 00 00
+		Room 0D: 00 00 00
+		Room 06: 00 00 00
+		Room 00: 01 00 01
+		Room 0E: 00 00 00
+		Room 01: 00 00 00
+		Room 08: 00 00 00
+		Room 07: 00 00 00
+		Room 02: 00 00 00
+		Room 0A: 00 00 00
+		Room 09: 00 00 00
+	[END]
+
+140C BB_SCENARIO_1_OPEN:
+	Raise Flag:
+		1400 BB_START
+	[END]
+
+140D BB_SCENARIO_1_START:
+	Raise Flag:
+		1401 BB_101_END
+	[END]
+
+140E BB_114_END:
+	Spawn ID Change:
+		Room 03: -1 -1 00
+	[END]
+
+140F BB_SCENARIO_1_END:
+	Raise Flag:
+		1415 BB_119_END
+	[END]
+
+1410 BB_SCENARIO_2_OPEN:
+	Raise Flag:
+		1418 BB_START2
+	[END]
+
+1411 BB_SCENARIO_2_START:
+	Raise Flag:
+		1419 BB_201_END
+	[END]
+
+1412 BB_SCENARIO_2_END:
+	Raise Flag:
+		1428 BB_216_END
+	[END]
+
+1413:
+	[SKIP]
+
+1414:
+	[SKIP]
+
+1415 BB_119_END:
+	World Map: 02 01
+	Spawn ID Change:
+		Room 03: -1 -1 00
+		Room 0E: -1 -1 00
+		Room 01: -1 -1 15
+		Room 02: -1 -1 12
+	Raise Flag:
+		140F BB_SCENARIO_1_END
+		3C03 WM_BB1_CLEAR
+	[END]
+
+1416:
+	[SKIP]
+
+1417:
+	[SKIP]
+
+1418 BB_START2:
+	World Map: 00 02
+	Spawn ID Change:
+		Room 03: 00 00 00
+		Room 0F: 00 00 00
+		Room 0B: 00 00 00
+		Room 04: 00 00 00
+		Room 0C: 00 00 00
+		Room 05: 00 00 00
+		Room 0D: 00 00 00
+		Room 06: 00 00 00
+		Room 00: 00 00 00
+		Room 0E: 00 00 00
+		Room 01: 00 00 00
+		Room 08: 00 00 00
+		Room 07: 00 00 00
+		Room 02: 00 00 0A
+		Room 0A: 00 00 00
+		Room 09: 00 00 00
+	Raise Flag:
+		1410 BB_SCENARIO_2_OPEN
+	[END]
+
+1419 BB_201_END:
+	World Map: 01 02
+	Spawn ID Change:
+		Room 00: -1 -1 0A
+		Room 02: -1 -1 00
+	Raise Flag:
+		1411 BB_SCENARIO_2_START
+	[END]
+
+141A:
+	[SKIP]
+
+141B:
+	[SKIP]
+
+141C BB_204_END:
+	Spawn ID Change:
+		Room 04: -1 -1 0A
+		Room 00: -1 -1 00
+	[END]
+
+141D BB_205_END:
+	Spawn ID Change:
+		Room 04: -1 -1 00
+	[END]
+
+141E:
+	[SKIP]
+
+141F BB_207_END:
+	Spawn ID Change:
+		Room 03: -1 -1 00
+		Room 04: -1 0A 00
+		Room 09: -1 -1 0A
+	[END]
+
+1420:
+	[SKIP]
+
+1421 BB_208_OUT:
+	Spawn ID Change:
+		Room 03: -1 01 -1
+		Room 09: -1 0A 00
+	[END]
+
+1422 BB_210_END:
+	Spawn ID Change:
+		Room 00: -1 -1 00
+	[END]
+
+1423:
+	[SKIP]
+
+1424 BB_FM_COM_OBJ_OFF:
+	Spawn ID Change:
+		Room 03: -1 00 -1
+	[END]
+
+1425 BB_213_END:
+	Unblock: World 05 Room 0D
+	Spawn ID Change:
+		Room 0D: -1 -1 0A
+		Room 06: -1 -1 00
+		Room 02: 00 -1 -1
+	[END]
+
+1426 BB_214_END:
+	Spawn ID Change:
+		Room 0D: -1 -1 00
+	[END]
+
+1427 BB_FM_XAL_RE_CLEAR:
+	[SKIP]
+
+1428 BB_216_END:
+	World Map: 02 02
+	Spawn ID Change:
+		Room 03: 00 -1 -1
+		Room 0D: -1 0A -1
+		Room 06: 00 0A 00
+		Room 01: -1 -1 11
+		Room 02: -1 -1 0E
+	Raise Flag:
+		1412 BB_SCENARIO_2_END
+	[END]
+
+1429 BB_bb01_ms101:
+	Block: World 05 Room 0D
+	Spawn ID Change:
+		Room 04: -1 01 -1
+		Room 06: 01 01 -1
+		Room 00: 00 01 02
+		Room 01: 00 -1 14
+		Room 08: 01 01 01
+	[END]
+
+142A BB_bb11_ms102:
+	Spawn ID Change:
+		Room 0B: 02 -1 -1
+		Room 06: -1 02 -1
+		Room 07: -1 02 -1
+		Room 0A: -1 -1 01
+	[END]
+
+142B BB_bb03_ms103:
+	Spawn ID Change:
+		Room 03: -1 -1 16
+		Room 0B: -1 02 -1
+		Room 00: -1 03 -1
+		Room 01: -1 -1 0D
+		Room 08: 00 03 -1
+		Room 07: -1 03 -1
+		Room 02: -1 -1 01
+		Room 09: -1 02 -1
+	[END]
+
+142C:
+	[SKIP]
+
+142D BB_FM_KINOKO_XAL_PLAYED:
+	[SKIP]
+
+142E:
+	[SKIP]
+
+142F:
+	[SKIP]
+
+1430:
+	[SKIP]
+
+1431:
+	[SKIP]
+
+1432 BB_105_END:
+	Spawn ID Change:
+		Room 08: 02 -1 03
+	[END]
+
+1433 BB_106_END:
+	Spawn ID Change:
+		Room 08: 03 -1 04
+	[END]
+
+1434 BB_107_END:
+	Spawn ID Change:
+		Room 0B: 01 -1 01
+		Room 08: 04 00 05
+		Room 02: -1 -1 14
+	[END]
+
+1435:
+	[SKIP]
+
+1436 BB_110_END:
+	Spawn ID Change:
+		Room 0B: -1 -1 02
+		Room 02: -1 -1 0F
+		Room 0A: -1 -1 00
+	[END]
+
+1437 BB_111_END:
+	Spawn ID Change:
+		Room 0B: 00 -1 03
+		Room 0C: 01 -1 01
+	[END]
+
+1438 BB_112_END:
+	Spawn ID Change:
+		Room 0C: 02 16 02
+	[END]
+
+1439 BB_113_END:
+	Spawn ID Change:
+		Room 03: -1 -1 01
+		Room 0C: 00 00 03
+		Room 01: -1 -1 16
+		Room 08: 05 02 -1
+		Room 09: -1 01 -1
+	[END]
+
+143A:
+	[SKIP]
+
+143B BB_116_END:
+	Spawn ID Change:
+		Room 00: -1 -1 03
+		Room 07: -1 04 -1
+		Room 02: -1 -1 15
+	[END]
+
+143C BB_117_END:
+	Spawn ID Change:
+		Room 03: -1 -1 15
+		Room 04: -1 00 01
+		Room 00: -1 -1 04
+		Room 01: -1 -1 0F
+		Room 02: -1 -1 0D
+	[END]
+
+143D BB_118_END:
+	Spawn ID Change:
+		Room 04: -1 -1 00
+	[END]
+
+143E:
+	[SKIP]
+
+143F:
+	[SKIP]
+
+1440:
+	[SKIP]
+
+1441:
+	[SKIP]
+
+1442:
+	[SKIP]
+
+1443 BB_202_END:
+	Block: World 05 Room 04
+	Block: World 05 Room 06
+	Block: World 05 Room 07
+	Block: World 05 Room 0D
+	Block: World 05 Room 08
+	Spawn ID Change:
+		Room 0B: -1 0A -1
+		Room 0C: -1 0A -1
+		Room 06: 01 0A -1
+		Room 00: -1 -1 0B
+		Room 01: -1 -1 10
+		Room 08: -1 0A -1
+		Room 07: -1 0A -1
+		Room 09: -1 0A -1
+	[END]
+
+1444:
+	[SKIP]
+
+1445:
+	[SKIP]
+
+1446:
+	[SKIP]
+
+1447 BB_208_END:
+	Spawn ID Change:
+		Room 03: -1 -1 0B
+		Room 01: -1 -1 12
+		Room 02: 01 -1 10
+		Room 09: -1 00 16
+	[END]
+
+1448 BB_209_END:
+	Spawn ID Change:
+		Room 03: -1 -1 14
+		Room 00: -1 00 0C
+		Room 01: -1 -1 0E
+		Room 08: -1 0B -1
+		Room 09: -1 0B -1
+	[END]
+
+1449:
+	[SKIP]
+
+144A BB_212_END:
+	Spawn ID Change:
+		Room 02: -1 -1 11
+	[END]
+
+144B:
+	[SKIP]
+
+144C:
+	[SKIP]
+
+144D:
+	[SKIP]
+
+144E BB_111_OUT:
+	Spawn ID Change:
+		Room 0B: -1 01 00
+		Room 0A: -1 01 -1
+	[END]
+
+144F BB_bb04_ms201:
+	Unblock: World 05 Room 04
+	Unblock: World 05 Room 06
+	Unblock: World 05 Room 07
+	Unblock: World 05 Room 08
+	Spawn ID Change:
+		Room 03: 01 -1 0A
+		Room 04: -1 -1 16
+		Room 00: -1 0A -1
+		Room 01: -1 -1 14
+		Room 02: -1 -1 13
+	[END]
+
+1450 BB_bb00_ms202:
+	Spawn ID Change:
+		Room 03: -1 -1 03
+		Room 06: 02 00 0A
+		Room 00: -1 -1 0D
+		Room 01: -1 -1 13
+		Room 02: -1 -1 0B
+	[END]
+
+1451:
+	[SKIP]
+
+1452 BB_107_OUT:
+	Spawn ID Change:
+		Room 08: -1 01 00
+	[END]
+
+1453 BB_113_OUT:
+	Spawn ID Change:
+		Room 0B: -1 01 -1
+		Room 0C: -1 01 00
+	[END]
+
+1454 BB_117_OUT:
+	Spawn ID Change:
+		Room 00: -1 03 00
+	[END]
+
+1455 BB_bb00_ms202_OUT:
+	Spawn ID Change:
+		Room 00: -1 0B 00
+	[END]
+

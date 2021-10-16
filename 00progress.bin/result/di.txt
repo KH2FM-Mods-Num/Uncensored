@@ -1,0 +1,6 @@
+0C00 DI_START:
+	[SKIP]
+
+0C01 DI_555_END:
+	[SKIP]
+

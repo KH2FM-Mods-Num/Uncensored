@@ -1,0 +1,678 @@
+4000 CA_START:
+	World Map: 00 01
+	Raise Flag:
+		404B CA_SCENARIO_1_OPEN
+		405E CA_NO_JACK01_START
+	[END]
+
+4001:
+	[SKIP]
+
+4002 CA_START2:
+	World Map: 00 02
+	Spawn ID Change:
+		Room 14: 00 00 00
+		Room 03: 00 00 00
+		Room 0F: 00 00 00
+		Room 0B: 01 00 00
+		Room 15: 00 00 00
+		Room 04: 00 00 00
+		Room 11: 00 00 00
+		Room 0C: 00 00 00
+		Room 16: 00 00 00
+		Room 05: 00 00 00
+		Room 12: 00 00 00
+		Room 0D: 00 00 00
+		Room 17: 00 00 00
+		Room 06: 01 00 00
+		Room 00: 02 00 00
+		Room 13: 00 00 00
+		Room 0E: 01 00 00
+		Room 01: 02 00 00
+		Room 18: 00 00 00
+		Room 08: 00 00 00
+		Room 07: 00 00 00
+		Room 10: 00 -1 -1
+		Room 02: 00 00 00
+		Room 19: 00 00 00
+		Room 0A: 00 00 0A
+		Room 09: 01 00 00
+	Lower Flag:
+		4040 CA_ca01_on
+		4042 CA_ca08_on
+		4043 CA_ca14_on
+		4049 CA_ca16_on
+	Raise Flag:
+		404E CA_SCENARIO_2_OPEN
+	[END]
+
+4003:
+	[SKIP]
+
+4004 CA_101_END:
+	Block: World 10 Room 02
+	World Map: 01 01
+	Spawn ID Change:
+		Room 00: -1 -1 00
+		Room 01: -1 -1 01
+	Raise Flag:
+		404C CA_SCENARIO_1_START
+	[END]
+
+4005 CA_102_END:
+	Spawn ID Change:
+		Room 01: -1 -1 00
+	[END]
+
+4006 CA_ca01_ms101:
+	Spawn ID Change:
+		Room 01: 03 -1 -1
+	[END]
+
+4007 CA_ca01_ms102:
+	Unblock: World 10 Room 02
+	Block: World 10 Room 03
+	Spawn ID Change:
+		Room 01: -1 -1 03
+		Room 02: -1 -1 01
+	[END]
+
+4008 CA_105_END:
+	Spawn ID Change:
+		Room 00: -1 -1 02
+		Room 02: -1 -1 02
+	[END]
+
+4009 CA_ca02_ms103:
+	Spawn ID Change:
+		Room 01: 04 00 02
+		Room 18: 04 -1 -1
+		Room 02: -1 01 -1
+	[END]
+
+400A CA_107_END:
+	Block: World 10 Room 03
+	Spawn ID Change:
+		Room 06: -1 -1 01
+		Room 00: 01 -1 00
+		Room 01: 06 -1 16
+		Room 02: -1 -1 00
+	Raise Flag:
+		405F CA_NO_JACK01_END
+	[END]
+
+400B CA_109_END:
+	Unblock: World 10 Room 03
+	Spawn ID Change:
+		Room 03: -1 -1 15
+		Room 15: -1 01 01
+		Room 04: -1 -1 14
+		Room 16: -1 01 01
+		Room 06: 01 -1 00
+		Room 01: 01 01 00
+	[END]
+
+400C:
+	[SKIP]
+
+400D:
+	[SKIP]
+
+400E:
+	[SKIP]
+
+400F:
+	[SKIP]
+
+4010 CA_112_END:
+	Block: World 10 Room 03
+	Spawn ID Change:
+		Room 03: -1 -1 00
+		Room 0A: 01 -1 -1
+	Raise Flag:
+		4060 CA_NO_JACK02_START
+	Minigame: 3A 39
+	[END]
+
+4011 CA_ca_event_113:
+	Spawn ID Change:
+		Room 08: -1 -1 00
+		Room 09: -1 01 02
+	Lower Flag:
+		4040 CA_ca01_on
+	[END]
+
+4012 CA_114_END:
+	Block: World 10 Room 0C
+	Block: World 10 Room 08
+	Spawn ID Change:
+		Room 09: -1 -1 00
+	[END]
+
+4013 CA_ca09_ms104:
+	Unblock: World 10 Room 0C
+	Spawn ID Change:
+		Room 11: -1 -1 01
+	[END]
+
+4014 CA_116_END:
+	Unblock: World 10 Room 04
+	Block: World 10 Room 00
+	Block: World 10 Room 08
+	Unblock: World 10 Room 03
+	Spawn ID Change:
+		Room 03: -1 -1 14
+		Room 15: -1 02 02
+		Room 04: -1 -1 16
+		Room 11: -1 -1 00
+		Room 16: -1 -1 03
+		Room 0A: 00 -1 -1
+	Minigame: 47 74
+	[END]
+
+4015:
+	[SKIP]
+
+4016 CA_118_END:
+	Spawn ID Change:
+		Room 03: -1 -1 03
+		Room 04: -1 -1 00
+		Room 05: -1 -1 00
+	[END]
+
+4017 CA_119_END:
+	Spawn ID Change:
+		Room 03: -1 -1 12
+		Room 15: -1 -1 04
+	[END]
+
+4018 CA_ca07_ms105:
+	Spawn ID Change:
+		Room 04: -1 -1 02
+	[END]
+
+4019 CA_121_END:
+	Block: World 10 Room 00
+	Block: World 10 Room 08
+	Spawn ID Change:
+		Room 04: 00 -1 03
+	Raise Flag:
+		4061 CA_NO_JACK02_END
+	[END]
+
+401A CA_ca03_ms106:
+	Unblock: World 10 Room 00
+	Unblock: World 10 Room 08
+	Spawn ID Change:
+		Room 04: -1 -1 00
+		Room 08: -1 -1 03
+	[END]
+
+401B CA_126_END:
+	Spawn ID Change:
+		Room 03: -1 -1 11
+		Room 15: -1 03 -1
+		Room 04: 00 -1 15
+		Room 0C: -1 01 -1
+		Room 16: -1 03 -1
+		Room 0D: -1 01 -1
+		Room 08: -1 01 05
+		Room 10: 00 01 01
+		Room 0A: -1 -1 02
+		Room 09: -1 02 -1
+	Minigame: 3A 39
+	Command 9: 47
+	[END]
+
+401C CA_123_END:
+	Spawn ID Change:
+		Room 0A: -1 -1 00
+	Raise Flag:
+		405A CA_JACK01_START
+	[END]
+
+401D CA_ca10_ms107:
+	Spawn ID Change:
+		Room 08: -1 -1 04
+	[END]
+
+401E CA_125_END:
+	World Map: 02 01
+	Spawn ID Change:
+		Room 03: -1 -1 00
+		Room 04: -1 -1 00
+		Room 0C: -1 02 -1
+		Room 05: -1 -1 15
+		Room 12: -1 01 01
+		Room 0D: -1 02 -1
+		Room 00: 02 -1 16
+		Room 13: -1 01 01
+		Room 01: 02 02 -1
+		Room 08: -1 -1 05
+		Room 02: 01 02 -1
+		Room 0A: -1 01 -1
+		Room 09: 01 03 -1
+	Lower Flag:
+		4040 CA_ca01_on
+		4042 CA_ca08_on
+		4043 CA_ca14_on
+		4049 CA_ca16_on
+	Raise Flag:
+		3C07 WM_CA1_CLEAR
+		404D CA_SCENARIO_1_END
+		405B CA_JACK01_END
+	Minigame: 78
+	[END]
+
+401F CA_201_END:
+	World Map: 01 02
+	Spawn ID Change:
+		Room 00: -1 -1 0A
+		Room 0A: 02 -1 00
+	Raise Flag:
+		404F CA_SCENARIO_2_START
+	[END]
+
+4020 CA_202_END:
+	Block: World 10 Room 02
+	Spawn ID Change:
+		Room 00: -1 -1 14
+		Room 01: -1 -1 0A
+	[END]
+
+4021 CA_203_END:
+	Spawn ID Change:
+		Room 01: -1 -1 00
+	[END]
+
+4022 CA_ca01_ms201:
+	Unblock: World 10 Room 02
+	Spawn ID Change:
+		Room 05: -1 -1 12
+		Room 12: -1 0A 0A
+		Room 06: -1 -1 16
+		Room 13: -1 0A 0A
+		Room 01: -1 -1 15
+		Room 02: -1 0A -1
+	Minigame: 3A 39 75
+	[END]
+
+4023:
+	[SKIP]
+
+4024 CA_205_END:
+	Spawn ID Change:
+		Room 05: -1 -1 00
+		Room 06: -1 -1 0A
+	[END]
+
+4025 CA_206_END:
+	Block: World 10 Room 00
+	Spawn ID Change:
+		Room 05: 02 -1 0B
+		Room 06: 02 -1 15
+	[END]
+
+4026 CA_207_END:
+	Spawn ID Change:
+		Room 05: 00 -1 00
+		Room 06: 01 -1 -1
+	[END]
+
+4027:
+	[SKIP]
+
+4028 CA_209_END:
+	Unblock: World 10 Room 0B
+	Block: World 10 Room 06
+	Spawn ID Change:
+		Room 0F: -1 0A -1
+		Room 0B: -1 -1 16
+		Room 0E: -1 -1 0A
+	Lower Flag:
+		4040 CA_ca01_on
+	Raise Flag:
+		405C CA_JACK02_START
+	Minigame: 3B
+	[END]
+
+4029 CA_210_END:
+	Spawn ID Change:
+		Room 0E: -1 -1 00
+	[END]
+
+402A CA_ca14_ms203:
+	Spawn ID Change:
+		Room 0B: -1 -1 00
+		Room 05: -1 -1 0C
+	[END]
+
+402B CA_212_END:
+	Unblock: World 10 Room 00
+	Unblock: World 10 Room 06
+	Spawn ID Change:
+		Room 14: -1 0A 0A
+		Room 0F: -1 16 -1
+		Room 0B: 00 16 -1
+		Room 0C: 01 16 -1
+		Room 05: -1 -1 16
+		Room 0D: -1 16 -1
+		Room 06: -1 -1 14
+		Room 13: -1 0B -1
+		Room 0E: 00 16 -1
+		Room 0A: -1 16 -1
+		Room 09: -1 16 -1
+	Minigame: 46
+	[END]
+
+402C:
+	[SKIP]
+
+402D CA_213_END:
+	Spawn ID Change:
+		Room 05: -1 -1 14
+		Room 06: -1 -1 13
+		Room 01: 05 -1 0B
+		Room 18: 05 -1 -1
+	Minigame: 3A 39 74
+	Command 9: 46
+	[END]
+
+402E CA_214_END:
+	Spawn ID Change:
+		Room 01: -1 -1 00
+	[END]
+
+402F CA_ca01_ms204:
+	Spawn ID Change:
+		Room 05: -1 -1 0E
+	[END]
+
+4030 CA_216_END:
+	World Map: 02 02
+	Spawn ID Change:
+		Room 14: -1 0B -1
+		Room 0F: -1 0B -1
+		Room 0C: -1 0A -1
+		Room 05: -1 -1 13
+		Room 12: -1 0B -1
+		Room 0D: -1 0A -1
+		Room 06: -1 -1 00
+		Room 00: -1 -1 15
+		Room 13: -1 0C -1
+		Room 0E: -1 0A -1
+		Room 01: 02 0B -1
+		Room 02: 01 0B -1
+		Room 0A: -1 0A -1
+		Room 09: -1 0A -1
+	Raise Flag:
+		3C0D WM_CA2_CLEAR
+		4050 CA_SCENARIO_2_END
+		405D CA_JACK02_END
+	Command 9: 74
+	[END]
+
+4031:
+	[SKIP]
+
+4032 CA_ca09_ms_ht:
+	Spawn ID Change:
+		Room 09: -1 15 -1
+	[END]
+
+4033:
+	[SKIP]
+
+4034 CA_ca10_ms_ht:
+	Spawn ID Change:
+		Room 0A: -1 15 -1
+	[END]
+
+4035:
+	[SKIP]
+
+4036 CA_ca12_ms_ht:
+	Spawn ID Change:
+		Room 0C: -1 15 -1
+	[END]
+
+4037:
+	[SKIP]
+
+4038 CA_ca13_ms_ht:
+	Spawn ID Change:
+		Room 0D: -1 15 -1
+	[END]
+
+4039:
+	[SKIP]
+
+403A CA_ca14_ms_ht:
+	Spawn ID Change:
+		Room 0E: -1 15 -1
+	[END]
+
+403B:
+	[SKIP]
+
+403C CA_ca15_ms_ht:
+	Spawn ID Change:
+		Room 0F: -1 15 -1
+	[END]
+
+403D CA_mission_success:
+	Spawn ID Change:
+		Room 0F: -1 15 -1
+		Room 0B: -1 15 -1
+		Room 0C: -1 15 -1
+		Room 05: -1 -1 0D
+		Room 0D: -1 15 -1
+		Room 0E: -1 15 -1
+		Room 0A: -1 15 -1
+		Room 09: -1 15 -1
+	[END]
+
+403E:
+	[SKIP]
+
+403F:
+	[SKIP]
+
+4040 CA_ca01_on:
+	Unblock: World 10 Room 04
+	Unblock: World 10 Room 00
+	Unblock: World 10 Room 06
+	Lower Flag:
+		4042 CA_ca08_on
+		4043 CA_ca14_on
+		4049 CA_ca16_on
+	[END]
+
+4041:
+	[SKIP]
+
+4042 CA_ca08_on:
+	Unblock: World 10 Room 04
+	Unblock: World 10 Room 06
+	Unblock: World 10 Room 08
+	Lower Flag:
+		4040 CA_ca01_on
+		4043 CA_ca14_on
+		4049 CA_ca16_on
+	[END]
+
+4043 CA_ca14_on:
+	Unblock: World 10 Room 04
+	Unblock: World 10 Room 0B
+	Unblock: World 10 Room 06
+	Lower Flag:
+		4040 CA_ca01_on
+		4042 CA_ca08_on
+		4049 CA_ca16_on
+	[END]
+
+4044 CA_EVENT_111:
+	Spawn ID Change:
+		Room 03: -1 -1 02
+		Room 16: -1 -1 00
+		Room 08: -1 -1 01
+	[END]
+
+4045 CA_EVENT_117:
+	Spawn ID Change:
+		Room 15: -1 -1 00
+		Room 04: -1 -1 01
+		Room 05: -1 -1 01
+	Command 9: 74
+	[END]
+
+4046:
+	[SKIP]
+
+4047 CA_EVENT_205:
+	Spawn ID Change:
+		Room 05: -1 -1 0A
+		Room 13: -1 -1 0B
+	Command 9: 75
+	[END]
+
+4048:
+	[SKIP]
+
+4049 CA_ca16_on:
+	Unblock: World 10 Room 04
+	Unblock: World 10 Room 06
+	Unblock: World 10 Room 10
+	Lower Flag:
+		4040 CA_ca01_on
+		4042 CA_ca08_on
+		4043 CA_ca14_on
+	[END]
+
+404A CA_INIT:
+	Spawn ID Change:
+		Room 14: 00 00 00
+		Room 03: 00 00 00
+		Room 0F: 00 00 00
+		Room 0B: 00 00 00
+		Room 15: 00 00 00
+		Room 04: 00 00 00
+		Room 11: 00 00 00
+		Room 0C: 00 00 00
+		Room 16: 00 00 00
+		Room 05: 00 00 00
+		Room 12: 00 00 00
+		Room 0D: 00 00 00
+		Room 17: 00 00 00
+		Room 06: 00 00 00
+		Room 00: 00 00 01
+		Room 13: 00 00 00
+		Room 0E: 01 00 00
+		Room 01: 00 00 00
+		Room 18: 00 00 00
+		Room 08: 00 00 00
+		Room 07: 00 00 00
+		Room 10: 00 00 00
+		Room 02: 00 00 00
+		Room 19: 00 00 00
+		Room 0A: 00 00 00
+		Room 09: 00 00 00
+	[END]
+
+404B CA_SCENARIO_1_OPEN:
+	Raise Flag:
+		4000 CA_START
+	[END]
+
+404C CA_SCENARIO_1_START:
+	Raise Flag:
+		4004 CA_101_END
+	[END]
+
+404D CA_SCENARIO_1_END:
+	Raise Flag:
+		401E CA_125_END
+	[END]
+
+404E CA_SCENARIO_2_OPEN:
+	Raise Flag:
+		4002 CA_START2
+	[END]
+
+404F CA_SCENARIO_2_START:
+	Raise Flag:
+		401F CA_201_END
+	[END]
+
+4050 CA_SCENARIO_2_END:
+	Raise Flag:
+		4030 CA_216_END
+	[END]
+
+4051 CA_104_OUT:
+	Spawn ID Change:
+		Room 01: -1 01 00
+	[END]
+
+4052:
+	[SKIP]
+
+4053:
+	[SKIP]
+
+4054:
+	[SKIP]
+
+4055:
+	[SKIP]
+
+4056:
+	[SKIP]
+
+4057:
+	[SKIP]
+
+4058:
+	[SKIP]
+
+4059:
+	[SKIP]
+
+405A CA_JACK01_START:
+	[SKIP]
+
+405B CA_JACK01_END:
+	[SKIP]
+
+405C CA_JACK02_START:
+	[SKIP]
+
+405D CA_JACK02_END:
+	[SKIP]
+
+405E CA_NO_JACK01_START:
+	[SKIP]
+
+405F CA_NO_JACK01_END:
+	[SKIP]
+
+4060 CA_NO_JACK02_START:
+	[SKIP]
+
+4061 CA_NO_JACK02_END:
+	[SKIP]
+
+4062 CA_ca18_ms202:
+	Spawn ID Change:
+		Room 0B: -1 -1 0A
+	[END]
+
+4063 CA_FM_COM_OBJ_OFF:
+	Spawn ID Change:
+		Room 08: -1 00 -1
+		Room 10: -1 00 -1
+	[END]
+
+4064 CA_FM_KINOKO_LUX_PLAYED:
+	[SKIP]
+
