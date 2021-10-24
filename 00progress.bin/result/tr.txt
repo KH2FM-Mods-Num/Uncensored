@@ -1,6 +1,9 @@
 4400 TR_START:
 	World Map: 00 01
-	Raise Flag:
+	Spawn ID Change:
+		Room 00: 00 -1 -1
+		Room 01: 02 -1 01
+	Raise Story:
 		442E TR_SCENARIO_1_OPEN
 	[END]
 
@@ -9,7 +12,7 @@
 	Spawn ID Change:
 		Room 00: -1 02 01
 		Room 01: -1 -1 00
-	Raise Flag:
+	Raise Story:
 		442F TR_SCENARIO_1_START
 	[END]
 
@@ -40,7 +43,7 @@
 	Spawn ID Change:
 		Room 00: 02 -1 04
 		Room 01: 01 -1 00
-	Lower Flag:
+	Lower Story:
 		4434 TR_tr01_ms101_EXIT
 	[END]
 
@@ -49,9 +52,10 @@
 	Spawn ID Change:
 		Room 00: -1 -1 15
 		Room 01: -1 -1 00
-	Raise Flag:
-		1013 HB_tr_107_END
-	Minigame: 25
+	Raise Story:
+		4424 TR_hb_304_END
+	Raise Menu:
+		25 TR_VISIT_TR00
 	[END]
 
 4408:
@@ -93,7 +97,7 @@
 		Room 00: 02 -1 -1
 		Room 01: 03 -1 -1
 		Room 02: -1 01 -1
-	Raise Flag:
+	Raise Story:
 		4436 TR_RTN_ON
 	[END]
 
@@ -102,9 +106,8 @@
 		Room 03: 01 01 00
 		Room 04: -1 -1 01
 		Room 05: 02 -1 16
-	Raise Flag:
-		1097 HB_RTN_ON_OFF
-	Minigame: 26
+	Raise Menu:
+		26 TR_VISIT_TR05
 	[END]
 
 4410 TR_114_END:
@@ -131,11 +134,12 @@
 		Room 05: 00 -1 05
 		Room 00: -1 -1 0D
 		Room 01: 05 -1 -1
-	Raise Flag:
-		1018 HB_tr_117_END
+	Raise Story:
 		4430 TR_SCENARIO_1_END
-	Minigame: 08
-	Command 9: 09
+	Raise Menu:
+		08 TR_LIGHTCYCLE_ON
+	Lower Menu:
+		09 TR_LIGHT_MEMO_ON
 	[END]
 
 4414 TR_START2:
@@ -153,7 +157,7 @@
 		Room 02: 00 00 00
 		Room 0A: 00 00 00
 		Room 09: 00 00 00
-	Raise Flag:
+	Raise Story:
 		4431 TR_SCENARIO_2_OPEN
 	[END]
 
@@ -162,7 +166,7 @@
 	Spawn ID Change:
 		Room 00: -1 -1 0A
 		Room 01: -1 -1 00
-	Raise Flag:
+	Raise Story:
 		4432 TR_SCENARIO_2_START
 	[END]
 
@@ -174,9 +178,11 @@
 		Room 06: -1 0A -1
 		Room 00: -1 -1 0B
 		Room 01: -1 0A -1
-	Raise Flag:
-		104D HB_TR_202_END
-	Minigame: 44 08
+	Raise Story:
+		4428 TR_hb_501_END
+	Raise Menu:
+		44 TR_LIGHTCYCLE2_ON
+		08 TR_LIGHTCYCLE_ON
 	[END]
 
 4417 TR_203_END:
@@ -195,9 +201,10 @@
 	Spawn ID Change:
 		Room 00: 02 -1 14
 		Room 01: -1 -1 0B
-	Raise Flag:
-		108A HB_hb_event_502
-	Minigame: 45
+	Raise Story:
+		4429 TR_hb_502_END
+	Raise Menu:
+		45 TR_LIGHTCYCLE2_OFF
 	[END]
 
 441A TR_205_END:
@@ -207,8 +214,8 @@
 	[END]
 
 441B TR_tr04_ms202:
-	Raise Flag:
-		1051 HB_TR_tr04_ms202
+	Raise Story:
+		442A TR_503_END
 	[END]
 
 441C TR_206_END:
@@ -217,9 +224,8 @@
 		Room 05: 03 -1 15
 		Room 06: 00 0B -1
 		Room 0A: -1 -1 0A
-	Raise Flag:
-		108F HB_TR05_HIDDEN_ON
-	Minigame: 26
+	Raise Menu:
+		26 TR_VISIT_TR05
 	[END]
 
 441D TR_207_END:
@@ -227,8 +233,6 @@
 		Room 05: 00 -1 12
 		Room 07: -1 -1 0A
 		Room 0A: -1 -1 16
-	Raise Flag:
-		1090 HB_TR05_HIDDEN_OFF
 	[END]
 
 441E TR_208_END:
@@ -245,16 +249,13 @@
 	Spawn ID Change:
 		Room 08: -1 -1 16
 		Room 09: -1 -1 0A
-	Raise Flag:
-		1091 HB_TR08_HIDDEN_ON
-	Minigame: 27
+	Raise Menu:
+		27 TR_VISIT_TR08
 	[END]
 
 4421 TR_210_END:
 	Spawn ID Change:
 		Room 09: -1 -1 00
-	Raise Flag:
-		1092 HB_TR08_HIDDEN_OFF
 	[END]
 
 4422 TR_tr09_ms204:
@@ -264,11 +265,10 @@
 	World Map: 02 02
 	Spawn ID Change:
 		Room 06: 02 -1 -1
-		Room 08: 01 -1 00
+		Room 08: 01 01 00
 		Room 07: 02 -1 -1
 		Room 0A: 01 -1 15
-	Raise Flag:
-		1053 HB_TR_tr09_ms205
+	Raise Story:
 		4433 TR_SCENARIO_2_END
 	[END]
 
@@ -313,54 +313,45 @@
 
 442D TR_INIT:
 	Spawn ID Change:
-		Room 03: 00 00 00
-		Room 0B: 00 00 00
-		Room 04: 00 00 00
-		Room 05: 00 00 00
-		Room 06: 01 00 00
-		Room 00: 00 00 00
-		Room 01: 02 00 01
-		Room 08: 00 00 00
-		Room 07: 00 00 00
-		Room 02: 00 00 00
-		Room 0A: 00 00 00
-		Room 09: 00 00 00
+		Room 06: 01 -1 -1
+		Room 00: 00 -1 -1
+		Room 01: 02 -1 01
 	[END]
 
 442E TR_SCENARIO_1_OPEN:
-	Raise Flag:
+	Raise Story:
 		4400 TR_START
 	[END]
 
 442F TR_SCENARIO_1_START:
-	Raise Flag:
+	Raise Story:
 		4401 TR_101_END
 	[END]
 
 4430 TR_SCENARIO_1_END:
-	Raise Flag:
+	Raise Story:
 		4413 TR_117_END
 	[END]
 
 4431 TR_SCENARIO_2_OPEN:
-	Raise Flag:
+	Raise Story:
 		4414 TR_START2
 	[END]
 
 4432 TR_SCENARIO_2_START:
-	Raise Flag:
+	Raise Story:
 		4415 TR_201_END
 	[END]
 
 4433 TR_SCENARIO_2_END:
-	Raise Flag:
+	Raise Story:
 		4423 TR_tr09_ms205
 	[END]
 
 4434 TR_tr01_ms101_EXIT:
 	Spawn ID Change:
 		Room 01: 02 -1 03
-	Lower Flag:
+	Lower Story:
 		4406 TR_tr01_ms101
 	[END]
 
@@ -368,24 +359,24 @@
 	[SKIP]
 
 4436 TR_RTN_ON:
-	Raise Flag:
-		108C HB_RTN_ON
-	[END]
+	[SKIP]
 
 4437 TR_113_OUT:
 	Block: World 11 Room 04
-	Lower Flag:
+	Lower Story:
 		4438 TR_113_IN
 	[END]
 
 4438 TR_113_IN:
 	Unblock: World 11 Room 04
-	Lower Flag:
+	Lower Story:
 		4437 TR_113_OUT
 	[END]
 
-4439:
-	[SKIP]
+4439 TR_FM_COM_OBJ_OFF_GOA:
+	Spawn ID Change:
+		Room 08: -1 02 -1
+	[END]
 
 443A TR_HB05_HIDDEN_OFF:
 	Spawn ID Change:
@@ -394,6 +385,9 @@
 	[END]
 
 443B TR_FRAG_OFF:
-	Command 9: 25 26 27
+	Lower Menu:
+		25 TR_VISIT_TR00
+		26 TR_VISIT_TR05
+		27 TR_VISIT_TR08
 	[END]
 

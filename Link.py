@@ -1,8 +1,10 @@
 import struct
 import json
 
-flags = open('flag.json')
-flags = json.load(flags)
+flag1 = json.load(open('progress.json'))
+flag2 = json.load(open('world.json'))
+flag3 = json.load(open('menu.json'))
+flagdicts = [{},flag1,flag2,flag3]
 
 def clean(num,char=2):
     if num >= 0:
@@ -14,9 +16,9 @@ def clean(num,char=2):
 def count(address):
     return struct.unpack('h',f[address:address+2])[0]
 
-def flagparse(flagid):
+def flagparse(flagid,flagdict=flag1):
     try:
-        return flagid+' '+flags[flagid]
+        return flagid+' '+flagdict[flagid]
     except:
         return flagid
 
@@ -33,14 +35,15 @@ for i in range(amt):
         flagnum  = clean(count(offset+4*j+2),4)
         if flagtype == 0:
             continue
-        elif flagtype == 1:
-            flagnum = flagparse(flagnum)
         else:
-            flagnum = 'Type '+str(flagtype)+' '+flagnum
+            if flagtype > 1:
+                flagnum = flagnum[2:]
+            flagtxt = 'Type '+str(flagtype)+' '
+            flagtxt += flagparse(flagnum,flagdicts[flagtype])
         if j == 0:
-            g.write(flagnum+': ('+str(req)+')\n')
+            g.write(flagtxt+': ('+str(req)+')\n')
         else:
-            g.write('\t'+flagnum+'\n')
+            g.write('\t'+flagtxt+'\n')
     g.write('\n')
 g.close()
         

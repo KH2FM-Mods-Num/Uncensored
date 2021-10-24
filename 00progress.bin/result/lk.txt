@@ -1,6 +1,9 @@
 2800 LK_START:
 	World Map: 00 01
-	Raise Flag:
+	Spawn ID Change:
+		Room 01: 02 -1 -1
+		Room 10: -1 -1 01
+	Raise Story:
 		282B LK_SCENARIO_1_OPEN
 	[END]
 
@@ -9,7 +12,7 @@
 	Spawn ID Change:
 		Room 0B: -1 -1 01
 		Room 10: -1 -1 00
-	Raise Flag:
+	Raise Story:
 		282C LK_SCENARIO_1_START
 	[END]
 
@@ -183,7 +186,7 @@
 		Room 02: 00 00 00
 		Room 0A: 00 00 00
 		Room 09: 00 00 13
-	Raise Flag:
+	Raise Story:
 		282E LK_SCENARIO_2_OPEN
 	[END]
 
@@ -193,7 +196,7 @@
 		Room 04: -1 -1 00
 		Room 00: 02 -1 0A
 		Room 01: -1 -1 14
-	Raise Flag:
+	Raise Story:
 		282F LK_SCENARIO_2_START
 	[END]
 
@@ -289,7 +292,7 @@
 		Room 01: -1 -1 15
 		Room 02: -1 -1 16
 		Room 09: -1 -1 16
-	Raise Flag:
+	Raise Story:
 		282D LK_SCENARIO_1_END
 	[END]
 
@@ -304,52 +307,37 @@
 
 282A LK_INIT:
 	Spawn ID Change:
-		Room 03: 00 00 00
-		Room 0F: 00 00 00
-		Room 0B: 00 00 00
-		Room 04: 00 00 00
-		Room 0C: 00 00 00
-		Room 05: 00 00 00
-		Room 0D: 00 00 00
-		Room 06: 00 00 00
-		Room 00: 00 00 00
-		Room 0E: 00 00 00
-		Room 01: 02 00 00
-		Room 08: 00 00 00
-		Room 07: 00 00 00
-		Room 10: 00 00 01
-		Room 02: 00 00 00
-		Room 0A: 00 00 00
-		Room 09: 00 00 00
+		Room 01: 02 -1 -1
+		Room 10: -1 -1 01
 	[END]
 
 282B LK_SCENARIO_1_OPEN:
-	Raise Flag:
+	Raise Story:
 		2800 LK_START
 	[END]
 
 282C LK_SCENARIO_1_START:
-	Raise Flag:
+	Raise Story:
 		2801 LK_101_END
 	[END]
 
 282D LK_SCENARIO_1_END:
-	Raise Flag:
+	Raise Story:
 		2827 LK_123_END
 	[END]
 
 282E LK_SCENARIO_2_OPEN:
-	Raise Flag:
+	Raise Story:
 		2818 LK_START2
 	[END]
 
 282F LK_SCENARIO_2_START:
-	Raise Flag:
+	Raise Story:
 		2819 LK_201_END
 	[END]
 
 2830 LK_SCENARIO_2_END:
-	Raise Flag:
+	Raise Story:
 		2833 LK_lk15_ms202
 	[END]
 
@@ -374,7 +362,8 @@
 	World Map: 02 02
 	Spawn ID Change:
 		Room 00: -1 -1 0E
-	Raise Flag:
+		Room 0D: 0D -1 -1
+	Raise Story:
 		2830 LK_SCENARIO_2_END
 	[END]
 

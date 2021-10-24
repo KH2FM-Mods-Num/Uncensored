@@ -3,7 +3,7 @@
 	Spawn ID Change:
 		Room 0D: 01 -1 -1
 		Room 01: -1 -1 01
-	Raise Flag:
+	Raise Story:
 		482F EH_SCENARIO_1_OPEN
 		4843 EH_NO_RIKU_START
 	[END]
@@ -31,7 +31,7 @@
 	Spawn ID Change:
 		Room 03: -1 -1 01
 		Room 01: 03 -1 16
-	Raise Flag:
+	Raise Story:
 		4830 EH_SCENARIO_1_START
 	[END]
 
@@ -54,7 +54,7 @@
 	Spawn ID Change:
 		Room 03: -1 -1 00
 		Room 04: -1 -1 01
-	Raise Flag:
+	Raise Story:
 		4842 EH_FINAL_CHANCE_START
 	[END]
 
@@ -207,7 +207,7 @@
 		Room 11: -1 01 01
 		Room 0D: 03 -1 13
 		Room 10: -1 01 00
-	Raise Flag:
+	Raise Story:
 		4844 EH_NO_RIKU_END
 	[END]
 
@@ -244,30 +244,28 @@
 	Spawn ID Change:
 		Room 11: -1 02 -1
 		Room 0C: -1 02 -1
-		Room 12: 04 -1 04
+		Room 12: 0D -1 04
 		Room 06: -1 02 -1
 		Room 10: -1 02 -1
 		Room 0A: -1 02 -1
+		Room 03: -1 03 -1
+	Raise Story:
+		4837 EH_JIMMNY_FULL_OPEN
 	[END]
 
 4826 EH_eh_event_134:
-	Spawn ID Change:
-		Room 14: -1 -1 01
-		Room 12: 03 -1 00
-	[END]
+	[SKIP]
 
 4827 EH_eh_event_135:
 	Spawn ID Change:
-		Room 14: -1 -1 00
+		Room 1B: -1 -1 01
 	[END]
 
 4828:
 	[SKIP]
 
 4829 EH_eh_event_136:
-	Spawn ID Change:
-		Room 12: -1 -1 00
-	[END]
+	[SKIP]
 
 482A:
 	[SKIP]
@@ -285,12 +283,12 @@
 	[SKIP]
 
 482F EH_SCENARIO_1_OPEN:
-	Raise Flag:
+	Raise Story:
 		4800 EH_START
 	[END]
 
 4830 EH_SCENARIO_1_START:
-	Raise Flag:
+	Raise Story:
 		4805 EH_eh_event_101
 	[END]
 
@@ -338,15 +336,13 @@
 	[SKIP]
 
 483E EH_eh24_ms110:
-	Spawn ID Change:
-		Room 12: -1 -1 05
-	[END]
+	[SKIP]
 
 483F EH_eh22_ms111:
 	[SKIP]
 
 4840 EH_eh23_ms112:
-	Raise Flag:
+	Raise Story:
 		4845 EH_RIKU_LAST_START
 	[END]
 
@@ -366,30 +362,28 @@
 	[SKIP]
 
 4846 EH_EH_OUT:
-	Lower Flag:
+	Lower Story:
 		4847 EH_EH_IN
-	Raise Flag:
+	Raise Story:
 		08F2 TT_TT21_REAL
 	[END]
 
 4847 EH_EH_IN:
-	Lower Flag:
+	Lower Story:
 		4846 EH_EH_OUT
-	Raise Flag:
+	Raise Story:
 		08F3 TT_TT21_FAKE
 	[END]
 
 4848 EH_GAME_COMPLETE:
-	Raise Flag:
+	Raise Story:
 		4837 EH_JIMMNY_FULL_OPEN
 	[END]
 
 4849 EH_EH_LASTBOSS_RESET:
 	Spawn ID Change:
-		Room 14: -1 -1 00
-		Room 03: -1 03 -1
-		Room 12: 04 -1 04
-	Lower Flag:
+		Room 1B: -1 -1 00
+	Lower Story:
 		4845 EH_RIKU_LAST_START
 		4841 EH_eh20_ms113
 		4840 EH_eh23_ms112
@@ -403,25 +397,27 @@
 		4827 EH_eh_event_135
 		4826 EH_eh_event_134
 		4849 EH_EH_LASTBOSS_RESET
+	Raise Story:
+		4846 EH_EH_OUT
 	[END]
 
 484A EH_NO_RIKU_START_RE:
-	Lower Flag:
+	Lower Story:
 		484B EH_NO_RIKU_END_RE
 	[END]
 
 484B EH_NO_RIKU_END_RE:
-	Lower Flag:
+	Lower Story:
 		484A EH_NO_RIKU_START_RE
 	[END]
 
 484C EH_RIKU_LAST_RE:
-	Lower Flag:
+	Lower Story:
 		484D EH_RIKU_LAST_END_RE
 	[END]
 
 484D EH_RIKU_LAST_END_RE:
-	Lower Flag:
+	Lower Story:
 		484C EH_RIKU_LAST_RE
 	[END]
 
@@ -438,7 +434,9 @@
 	[SKIP]
 
 4852 EH_FM_XEM_RE_CLEAR:
-	[SKIP]
+	Raise Story:
+		4846 EH_EH_OUT
+	[END]
 
 4853 EH_FM_KINOKO_XEM_PLAYED:
 	[SKIP]

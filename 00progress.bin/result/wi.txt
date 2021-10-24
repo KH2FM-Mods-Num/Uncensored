@@ -3,7 +3,7 @@
 	Spawn ID Change:
 		Room 00: 01 00 01
 		Room 01: 01 00 00
-	Raise Flag:
+	Raise Story:
 		3425 WI_SCENARIO_1_OPEN
 	[END]
 
@@ -14,7 +14,7 @@
 	Spawn ID Change:
 		Room 00: -1 -1 16
 		Room 01: -1 -1 01
-	Raise Flag:
+	Raise Story:
 		3426 WI_SCENARIO_1_START
 	[END]
 
@@ -165,9 +165,10 @@
 		Room 00: 03 -1 13
 		Room 01: 02 -1 -1
 		Room 02: 00 0A -1
-	Raise Flag:
+	Raise Story:
 		300E DC_WI_CLEAR
 		3427 WI_SCENARIO_1_END
+		3428 WI_START2
 	[END]
 
 341C WI_105_END_A:
@@ -223,30 +224,20 @@
 	[END]
 
 3424 WI_INIT:
-	Spawn ID Change:
-		Room 03: 00 00 00
-		Room 04: 00 00 00
-		Room 05: 00 00 00
-		Room 06: 00 00 00
-		Room 00: 00 00 00
-		Room 01: 00 00 00
-		Room 08: 00 00 00
-		Room 07: 00 00 00
-		Room 02: 00 00 00
-	[END]
+	[SKIP]
 
 3425 WI_SCENARIO_1_OPEN:
-	Raise Flag:
+	Raise Story:
 		3400 WI_START
 	[END]
 
 3426 WI_SCENARIO_1_START:
-	Raise Flag:
+	Raise Story:
 		3401 WI_101_END
 	[END]
 
 3427 WI_SCENARIO_1_END:
-	Raise Flag:
+	Raise Story:
 		341B WI_122_END
 	[END]
 
@@ -260,12 +251,12 @@
 		Room 01: -1 0A -1
 		Room 07: -1 0A -1
 		Room 02: -1 0A -1
-	Raise Flag:
+	Raise Story:
 		3429 WI_SCENARIO_2_OPEN
 	[END]
 
 3429 WI_SCENARIO_2_OPEN:
-	Raise Flag:
+	Raise Story:
 		3428 WI_START2
 	[END]
 

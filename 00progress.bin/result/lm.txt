@@ -1,8 +1,8 @@
 2C00 LM_START:
 	World Map: 00 01
 	Spawn ID Change:
-		Room 07: 00 00 01
-	Raise Flag:
+		Room 07: -1 -1 01
+	Raise Story:
 		2C30 LM_SCENARIO_1_OPEN
 	[END]
 
@@ -12,7 +12,7 @@
 	Spawn ID Change:
 		Room 07: -1 -1 00
 		Room 02: 01 -1 01
-	Raise Flag:
+	Raise Story:
 		2C2F LM_SCENARIO_1_START
 	[END]
 
@@ -22,14 +22,14 @@
 	[END]
 
 2C03 LM_103_END_L:
-	Lower Flag:
+	Lower Story:
 		2C48 LM_lm02_ms102_failed
 	[END]
 
 2C04 LM_START_1:
 	Spawn ID Change:
 		Room 04: -1 -1 01
-	Lower Flag:
+	Lower Story:
 		2C3E LM_lm04_ms103_failed
 	[END]
 
@@ -73,9 +73,9 @@
 	Spawn ID Change:
 		Room 05: -1 -1 00
 		Room 01: -1 -1 01
-	Lower Flag:
+	Lower Story:
 		2C3F LM_lm01_ms201_failed
-	Raise Flag:
+	Raise Story:
 		2C32 LM_SCENARIO_2_START
 	[END]
 
@@ -87,7 +87,8 @@
 2C0D LM_203_END_L:
 	Spawn ID Change:
 		Room 00: -1 -1 01
-	Minigame: 1D
+	Raise Menu:
+		1D LM_MUSICAL2_CLEAR
 	[END]
 
 2C0E LM_204_END:
@@ -101,7 +102,7 @@
 	Spawn ID Change:
 		Room 00: -1 -1 15
 		Room 02: 03 -1 06
-	Raise Flag:
+	Raise Story:
 		2C34 LM_SCENARIO_2_END
 	[END]
 
@@ -123,16 +124,17 @@
 	World Map: 01 03
 	Spawn ID Change:
 		Room 03: -1 -1 00
-	Lower Flag:
+	Lower Story:
 		2C40 LM_lm03_ms301_failed
-	Raise Flag:
+	Raise Story:
 		2C35 LM_SCENARIO_3_START
 	[END]
 
 2C12 LM_302_END_L:
 	Spawn ID Change:
 		Room 06: -1 -1 02
-	Minigame: 1E
+	Raise Menu:
+		1E LM_MUSICAL3_CLEAR
 	[END]
 
 2C13 LM_303_END:
@@ -141,7 +143,7 @@
 		Room 06: -1 -1 00
 		Room 00: -1 -1 14
 		Room 02: 04 -1 07
-	Raise Flag:
+	Raise Story:
 		2C37 LM_SCENARIO_3_END
 	[END]
 
@@ -164,7 +166,7 @@
 	Spawn ID Change:
 		Room 01: -1 -1 00
 		Room 02: -1 -1 08
-	Raise Flag:
+	Raise Story:
 		2C38 LM_SCENARIO_4_START
 	[END]
 
@@ -193,7 +195,7 @@
 2C1A LM_405_END:
 	Spawn ID Change:
 		Room 07: -1 -1 03
-	Lower Flag:
+	Lower Story:
 		2C41 LM_lm09_ms401_failed
 	[END]
 
@@ -230,9 +232,9 @@
 	World Map: 01 05
 	Spawn ID Change:
 		Room 04: -1 -1 00
-	Lower Flag:
+	Lower Story:
 		2C42 LM_lm04_ms501_failed
-	Raise Flag:
+	Raise Story:
 		2C3B LM_SCENARIO_5_START
 	[END]
 
@@ -241,9 +243,10 @@
 	Spawn ID Change:
 		Room 00: -1 -1 12
 		Room 02: 00 -1 0D
-	Raise Flag:
+	Raise Story:
 		2C3D LM_SCENARIO_5_END
-	Minigame: 20
+	Raise Menu:
+		20 LM_MUSICAL5_CLEAR
 	[END]
 
 2C22 LM_104_END_L:
@@ -268,7 +271,7 @@
 		Room 05: -1 -1 00
 		Room 00: -1 -1 16
 		Room 02: 02 -1 04
-	Raise Flag:
+	Raise Story:
 		2C31 LM_SCENARIO_1_END
 	[END]
 
@@ -277,7 +280,7 @@
 	Spawn ID Change:
 		Room 00: -1 -1 11
 		Room 02: -1 -1 16
-	Raise Flag:
+	Raise Story:
 		2C33 LM_SCENARIO_2_OPEN
 	[END]
 
@@ -286,7 +289,7 @@
 	Spawn ID Change:
 		Room 00: -1 -1 10
 		Room 02: -1 -1 15
-	Raise Flag:
+	Raise Story:
 		2C36 LM_SCENARIO_3_OPEN
 	[END]
 
@@ -295,7 +298,7 @@
 	Spawn ID Change:
 		Room 00: -1 -1 0F
 		Room 02: -1 -1 14
-	Raise Flag:
+	Raise Story:
 		2C39 LM_SCENARIO_4_OPEN
 	[END]
 
@@ -308,7 +311,8 @@
 2C2A LM_409_END_L:
 	Spawn ID Change:
 		Room 07: -1 -1 04
-	Minigame: 1F
+	Raise Menu:
+		1F LM_MUSICAL4_CLEAR
 	[END]
 
 2C2B LM_410_END:
@@ -322,7 +326,7 @@
 	Spawn ID Change:
 		Room 00: -1 -1 13
 		Room 02: 05 -1 0C
-	Raise Flag:
+	Raise Story:
 		2C3A LM_SCENARIO_4_END
 	[END]
 
@@ -331,120 +335,109 @@
 	Spawn ID Change:
 		Room 00: -1 -1 0D
 		Room 02: -1 -1 13
-	Raise Flag:
+	Raise Story:
 		2C3C LM_SCENARIO_5_OPEN
 	[END]
 
 2C2E LM_INIT:
-	Spawn ID Change:
-		Room 03: 00 00 00
-		Room 04: 00 00 00
-		Room 05: 00 00 00
-		Room 06: 00 00 00
-		Room 00: 00 00 00
-		Room 01: 00 00 00
-		Room 08: 00 00 00
-		Room 07: 00 00 00
-		Room 02: 00 00 00
-		Room 09: 00 00 00
-	[END]
+	[SKIP]
 
 2C2F LM_SCENARIO_1_START:
-	Raise Flag:
+	Raise Story:
 		2C01 LM_101_END
 	[END]
 
 2C30 LM_SCENARIO_1_OPEN:
-	Raise Flag:
+	Raise Story:
 		2C00 LM_START
 	[END]
 
 2C31 LM_SCENARIO_1_END:
-	Raise Flag:
+	Raise Story:
 		2C25 LM_109_END
 	[END]
 
 2C32 LM_SCENARIO_2_START:
-	Raise Flag:
+	Raise Story:
 		2C0B LM_201_END
 	[END]
 
 2C33 LM_SCENARIO_2_OPEN:
-	Raise Flag:
+	Raise Story:
 		2C26 LM_GET_ITEM_2
 	[END]
 
 2C34 LM_SCENARIO_2_END:
-	Raise Flag:
+	Raise Story:
 		2C0F LM_205_END
 	[END]
 
 2C35 LM_SCENARIO_3_START:
-	Raise Flag:
+	Raise Story:
 		2C11 LM_301_END
 	[END]
 
 2C36 LM_SCENARIO_3_OPEN:
-	Raise Flag:
+	Raise Story:
 		2C27 LM_GET_ITEM_3
 	[END]
 
 2C37 LM_SCENARIO_3_END:
-	Raise Flag:
+	Raise Story:
 		2C13 LM_303_END
 	[END]
 
 2C38 LM_SCENARIO_4_START:
-	Raise Flag:
+	Raise Story:
 		2C15 LM_401_END
 	[END]
 
 2C39 LM_SCENARIO_4_OPEN:
-	Raise Flag:
+	Raise Story:
 		2C28 LM_GET_ITEM_4
 	[END]
 
 2C3A LM_SCENARIO_4_END:
-	Raise Flag:
+	Raise Story:
 		2C2C LM_411_END
 	[END]
 
 2C3B LM_SCENARIO_5_START:
-	Raise Flag:
+	Raise Story:
 		2C20 LM_501_END
 	[END]
 
 2C3C LM_SCENARIO_5_OPEN:
-	Raise Flag:
+	Raise Story:
 		2C2D LM_GET_ITEM_5
 	[END]
 
 2C3D LM_SCENARIO_5_END:
-	Raise Flag:
+	Raise Story:
 		2C21 LM_502_END_L
 	[END]
 
 2C3E LM_lm04_ms103_failed:
-	Lower Flag:
+	Lower Story:
 		2C04 LM_START_1
 		2C23 LM_105_END
 	[END]
 
 2C3F LM_lm01_ms201_failed:
-	Lower Flag:
+	Lower Story:
 		2C0A LM_START_2
 		2C0B LM_201_END
 		2C0C LM_202_END
 	[END]
 
 2C40 LM_lm03_ms301_failed:
-	Lower Flag:
+	Lower Story:
 		2C10 LM_START_3
 		2C11 LM_301_END
 	[END]
 
 2C41 LM_lm09_ms401_failed:
-	Lower Flag:
+	Lower Story:
 		2C1A LM_405_END
 		2C1B LM_406_END
 		2C29 LM_407_END
@@ -452,7 +445,7 @@
 	[END]
 
 2C42 LM_lm04_ms501_failed:
-	Lower Flag:
+	Lower Story:
 		2C1F LM_START_5
 		2C20 LM_501_END
 	[END]
@@ -475,7 +468,7 @@
 2C48 LM_lm02_ms102_failed:
 	Spawn ID Change:
 		Room 02: -1 -1 0E
-	Lower Flag:
+	Lower Story:
 		2C03 LM_103_END_L
 	[END]
 

@@ -1,6 +1,9 @@
 1000 HB_START:
 	World Map: 00 01
-	Raise Flag:
+	Spawn ID Change:
+		Room 00: -1 -1 01
+		Room 09: 01 -1 -1
+	Raise Story:
 		105C HB_SCENARIO_1_OPEN
 	[END]
 
@@ -9,7 +12,8 @@
 	Spawn ID Change:
 		Room 00: -1 -1 00
 		Room 0A: -1 -1 01
-	Raise Flag:
+	Raise Story:
+		102D HB_START_wi_dc
 		105D HB_SCENARIO_1_START
 	[END]
 
@@ -52,8 +56,9 @@
 1009 HB_START1_2:
 	World Map: 00 04
 	Spawn ID Change:
+		Room 08: 01 01 -1
 		Room 0A: 02 -1 02
-	Raise Flag:
+	Raise Story:
 		1074 HB_SCENARIO_4_OPEN
 	[END]
 
@@ -63,7 +68,7 @@
 		Room 0D: -1 -1 02
 		Room 0A: -1 -1 10
 		Room 09: -1 02 -1
-	Raise Flag:
+	Raise Story:
 		1075 HB_SCENARIO_4_START
 	[END]
 
@@ -75,7 +80,7 @@
 100C HB_203_END:
 	Spawn ID Change:
 		Room 0A: 01 -1 11
-	Raise Flag:
+	Raise Story:
 		109A HB_CLOUD_ON
 	[END]
 
@@ -139,13 +144,13 @@
 	Block: World 04 Room 0B
 	Spawn ID Change:
 		Room 05: 05 -1 07
+	Raise Story:
+		1018 HB_tr_117_END
 	[END]
 
 1017 HB_304_END:
 	Spawn ID Change:
 		Room 05: -1 -1 16
-	Raise Flag:
-		4424 TR_hb_304_END
 	[END]
 
 1018 HB_tr_117_END:
@@ -170,8 +175,6 @@
 101C HB_404_END:
 	Spawn ID Change:
 		Room 0B: -1 -1 00
-	Raise Flag:
-		443A TR_HB05_HIDDEN_OFF
 	[END]
 
 101D:
@@ -277,7 +280,7 @@
 		Room 10: 00 01 -1
 		Room 0A: -1 -1 0F
 		Room 09: -1 04 -1
-	Raise Flag:
+	Raise Story:
 		08F7 TT_BATTLE2_OPEN
 		1076 HB_SCENARIO_4_END
 	[END]
@@ -305,7 +308,7 @@
 		Room 02: 00 00 00
 		Room 0A: 00 00 0A
 		Room 09: 00 00 00
-	Raise Flag:
+	Raise Story:
 		1062 HB_SCENARIO_5_OPEN
 	[END]
 
@@ -313,7 +316,7 @@
 	World Map: 00 03
 	Spawn ID Change:
 		Room 00: -1 -1 02
-	Raise Flag:
+	Raise Story:
 		1071 HB_SCENARIO_3_OPEN
 	[END]
 
@@ -321,7 +324,7 @@
 	World Map: 01 03
 	Spawn ID Change:
 		Room 00: -1 -1 00
-	Raise Flag:
+	Raise Story:
 		1072 HB_SCENARIO_3_START
 	[END]
 
@@ -333,7 +336,7 @@
 1030 HB_802_END:
 	Spawn ID Change:
 		Room 0D: -1 -1 12
-	Raise Flag:
+	Raise Story:
 		3011 DC_HB_MERLIN_MEET
 	[END]
 
@@ -341,7 +344,7 @@
 	World Map: 00 02
 	Spawn ID Change:
 		Room 09: -1 -1 02
-	Raise Flag:
+	Raise Story:
 		105F HB_SCENARIO_2_OPEN
 	[END]
 
@@ -350,7 +353,7 @@
 	Spawn ID Change:
 		Room 0D: 02 -1 04
 		Room 09: -1 -1 00
-	Raise Flag:
+	Raise Story:
 		1060 HB_SCENARIO_2_START
 	[END]
 
@@ -368,7 +371,7 @@
 1035 HB_903_END:
 	Spawn ID Change:
 		Room 0D: -1 -1 0F
-	Raise Flag:
+	Raise Story:
 		2400 PO_START
 	[END]
 
@@ -399,7 +402,7 @@
 	World Map: 02 02
 	Spawn ID Change:
 		Room 0D: 00 -1 09
-	Raise Flag:
+	Raise Story:
 		1061 HB_SCENARIO_2_END
 	[END]
 
@@ -414,7 +417,7 @@
 	Spawn ID Change:
 		Room 0D: -1 -1 15
 		Room 0A: -1 -1 14
-	Raise Flag:
+	Raise Story:
 		105E HB_SCENARIO_1_END
 		3C01 WM_HB1_CLEAR
 	[END]
@@ -426,7 +429,9 @@
 	[SKIP]
 
 1040 HB_hb04_ms403:
-	Raise Flag:
+	Spawn ID Change:
+		Room 04: -1 -1 02
+	Raise Story:
 		1083 HB_NEW_MICKEY_START
 	[END]
 
@@ -440,7 +445,7 @@
 	Block: World 04 Room 09
 	Spawn ID Change:
 		Room 0D: 03 -1 07
-	Raise Flag:
+	Raise Story:
 		2404 PO_HB_BATTLE_END
 	[END]
 
@@ -451,6 +456,8 @@
 	Unblock: World 04 Room 0B
 	Spawn ID Change:
 		Room 05: 03 -1 -1
+	Raise Story:
+		1013 HB_tr_107_END
 	[END]
 
 1046 HB_HB_EVENT_403:
@@ -471,6 +478,7 @@
 104A HB_hb16_ms404d:
 	Spawn ID Change:
 		Room 03: -1 -1 01
+		Room 04: -1 -1 00
 	[END]
 
 104B HB_417_END:
@@ -486,7 +494,7 @@
 	Spawn ID Change:
 		Room 0A: -1 -1 0B
 		Room 09: 02 -1 0A
-	Raise Flag:
+	Raise Story:
 		1063 HB_SCENARIO_5_START
 	[END]
 
@@ -499,8 +507,6 @@
 	Spawn ID Change:
 		Room 05: -1 -1 00
 		Room 0D: -1 -1 00
-	Raise Flag:
-		4428 TR_hb_501_END
 	[END]
 
 104F:
@@ -513,9 +519,7 @@
 	[SKIP]
 
 1052 HB_503_END:
-	Raise Flag:
-		442A TR_503_END
-	[END]
+	[SKIP]
 
 1053 HB_TR_tr09_ms205:
 	Spawn ID Change:
@@ -540,7 +544,7 @@
 	[END]
 
 1057:
-	Raise Flag:
+	Raise Story:
 		3C0B WM_HB2_CLEAR
 	[END]
 
@@ -558,71 +562,50 @@
 105B HB_INIT:
 	BGM Set: 1
 	Spawn ID Change:
-		Room 03: 00 00 00
-		Room 1A: 01 00 03
-		Room 0F: 00 00 00
-		Room 0B: 00 00 00
-		Room 15: 00 00 00
-		Room 04: 00 00 00
-		Room 11: 00 00 00
-		Room 0C: 00 00 00
-		Room 16: 00 00 00
-		Room 05: 00 00 00
-		Room 12: 00 00 00
-		Room 0D: 01 -1 00
-		Room 17: 00 00 00
-		Room 06: 00 00 00
-		Room 00: 00 00 01
-		Room 13: 00 00 00
-		Room 0E: 00 00 00
-		Room 01: 00 00 00
-		Room 18: 00 00 00
-		Room 08: 00 00 00
-		Room 07: 00 00 00
-		Room 10: 00 00 00
-		Room 02: 00 00 00
-		Room 19: 00 00 00
-		Room 0A: 01 00 00
-		Room 09: 01 01 00
+		Room 1A: 01 -1 03
+		Room 0D: 01 -1 -1
+		Room 00: -1 -1 01
+		Room 0A: 01 -1 -1
+		Room 09: 01 01 -1
 	[END]
 
 105C HB_SCENARIO_1_OPEN:
-	Raise Flag:
+	Raise Story:
 		1000 HB_START
 	[END]
 
 105D HB_SCENARIO_1_START:
-	Raise Flag:
+	Raise Story:
 		1001 HB_101_END
 	[END]
 
 105E HB_SCENARIO_1_END:
-	Raise Flag:
+	Raise Story:
 		103D HB_hb08_ms102
 	[END]
 
 105F HB_SCENARIO_2_OPEN:
-	Raise Flag:
+	Raise Story:
 		1031 HB_START_pooh
 	[END]
 
 1060 HB_SCENARIO_2_START:
-	Raise Flag:
+	Raise Story:
 		1032 HB_901_END
 	[END]
 
 1061 HB_SCENARIO_2_END:
-	Raise Flag:
+	Raise Story:
 		103B HB_907_END
 	[END]
 
 1062 HB_SCENARIO_5_OPEN:
-	Raise Flag:
+	Raise Story:
 		102C HB_START2
 	[END]
 
 1063 HB_SCENARIO_5_START:
-	Raise Flag:
+	Raise Story:
 		104C HB_508_END
 	[END]
 
@@ -683,7 +666,7 @@
 	Spawn ID Change:
 		Room 05: 0A -1 0E
 		Room 0D: -1 -1 0E
-	Raise Flag:
+	Raise Story:
 		443B TR_FRAG_OFF
 	[END]
 
@@ -703,42 +686,42 @@
 
 1070 HB_dc_END:
 	World Map: 02 03
-	Raise Flag:
+	Raise Story:
 		1073 HB_SCENARIO_3_END
 	[END]
 
 1071 HB_SCENARIO_3_OPEN:
-	Raise Flag:
+	Raise Story:
 		102D HB_START_wi_dc
 	[END]
 
 1072 HB_SCENARIO_3_START:
-	Raise Flag:
+	Raise Story:
 		102E HB_801_END
 	[END]
 
 1073 HB_SCENARIO_3_END:
-	Raise Flag:
+	Raise Story:
 		1070 HB_dc_END
 	[END]
 
 1074 HB_SCENARIO_4_OPEN:
-	Raise Flag:
+	Raise Story:
 		1009 HB_START1_2
 	[END]
 
 1075 HB_SCENARIO_4_START:
-	Raise Flag:
+	Raise Story:
 		100A HB_201_END
 	[END]
 
 1076 HB_SCENARIO_4_END:
-	Raise Flag:
+	Raise Story:
 		102B HB_418_END
 	[END]
 
 1077 HB_SCENARIO_5_END:
-	Raise Flag:
+	Raise Story:
 		108B HB_hb_event_507
 	[END]
 
@@ -769,7 +752,7 @@
 107D HB_hb01_ms601:
 	Spawn ID Change:
 		Room 01: -1 -1 15
-	Raise Flag:
+	Raise Story:
 		107E HB_604_ON
 	[END]
 
@@ -827,7 +810,7 @@
 1088 HB_203_ON:
 	Spawn ID Change:
 		Room 0A: 01 -1 13
-	Raise Flag:
+	Raise Story:
 		109A HB_CLOUD_ON
 	[END]
 
@@ -835,9 +818,7 @@
 	[SKIP]
 
 108A HB_hb_event_502:
-	Raise Flag:
-		4429 TR_hb_502_END
-	[END]
+	[SKIP]
 
 108B HB_hb_event_507:
 	Unblock: World 04 Room 06
@@ -865,16 +846,16 @@
 	[END]
 
 108D HB_TRON_OUT:
-	Lower Flag:
+	Lower Story:
 		108E HB_TRON_IN
-	Raise Flag:
+	Raise Story:
 		4437 TR_113_OUT
 	[END]
 
 108E HB_TRON_IN:
-	Lower Flag:
+	Lower Story:
 		108D HB_TRON_OUT
-	Raise Flag:
+	Raise Story:
 		4438 TR_113_IN
 	[END]
 
@@ -931,28 +912,28 @@
 	[SKIP]
 
 109B HB_FM_COM_VEX_END:
-	Raise Flag:
-		1C50 AL_FM_COM_OBJ_OFF
+	Raise Story:
+		383B NM_FM_COM_OBJ_OFF_GOA
 	[END]
 
 109C HB_FM_COM_LEX_END:
-	Raise Flag:
-		08F4 TT_FM_COM_OBJ_OFF
+	Raise Story:
+		1C50 AL_FM_COM_OBJ_OFF
 	[END]
 
 109D HB_FM_COM_LAR_END:
-	Raise Flag:
-		4063 CA_FM_COM_OBJ_OFF
+	Raise Story:
+		4439 TR_FM_COM_OBJ_OFF_GOA
 	[END]
 
 109E HB_FM_COM_ZEX_END:
-	Raise Flag:
+	Raise Story:
 		1875 HE_FM_COM_OBJ_OFF
 	[END]
 
 109F HB_FM_COM_MAR_END:
-	Raise Flag:
-		1424 BB_FM_COM_OBJ_OFF
+	Raise Story:
+		3020 DC_FM_COM_OBJ_OFF_GOA
 	[END]
 
 10A0:
@@ -1059,7 +1040,6 @@
 
 10BA HB_FM_13TSUURO_OUT:
 	Spawn ID Change:
-		Room 1A: 01 00 03
 		Room 19: -1 04 00
 	[END]
 
@@ -1072,10 +1052,11 @@
 10BC HB_FM_714_END:
 	Spawn ID Change:
 		Room 1A: -1 -1 01
-	Raise Flag:
+	Raise Story:
 		4842 EH_FINAL_CHANCE_START
 		08DB TT_ROXAS_START
 		08D0 TT_ROXAS_END
+		08D1 TT_SORA_OLD_END
 		1000 HB_START
 		1400 BB_START
 		1800 HE_START

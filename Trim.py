@@ -1,18 +1,20 @@
 import struct
 import json
 
-dsa = open('dsa.json')
-dsa = json.load(dsa)
-flags = open('flag.json')
-flags = json.load(flags)
-
 class progress:
     def __init__(self):
-        self.length = length
-        self.content = f[offset:offset+length]
+        self.length = length + 2
+        self.content = f[offset:offset+length] + b'\x00\x00'
 
 def count(address):
     return struct.unpack('h',f[address:address+2])[0]
+
+def transfer(fro,to,amt):
+    global filelen
+    if world == fro:
+        filelen[world] -= amt
+    if world == to:
+        filelen[world] += amt
 
 for world in range(19):
     filename = ['zz','es','tt','di','hb','bb','he','al','mu','po','lk','lm',
@@ -21,6 +23,7 @@ for world in range(19):
                 0x22,0x2A,0x3F,0x11,0x64,0x3B,0x53][world]
     filelen  = [0x13C,0x66,0x16DA,0x1C,0xD74,0x6C2,0xA2E,0x680,0x6C2,0x594,
                 0x630,0x5E4,0x2EE,0x3E2,0x6C8,0x44,0x9DE,0x536,0x54A]
+    #transfer(8,9,20) #Transfer 20 bytes from 'mu' to 'po'
     f = open('00progress.bin/'+filename+'.bin','rb').read()
     g = {}
 
@@ -34,9 +37,8 @@ for world in range(19):
         while f[offset+length] > 0:
             args = f[offset+length+1]
             length += 2 + 2*args
-        length += 2 #Include Termination Code
         g[flag] = progress()
-
+    
     #Write Flag
     h = open('00progress.bin/trimmed/'+filename+'.bin','wb')
     totallength = 0

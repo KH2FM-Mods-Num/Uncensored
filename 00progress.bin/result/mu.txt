@@ -1,8 +1,10 @@
 2000 MU_START:
 	World Map: 00 01
 	Spawn ID Change:
-		Room 00: 01 00 01
-	Raise Flag:
+		Room 00: -1 -1 01
+		Room 01: -1 00 -1
+		Room 06: 00 -1 -1
+	Raise Story:
 		200A MU_SCENARIO_1_OPEN
 	[END]
 
@@ -36,43 +38,33 @@
 
 2008 MU_INIT:
 	Spawn ID Change:
-		Room 03: 00 00 00
-		Room 0B: 00 00 00
-		Room 04: 00 00 00
-		Room 0C: 00 00 00
-		Room 05: 00 00 00
-		Room 06: 00 00 00
-		Room 00: 00 00 00
-		Room 01: 00 00 00
-		Room 08: 00 00 00
-		Room 07: 00 00 00
-		Room 02: 00 00 00
-		Room 0A: 00 00 00
-		Room 09: 00 00 00
+		Room 06: 00 -1 -1
+		Room 00: 01 -1 01
+		Room 01: -1 -1 00
 	[END]
 
 2009 MU_SCENARIO_1_START:
-	Raise Flag:
+	Raise Story:
 		2024 MU_101_END
 	[END]
 
 200A MU_SCENARIO_1_OPEN:
-	Raise Flag:
+	Raise Story:
 		2000 MU_START
 	[END]
 
 200B MU_SCENARIO_1_END:
-	Raise Flag:
+	Raise Story:
 		2012 MU_118_END_L
 	[END]
 
 200C MU_SCENARIO_2_START:
-	Raise Flag:
+	Raise Story:
 		2040 MU_201_END
 	[END]
 
 200D MU_SCENARIO_2_OPEN:
-	Raise Flag:
+	Raise Story:
 		2013 MU_START2
 	[END]
 
@@ -87,7 +79,7 @@
 	[END]
 
 200F MU_SCENARIO_2_END:
-	Raise Flag:
+	Raise Story:
 		2023 MU_216_END
 	[END]
 
@@ -107,7 +99,7 @@
 		Room 0C: -1 -1 14
 		Room 00: -1 -1 11
 		Room 09: -1 01 -1
-	Raise Flag:
+	Raise Story:
 		200B MU_SCENARIO_1_END
 		3C02 WM_MU1_CLEAR
 	[END]
@@ -129,7 +121,7 @@
 		Room 02: 00 0A 00
 		Room 0A: 00 00 00
 		Room 09: 00 0A 00
-	Raise Flag:
+	Raise Story:
 		200D MU_SCENARIO_2_OPEN
 	[END]
 
@@ -228,7 +220,8 @@
 		Room 02: 00 -1 -1
 		Room 0A: -1 0A -1
 		Room 09: -1 01 -1
-	Raise Flag:
+		Room 07: 0D -1 -1
+	Raise Story:
 		200F MU_SCENARIO_2_END
 		3C0C WM_MU2_CLEAR
 	[END]
@@ -239,7 +232,7 @@
 	Spawn ID Change:
 		Room 00: 00 -1 02
 		Room 01: -1 -1 01
-	Raise Flag:
+	Raise Story:
 		2009 MU_SCENARIO_1_START
 	[END]
 
@@ -254,7 +247,8 @@
 		Room 00: -1 -1 16
 		Room 01: -1 -1 04
 		Room 02: 01 01 -1
-	Minigame: 02
+	Raise Menu:
+		02 MU_MS102_CLEAR
 	[END]
 
 2027:
@@ -276,7 +270,8 @@
 	Spawn ID Change:
 		Room 01: -1 -1 07
 		Room 02: -1 00 -1
-	Minigame: 03
+	Raise Menu:
+		03 MU_MS103A_CLEAR
 	[END]
 
 202D:
@@ -291,7 +286,8 @@
 2030 MU_MS103C_CLEAR:
 	Spawn ID Change:
 		Room 01: -1 -1 12
-	Minigame: 05
+	Raise Menu:
+		05 MU_MS103C_CLEAR
 	[END]
 
 2031 MU_MS103B_CLEAR_END:
@@ -311,7 +307,8 @@
 		Room 00: -1 -1 10
 		Room 01: -1 -1 0F
 		Room 02: -1 01 -1
-	Minigame: 06
+	Raise Menu:
+		06 MU_MS103_COMPLETE
 	[END]
 
 2034 MU_106_END:
@@ -367,7 +364,7 @@
 		Room 06: 01 00 01
 		Room 00: -1 -1 14
 		Room 07: 01 -1 02
-	Raise Flag:
+	Raise Story:
 		2018 MU_MULAN_START
 	[END]
 
@@ -398,7 +395,7 @@
 	Spawn ID Change:
 		Room 0C: -1 -1 15
 		Room 06: -1 -1 0A
-	Raise Flag:
+	Raise Story:
 		200C MU_SCENARIO_2_START
 	[END]
 
@@ -469,7 +466,8 @@
 	Spawn ID Change:
 		Room 01: -1 -1 0A
 		Room 02: -1 00 -1
-	Minigame: 04
+	Raise Menu:
+		04 MU_MS103B_CLEAR
 	[END]
 
 204F:

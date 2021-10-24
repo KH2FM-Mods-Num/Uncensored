@@ -3,8 +3,8 @@ import json
 
 dsa = open('dsa.json')
 dsa = json.load(dsa)
-flags = open('flag.json')
-flags = json.load(flags)
+flag1 = json.load(open('progress.json'))
+flag3 = json.load(open('menu.json'))
 
 def clean(num,char=2):
     if num >= 0:
@@ -16,9 +16,9 @@ def clean(num,char=2):
 def count(address):
     return struct.unpack('h',f[address:address+2])[0]
 
-def flagparse(flagid):
+def flagparse(flagid,flagdict=flag1):
     try:
-        return flagid+' '+flags[flagid]
+        return flagid+' '+flagdict[flagid]
     except:
         return flagid
 
@@ -31,7 +31,8 @@ for world in range(19):
     g = open('00progress.bin/result/'+filename+'.txt','w')
 
     cmd = {2:'Block: ',3:'Unblock: ',4: 'Add Warp: ',5: 'Remove Warp: ',
-           7:'Lower Flag:',8:'Minigame:',9:'Command 9:',12:'Raise Flag:'}
+           7:'Lower Story:',8:'Raise Menu:',9:'Lower Menu:',
+           12:'Raise Story:'}
     for flag in range(flagamt+1):
         g.write(flagparse(clean(world*4)+clean(flag))+':\n')
         offset = 2 * flag
@@ -63,13 +64,12 @@ for world in range(19):
                 g.write('\t'+cmd[command]+'\n')
                 for i in range(args):
                     j = offset + 2*i
-                    g.write('\t\t'+flagparse(clean(count(j),4))+'\n')
+                    g.write('\t\t'+flagparse(clean(count(j),4),flag1)+'\n')
             elif command in [8,9]:
-                g.write('\t'+cmd[command])
+                g.write('\t'+cmd[command]+'\n')
                 for i in range(args):
                     j = offset + 2*i
-                    g.write(' '+clean(count(j)))
-                g.write('\n')
+                    g.write('\t\t'+flagparse(clean(count(j),2),flag3)+'\n')
             else:
                 for i in range(args):
                     try:

@@ -1,6 +1,6 @@
 1400 BB_START:
 	World Map: 00 01
-	Raise Flag:
+	Raise Story:
 		140C BB_SCENARIO_1_OPEN
 	[END]
 
@@ -9,7 +9,7 @@
 	Spawn ID Change:
 		Room 00: -1 -1 00
 		Room 01: 01 -1 01
-	Raise Flag:
+	Raise Story:
 		140D BB_SCENARIO_1_START
 	[END]
 
@@ -78,12 +78,12 @@
 	[END]
 
 140C BB_SCENARIO_1_OPEN:
-	Raise Flag:
+	Raise Story:
 		1400 BB_START
 	[END]
 
 140D BB_SCENARIO_1_START:
-	Raise Flag:
+	Raise Story:
 		1401 BB_101_END
 	[END]
 
@@ -93,22 +93,22 @@
 	[END]
 
 140F BB_SCENARIO_1_END:
-	Raise Flag:
+	Raise Story:
 		1415 BB_119_END
 	[END]
 
 1410 BB_SCENARIO_2_OPEN:
-	Raise Flag:
+	Raise Story:
 		1418 BB_START2
 	[END]
 
 1411 BB_SCENARIO_2_START:
-	Raise Flag:
+	Raise Story:
 		1419 BB_201_END
 	[END]
 
 1412 BB_SCENARIO_2_END:
-	Raise Flag:
+	Raise Story:
 		1428 BB_216_END
 	[END]
 
@@ -125,7 +125,7 @@
 		Room 0E: -1 -1 00
 		Room 01: -1 -1 15
 		Room 02: -1 -1 12
-	Raise Flag:
+	Raise Story:
 		140F BB_SCENARIO_1_END
 		3C03 WM_BB1_CLEAR
 	[END]
@@ -155,7 +155,7 @@
 		Room 02: 00 00 0A
 		Room 0A: 00 00 00
 		Room 09: 00 00 00
-	Raise Flag:
+	Raise Story:
 		1410 BB_SCENARIO_2_OPEN
 	[END]
 
@@ -164,7 +164,7 @@
 	Spawn ID Change:
 		Room 00: -1 -1 0A
 		Room 02: -1 -1 00
-	Raise Flag:
+	Raise Story:
 		1411 BB_SCENARIO_2_START
 	[END]
 
@@ -241,7 +241,7 @@
 		Room 06: 00 0A 00
 		Room 01: -1 -1 11
 		Room 02: -1 -1 0E
-	Raise Flag:
+	Raise Story:
 		1412 BB_SCENARIO_2_END
 	[END]
 

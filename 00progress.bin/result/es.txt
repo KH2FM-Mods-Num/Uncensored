@@ -26,7 +26,7 @@
 	[SKIP]
 
 0409 ES_FM_URA_MOVIE:
-	Raise Flag:
+	Raise Story:
 		301F DC_FM_NAZO_ON
 	[END]
 

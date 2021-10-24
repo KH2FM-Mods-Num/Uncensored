@@ -8,9 +8,10 @@
 		Room 13: 01 00 01
 		Room 08: 01 00 01
 		Room 0A: 01 00 01
-	Raise Flag:
+	Raise Story:
 		000D ZZ_SCENARIO_1_OPEN
-	Minigame: 00
+	Raise Menu:
+		00 TEST
 	[END]
 
 0001 ZZ_E_003_A17_IN:
@@ -18,15 +19,16 @@
 	World Map: 01 01
 	Spawn ID Change:
 		Room 00: 00 -1 -1
-	Raise Flag:
+	Raise Story:
 		000E ZZ_SCENARIO_1_START
-	Command 9: 00
+	Lower Menu:
+		00 TEST
 	[END]
 
 0002 ZZ_E_005_A10_IN:
 	Spawn ID Change:
 		Room 11: 00 -1 -1
-	Lower Flag:
+	Lower Story:
 		0001 ZZ_E_003_A17_IN
 	[END]
 
@@ -81,7 +83,7 @@
 
 000C ZZ_START2:
 	World Map: 00 01
-	Raise Flag:
+	Raise Story:
 		000D ZZ_SCENARIO_1_OPEN
 	[END]
 
@@ -89,7 +91,7 @@
 	[SKIP]
 
 000E ZZ_SCENARIO_1_START:
-	Raise Flag:
+	Raise Story:
 		0001 ZZ_E_003_A17_IN
 	[END]
 

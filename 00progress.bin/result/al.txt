@@ -1,6 +1,8 @@
 1C00 AL_START:
 	World Map: 00 01
-	Raise Flag:
+	Spawn ID Change:
+		Room 00: -1 -1 01
+	Raise Story:
 		1C1A AL_SCENARIO_1_OPEN
 	[END]
 
@@ -22,6 +24,8 @@
 1C04 AL_CARPET_02_END_L:
 	Spawn ID Change:
 		Room 0E: 02 0B 0D
+	Raise Story:
+		1C05 AL_CARPET_03_JUMP
 	[END]
 
 1C05 AL_CARPET_03_JUMP:
@@ -84,7 +88,7 @@
 1C10:
 	[SKIP]
 
-1C11:
+1C11 AL_111_OUT_GOA:
 	[SKIP]
 
 1C12 AL_115_END_L:
@@ -106,7 +110,7 @@
 		Room 00: 03 -1 -1
 		Room 02: 01 -1 15
 		Room 0A: -1 02 -1
-	Raise Flag:
+	Raise Story:
 		1C1C AL_SCENARIO_1_END
 		3C09 WM_AL1_CLEAR
 	[END]
@@ -129,7 +133,7 @@
 		Room 02: 00 00 00
 		Room 0A: 00 0A 00
 		Room 09: 00 00 00
-	Raise Flag:
+	Raise Story:
 		1C1D AL_SCENARIO_2_OPEN
 	[END]
 
@@ -139,7 +143,7 @@
 	Spawn ID Change:
 		Room 0F: -1 -1 0A
 		Room 04: -1 -1 00
-	Raise Flag:
+	Raise Story:
 		1C1E AL_SCENARIO_2_START
 	[END]
 
@@ -151,45 +155,31 @@
 
 1C19 AL_INIT:
 	Spawn ID Change:
-		Room 03: 00 00 00
-		Room 0F: 00 00 00
-		Room 0B: 00 00 00
-		Room 04: 00 00 00
-		Room 0C: 00 00 00
-		Room 05: 00 00 00
-		Room 0D: 00 00 00
-		Room 06: 00 00 00
-		Room 00: 00 00 01
-		Room 0E: 00 00 00
-		Room 01: 00 00 00
-		Room 07: 00 00 00
-		Room 02: 00 00 00
-		Room 0A: 00 00 00
-		Room 09: 00 00 00
+		Room 00: -1 -1 01
 	[END]
 
 1C1A AL_SCENARIO_1_OPEN:
-	Raise Flag:
+	Raise Story:
 		1C00 AL_START
 	[END]
 
 1C1B AL_SCENARIO_1_START:
-	Raise Flag:
+	Raise Story:
 		1C23 AL_101_END
 	[END]
 
 1C1C AL_SCENARIO_1_END:
-	Raise Flag:
+	Raise Story:
 		1C14 AL_117_END
 	[END]
 
 1C1D AL_SCENARIO_2_OPEN:
-	Raise Flag:
+	Raise Story:
 		1C15 AL_START2
 	[END]
 
 1C1E AL_SCENARIO_2_START:
-	Raise Flag:
+	Raise Story:
 		1C16 AL_201_END
 	[END]
 
@@ -200,7 +190,7 @@
 	[END]
 
 1C20 AL_SCENARIO_2_END:
-	Raise Flag:
+	Raise Story:
 		1C3C AL_210_END
 	[END]
 
@@ -213,14 +203,14 @@
 	Spawn ID Change:
 		Room 06: 01 -1 00
 		Room 02: -1 -1 03
-		Room 0A: -1 01 00
+		Room 0A: -1 01 02
 	[END]
 
 1C23 AL_101_END:
 	World Map: 01 01
 	Spawn ID Change:
 		Room 00: -1 -1 00
-	Raise Flag:
+	Raise Story:
 		1C1B AL_SCENARIO_1_START
 	[END]
 
@@ -306,6 +296,7 @@
 		Room 01: -1 02 -1
 		Room 07: -1 02 -1
 		Room 02: 02 -1 13
+		Room 0A: -1 -1 00
 	[END]
 
 1C30 AL_113_END:
@@ -324,7 +315,7 @@
 	Block: World 07 Room 07
 	Spawn ID Change:
 		Room 03: -1 -1 16
-		Room 0F: 01 01 16
+		Room 0F: 01 -1 16
 		Room 06: 02 -1 0A
 		Room 00: 01 0A -1
 		Room 01: -1 0A -1
@@ -386,12 +377,12 @@
 	World Map: 02 02
 	Spawn ID Change:
 		Room 03: -1 00 14
-		Room 0F: 03 -1 15
+		Room 0F: 03 01 15
 		Room 06: -1 -1 12
 		Room 00: 04 0A 00
 		Room 01: -1 0A -1
 		Room 0A: -1 02 -1
-	Raise Flag:
+	Raise Story:
 		1C20 AL_SCENARIO_2_END
 		3C0F WM_AL2_CLEAR
 	[END]
@@ -466,7 +457,7 @@
 
 1C50 AL_FM_COM_OBJ_OFF:
 	Spawn ID Change:
-		Room 0F: -1 00 -1
+		Room 0F: -1 02 -1
 	[END]
 
 1C51 AL_FM_KINOKO_LEX_PLAYED:

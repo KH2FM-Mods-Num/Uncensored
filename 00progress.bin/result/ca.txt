@@ -1,8 +1,15 @@
 4000 CA_START:
 	World Map: 00 01
-	Raise Flag:
+	Spawn ID Change:
+		Room 00: -1 -1 01
+		Room 09: 00 -1 -1
+	Raise Story:
 		404B CA_SCENARIO_1_OPEN
 		405E CA_NO_JACK01_START
+	Lower Menu:
+		39 CA_NAVI_BP_OFF
+		3A CA_NAVI_08_ON
+		3B CA_NAVI_14_ON
 	[END]
 
 4001:
@@ -37,12 +44,12 @@
 		Room 19: 00 00 00
 		Room 0A: 00 00 0A
 		Room 09: 01 00 00
-	Lower Flag:
+	Lower Story:
 		4040 CA_ca01_on
 		4042 CA_ca08_on
 		4043 CA_ca14_on
 		4049 CA_ca16_on
-	Raise Flag:
+	Raise Story:
 		404E CA_SCENARIO_2_OPEN
 	[END]
 
@@ -55,7 +62,7 @@
 	Spawn ID Change:
 		Room 00: -1 -1 00
 		Room 01: -1 -1 01
-	Raise Flag:
+	Raise Story:
 		404C CA_SCENARIO_1_START
 	[END]
 
@@ -97,7 +104,7 @@
 		Room 00: 01 -1 00
 		Room 01: 06 -1 16
 		Room 02: -1 -1 00
-	Raise Flag:
+	Raise Story:
 		405F CA_NO_JACK01_END
 	[END]
 
@@ -129,16 +136,18 @@
 	Spawn ID Change:
 		Room 03: -1 -1 00
 		Room 0A: 01 -1 -1
-	Raise Flag:
+	Raise Story:
 		4060 CA_NO_JACK02_START
-	Minigame: 3A 39
+	Raise Menu:
+		3A CA_NAVI_08_ON
+		39 CA_NAVI_BP_OFF
 	[END]
 
 4011 CA_ca_event_113:
 	Spawn ID Change:
 		Room 08: -1 -1 00
 		Room 09: -1 01 02
-	Lower Flag:
+	Lower Story:
 		4040 CA_ca01_on
 	[END]
 
@@ -167,7 +176,9 @@
 		Room 11: -1 -1 00
 		Room 16: -1 -1 03
 		Room 0A: 00 -1 -1
-	Minigame: 47 74
+	Raise Menu:
+		47 CA_NAVI_08_DISABLE
+		74 CA_NAVI_NEXT_01
 	[END]
 
 4015:
@@ -196,7 +207,7 @@
 	Block: World 10 Room 08
 	Spawn ID Change:
 		Room 04: 00 -1 03
-	Raise Flag:
+	Raise Story:
 		4061 CA_NO_JACK02_END
 	[END]
 
@@ -216,18 +227,21 @@
 		Room 0C: -1 01 -1
 		Room 16: -1 03 -1
 		Room 0D: -1 01 -1
-		Room 08: -1 01 05
-		Room 10: 00 01 01
+		Room 08: -1 -1 05
+		Room 10: 00 -1 01
 		Room 0A: -1 -1 02
 		Room 09: -1 02 -1
-	Minigame: 3A 39
-	Command 9: 47
+	Raise Menu:
+		3A CA_NAVI_08_ON
+		39 CA_NAVI_BP_OFF
+	Lower Menu:
+		47 CA_NAVI_08_DISABLE
 	[END]
 
 401C CA_123_END:
 	Spawn ID Change:
 		Room 0A: -1 -1 00
-	Raise Flag:
+	Raise Story:
 		405A CA_JACK01_START
 	[END]
 
@@ -252,16 +266,17 @@
 		Room 02: 01 02 -1
 		Room 0A: -1 01 -1
 		Room 09: 01 03 -1
-	Lower Flag:
+	Lower Story:
 		4040 CA_ca01_on
 		4042 CA_ca08_on
 		4043 CA_ca14_on
 		4049 CA_ca16_on
-	Raise Flag:
+	Raise Story:
 		3C07 WM_CA1_CLEAR
 		404D CA_SCENARIO_1_END
 		405B CA_JACK01_END
-	Minigame: 78
+	Raise Menu:
+		78 CA_NAVI_ICON_BP
 	[END]
 
 401F CA_201_END:
@@ -269,7 +284,7 @@
 	Spawn ID Change:
 		Room 00: -1 -1 0A
 		Room 0A: 02 -1 00
-	Raise Flag:
+	Raise Story:
 		404F CA_SCENARIO_2_START
 	[END]
 
@@ -294,7 +309,10 @@
 		Room 13: -1 0A 0A
 		Room 01: -1 -1 15
 		Room 02: -1 0A -1
-	Minigame: 3A 39 75
+	Raise Menu:
+		3A CA_NAVI_08_ON
+		39 CA_NAVI_BP_OFF
+		75 CA_NAVI_NEXT_08
 	[END]
 
 4023:
@@ -329,11 +347,12 @@
 		Room 0F: -1 0A -1
 		Room 0B: -1 -1 16
 		Room 0E: -1 -1 0A
-	Lower Flag:
+	Lower Story:
 		4040 CA_ca01_on
-	Raise Flag:
+	Raise Story:
 		405C CA_JACK02_START
-	Minigame: 3B
+	Raise Menu:
+		3B CA_NAVI_14_ON
 	[END]
 
 4029 CA_210_END:
@@ -362,7 +381,8 @@
 		Room 0E: 00 16 -1
 		Room 0A: -1 16 -1
 		Room 09: -1 16 -1
-	Minigame: 46
+	Raise Menu:
+		46 CA_NAVI_01_DISABLE
 	[END]
 
 402C:
@@ -374,8 +394,12 @@
 		Room 06: -1 -1 13
 		Room 01: 05 -1 0B
 		Room 18: 05 -1 -1
-	Minigame: 3A 39 74
-	Command 9: 46
+	Raise Menu:
+		3A CA_NAVI_08_ON
+		39 CA_NAVI_BP_OFF
+		74 CA_NAVI_NEXT_01
+	Lower Menu:
+		46 CA_NAVI_01_DISABLE
 	[END]
 
 402E CA_214_END:
@@ -403,13 +427,14 @@
 		Room 0E: -1 0A -1
 		Room 01: 02 0B -1
 		Room 02: 01 0B -1
-		Room 0A: -1 0A -1
+		Room 0A: 0D 0A -1
 		Room 09: -1 0A -1
-	Raise Flag:
+	Raise Story:
 		3C0D WM_CA2_CLEAR
 		4050 CA_SCENARIO_2_END
 		405D CA_JACK02_END
-	Command 9: 74
+	Lower Menu:
+		74 CA_NAVI_NEXT_01
 	[END]
 
 4031:
@@ -482,7 +507,7 @@
 	Unblock: World 10 Room 04
 	Unblock: World 10 Room 00
 	Unblock: World 10 Room 06
-	Lower Flag:
+	Lower Story:
 		4042 CA_ca08_on
 		4043 CA_ca14_on
 		4049 CA_ca16_on
@@ -495,7 +520,7 @@
 	Unblock: World 10 Room 04
 	Unblock: World 10 Room 06
 	Unblock: World 10 Room 08
-	Lower Flag:
+	Lower Story:
 		4040 CA_ca01_on
 		4043 CA_ca14_on
 		4049 CA_ca16_on
@@ -505,7 +530,7 @@
 	Unblock: World 10 Room 04
 	Unblock: World 10 Room 0B
 	Unblock: World 10 Room 06
-	Lower Flag:
+	Lower Story:
 		4040 CA_ca01_on
 		4042 CA_ca08_on
 		4049 CA_ca16_on
@@ -523,7 +548,8 @@
 		Room 15: -1 -1 00
 		Room 04: -1 -1 01
 		Room 05: -1 -1 01
-	Command 9: 74
+	Lower Menu:
+		74 CA_NAVI_NEXT_01
 	[END]
 
 4046:
@@ -533,7 +559,8 @@
 	Spawn ID Change:
 		Room 05: -1 -1 0A
 		Room 13: -1 -1 0B
-	Command 9: 75
+	Lower Menu:
+		75 CA_NAVI_NEXT_08
 	[END]
 
 4048:
@@ -543,7 +570,7 @@
 	Unblock: World 10 Room 04
 	Unblock: World 10 Room 06
 	Unblock: World 10 Room 10
-	Lower Flag:
+	Lower Story:
 		4040 CA_ca01_on
 		4042 CA_ca08_on
 		4043 CA_ca14_on
@@ -551,61 +578,38 @@
 
 404A CA_INIT:
 	Spawn ID Change:
-		Room 14: 00 00 00
-		Room 03: 00 00 00
-		Room 0F: 00 00 00
-		Room 0B: 00 00 00
-		Room 15: 00 00 00
-		Room 04: 00 00 00
-		Room 11: 00 00 00
-		Room 0C: 00 00 00
-		Room 16: 00 00 00
-		Room 05: 00 00 00
-		Room 12: 00 00 00
-		Room 0D: 00 00 00
-		Room 17: 00 00 00
-		Room 06: 00 00 00
-		Room 00: 00 00 01
-		Room 13: 00 00 00
-		Room 0E: 01 00 00
-		Room 01: 00 00 00
-		Room 18: 00 00 00
-		Room 08: 00 00 00
-		Room 07: 00 00 00
-		Room 10: 00 00 00
-		Room 02: 00 00 00
-		Room 19: 00 00 00
-		Room 0A: 00 00 00
-		Room 09: 00 00 00
+		Room 00: -1 -1 01
+		Room 0E: 01 -1 -1
+	Lower Menu:
 	[END]
 
 404B CA_SCENARIO_1_OPEN:
-	Raise Flag:
+	Raise Story:
 		4000 CA_START
 	[END]
 
 404C CA_SCENARIO_1_START:
-	Raise Flag:
+	Raise Story:
 		4004 CA_101_END
 	[END]
 
 404D CA_SCENARIO_1_END:
-	Raise Flag:
+	Raise Story:
 		401E CA_125_END
 	[END]
 
 404E CA_SCENARIO_2_OPEN:
-	Raise Flag:
+	Raise Story:
 		4002 CA_START2
 	[END]
 
 404F CA_SCENARIO_2_START:
-	Raise Flag:
+	Raise Story:
 		401F CA_201_END
 	[END]
 
 4050 CA_SCENARIO_2_END:
-	Raise Flag:
+	Raise Story:
 		4030 CA_216_END
 	[END]
 

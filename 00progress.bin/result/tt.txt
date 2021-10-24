@@ -1,7 +1,7 @@
 0800 TT_START_1:
 	BGM Set: 1
 	World Map: 00 01
-	Raise Flag:
+	Raise Story:
 		0814 TT_INIT
 		0815 TT_SCENARIO_1_OPEN
 		105B HB_INIT
@@ -26,32 +26,68 @@
 0802:
 	[SKIP]
 
-0803:
-	[SKIP]
+0803 TT_XEM_PATH_GOA:
+	Spawn ID Change:
+		Room 21: 01 00 -1
+	Lower Story:
+		0803 TT_XEM_PATH_GOA
+	[END]
 
-0804:
-	[SKIP]
+0804 TT_XIG_PATH_GOA:
+	Spawn ID Change:
+		Room 21: 02 00 -1
+	Lower Story:
+		0804 TT_XIG_PATH_GOA
+	[END]
 
-0805:
-	[SKIP]
+0805 TT_XAL_PATH_GOA:
+	Spawn ID Change:
+		Room 21: 03 00 -1
+	Lower Story:
+		0805 TT_XAL_PATH_GOA
+	[END]
 
-0806:
-	[SKIP]
+0806 TT_SAI_PATH_GOA:
+	Spawn ID Change:
+		Room 21: 07 00 -1
+	Lower Story:
+		0806 TT_SAI_PATH_GOA
+	[END]
 
-0807:
-	[SKIP]
+0807 TT_AXE_PATH_GOA:
+	Spawn ID Change:
+		Room 21: 08 00 -1
+	Lower Story:
+		0807 TT_AXE_PATH_GOA
+	[END]
 
-0808:
-	[SKIP]
+0808 TT_DEM_PATH_GOA:
+	Spawn ID Change:
+		Room 21: 09 00 -1
+	Lower Story:
+		0808 TT_DEM_PATH_GOA
+	[END]
 
-0809:
-	[SKIP]
+0809 TT_LUX_PATH_GOA:
+	Spawn ID Change:
+		Room 21: 0A 00 -1
+	Lower Story:
+		0809 TT_LUX_PATH_GOA
+	[END]
 
-080A:
-	[SKIP]
+080A TT_ROX_PATH_GOA:
+	Spawn ID Change:
+		Room 21: 0D 00 -1
+	Lower Story:
+		080A TT_ROX_PATH_GOA
+	[END]
 
-080B:
-	[SKIP]
+080B TT_FINAL_PATH_GOA:
+	Spawn ID Change:
+		Room 21: 0F 00 -1
+	Lower Story:
+		080B TT_FINAL_PATH_GOA
+	[END]
 
 080C:
 	[SKIP]
@@ -63,7 +99,7 @@
 	[SKIP]
 
 080F:
-	Raise Flag:
+	Raise Story:
 		3C00 WM_TT8_CLEAR
 	[END]
 
@@ -123,23 +159,31 @@
 		Room 1B: 00 00 00
 		Room 00: 00 00 00
 		Room 16: 00 00 00
-	Minigame: 70 71 72 73
+	Raise Menu:
+		70 CAMP_CMD_OPEN_ITEM
+		71 CAMP_CMD_OPEN_PARTY
+		72 CAMP_CMD_OPEN_CUSTOMIZE
+		73 CAMP_CMD_OPEN_JIMINYMEMO
+		34 SHOP_HE_HYBRID
+		36 SHOP_CA_HYBRID
+		3F SHOP_LK_HYBRID
+		42 SHOP_EH_HYBRID
 	[END]
 
 0815 TT_SCENARIO_1_OPEN:
-	Raise Flag:
+	Raise Story:
 		0800 TT_START_1
 	[END]
 
 0816 TT_MOVIE_101_END_L:
 	BGM Set: 1
 	World Map: 01 01
-	Raise Flag:
+	Raise Story:
 		0817 TT_SCENARIO_1_START
 	[END]
 
 0817 TT_SCENARIO_1_START:
-	Raise Flag:
+	Raise Story:
 		0816 TT_MOVIE_101_END_L
 		08DB TT_ROXAS_START
 	[END]
@@ -231,34 +275,34 @@
 
 082A TT_119_END_L:
 	World Map: 02 01
-	Raise Flag:
+	Raise Story:
 		082B TT_SCENARIO_1_END
 	[END]
 
 082B TT_SCENARIO_1_END:
-	Raise Flag:
+	Raise Story:
 		082A TT_119_END_L
 	[END]
 
 082C TT_MOVIE_201_END_L:
 	World Map: 00 02
-	Raise Flag:
+	Raise Story:
 		082D TT_SCENARIO_2_OPEN
 	[END]
 
 082D TT_SCENARIO_2_OPEN:
-	Raise Flag:
+	Raise Story:
 		082C TT_MOVIE_201_END_L
 	[END]
 
 082E TT_201_END_L:
 	World Map: 01 02
-	Raise Flag:
+	Raise Story:
 		082F TT_SCENARIO_2_START
 	[END]
 
 082F TT_SCENARIO_2_START:
-	Raise Flag:
+	Raise Story:
 		082E TT_201_END_L
 	[END]
 
@@ -329,34 +373,34 @@
 0839 TT_211_END_L:
 	Unblock: World 02 Room 04
 	World Map: 02 02
-	Raise Flag:
+	Raise Story:
 		083A TT_SCENARIO_2_END
 	[END]
 
 083A TT_SCENARIO_2_END:
-	Raise Flag:
+	Raise Story:
 		0839 TT_211_END_L
 	[END]
 
 083B TT_MOVIE_301_END_L:
 	World Map: 00 03
-	Raise Flag:
+	Raise Story:
 		083C TT_SCENARIO_3_OPEN
 	[END]
 
 083C TT_SCENARIO_3_OPEN:
-	Raise Flag:
+	Raise Story:
 		083B TT_MOVIE_301_END_L
 	[END]
 
 083D TT_301_END_L:
 	World Map: 01 03
-	Raise Flag:
+	Raise Story:
 		083E TT_SCENARIO_3_START
 	[END]
 
 083E TT_SCENARIO_3_START:
-	Raise Flag:
+	Raise Story:
 		083D TT_301_END_L
 	[END]
 
@@ -420,7 +464,8 @@
 0848 TT_311_END:
 	Spawn ID Change:
 		Room 20: -1 -1 00
-	Minigame: 77
+	Raise Menu:
+		77 CAMP_ROXAS_WEAPON_HIDE
 	[END]
 
 0849 TT_312_END_L:
@@ -431,7 +476,9 @@
 		Room 22: -1 -1 01
 		Room 21: -1 01 -1
 		Room 20: 00 00 02
-	Minigame: 70 72
+	Raise Menu:
+		70 CAMP_CMD_OPEN_ITEM
+		72 CAMP_CMD_OPEN_CUSTOMIZE
 	[END]
 
 084B TT_314_END:
@@ -454,23 +501,23 @@
 
 0850 TT_319_END_L:
 	World Map: 02 03
-	Raise Flag:
+	Raise Story:
 		0851 TT_SCENARIO_3_END
 	[END]
 
 0851 TT_SCENARIO_3_END:
-	Raise Flag:
+	Raise Story:
 		0850 TT_319_END_L
 	[END]
 
 0852 TT_MOVIE_401_END_L:
 	World Map: 00 04
-	Raise Flag:
+	Raise Story:
 		0853 TT_SCENARIO_4_OPEN
 	[END]
 
 0853 TT_SCENARIO_4_OPEN:
-	Raise Flag:
+	Raise Story:
 		0852 TT_MOVIE_401_END_L
 	[END]
 
@@ -480,12 +527,12 @@
 	World Map: 01 04
 	Spawn ID Change:
 		Room 03: 02 -1 02
-	Raise Flag:
+	Raise Story:
 		0855 TT_SCENARIO_4_START
 	[END]
 
 0855 TT_SCENARIO_4_START:
-	Raise Flag:
+	Raise Story:
 		0854 TT_401_END_L
 	[END]
 
@@ -514,14 +561,14 @@
 0859 TT_405_END:
 	Spawn ID Change:
 		Room 05: -1 -1 00
-	Lower Flag:
+	Lower Story:
 		085A TT_406_LOSE_L
 	[END]
 
 085A TT_406_LOSE_L:
 	Spawn ID Change:
 		Room 05: -1 -1 03
-	Lower Flag:
+	Lower Story:
 		0859 TT_405_END
 	[END]
 
@@ -534,14 +581,14 @@
 085C TT_407_END:
 	Spawn ID Change:
 		Room 05: -1 -1 00
-	Lower Flag:
+	Lower Story:
 		085D TT_408_LOSE_L
 	[END]
 
 085D TT_408_LOSE_L:
 	Spawn ID Change:
 		Room 05: -1 -1 04
-	Lower Flag:
+	Lower Story:
 		085C TT_407_END
 	[END]
 
@@ -576,23 +623,23 @@
 	Unblock: World 02 Room 08
 	Unblock: World 02 Room 0D
 	World Map: 02 04
-	Raise Flag:
+	Raise Story:
 		0866 TT_SCENARIO_4_END
 	[END]
 
 0866 TT_SCENARIO_4_END:
-	Raise Flag:
+	Raise Story:
 		0865 TT_415_END_L
 	[END]
 
 0867 TT_501_END_L:
 	World Map: 00 05
-	Raise Flag:
+	Raise Story:
 		0868 TT_SCENARIO_5_OPEN
 	[END]
 
 0868 TT_SCENARIO_5_OPEN:
-	Raise Flag:
+	Raise Story:
 		0867 TT_501_END_L
 	[END]
 
@@ -606,12 +653,12 @@
 		Room 08: -1 -1 0F
 		Room 07: 01 -1 13
 		Room 02: -1 -1 0C
-	Raise Flag:
+	Raise Story:
 		086A TT_SCENARIO_5_START
 	[END]
 
 086A TT_SCENARIO_5_START:
-	Raise Flag:
+	Raise Story:
 		0869 TT_502_END_L
 	[END]
 
@@ -640,30 +687,34 @@
 086E TT_MISTERY_A_END:
 	Spawn ID Change:
 		Room 0C: 02 -1 0D
-	Lower Flag:
+	Lower Story:
 		08E4 TT_MISTERY_A_LOSE
-	Minigame: 21
+	Raise Menu:
+		21 TT_MYSTERY2_CLEAR
 	[END]
 
 086F TT_MISTERY_B_END:
-	Lower Flag:
+	Lower Story:
 		08E5 TT_MISTERY_B_LOSE
-	Minigame: 22
+	Raise Menu:
+		22 TT_MYSTERY3_CLEAR
 	[END]
 
 0870 TT_MISTERY_C_END:
 	Unblock: World 02 Room 24
 	Spawn ID Change:
 		Room 24: 02 -1 02
-	Lower Flag:
+	Lower Story:
 		08E6 TT_MISTERY_C_LOSE
-	Minigame: 23
+	Raise Menu:
+		23 TT_MYSTERY4_CLEAR
 	[END]
 
 0871 TT_MISTERY_D_END:
-	Lower Flag:
+	Lower Story:
 		08E7 TT_MISTERY_D_LOSE
-	Minigame: 24
+	Raise Menu:
+		24 TT_MYSTERY5_CLEAR
 	[END]
 
 0872 TT_506_END_L:
@@ -720,23 +771,23 @@
 
 087B TT_515_END_L:
 	World Map: 02 05
-	Raise Flag:
+	Raise Story:
 		087C TT_SCENARIO_5_END
 	[END]
 
 087C TT_SCENARIO_5_END:
-	Raise Flag:
+	Raise Story:
 		087B TT_515_END_L
 	[END]
 
 087D TT_MOVIE_601_END_L:
 	World Map: 00 06
-	Raise Flag:
+	Raise Story:
 		087E TT_SCENARIO_6_OPEN
 	[END]
 
 087E TT_SCENARIO_6_OPEN:
-	Raise Flag:
+	Raise Story:
 		087D TT_MOVIE_601_END_L
 	[END]
 
@@ -833,7 +884,7 @@
 
 088B TT_613_END_L:
 	BGM Set: 3
-	Raise Flag:
+	Raise Story:
 		08CE TT_ROXAS2_START
 	[END]
 
@@ -894,26 +945,25 @@
 		Room 07: -1 16 -1
 		Room 12: 00 -1 -1
 		Room 16: 00 -1 -1
-	Raise Flag:
+	Raise Story:
 		0892 TT_SCENARIO_6_END
 		08D0 TT_ROXAS_END
 	[END]
 
 0892 TT_SCENARIO_6_END:
-	Raise Flag:
+	Raise Story:
 		0891 TT_618_END
 	[END]
 
 0893 TT_701_END_L:
 	BGM Set: 2
 	World Map: 00 07
-	Raise Flag:
+	Raise Story:
 		0894 TT_SCENARIO_7_OPEN
 	[END]
 
 0894 TT_SCENARIO_7_OPEN:
-	Remove Warp: World 02 Room 12
-	[END]
+	[SKIP]
 
 0895 TT_702_END_L:
 	Block: World 02 Room 19
@@ -937,13 +987,15 @@
 		Room 0E: 02 -1 12
 		Room 07: 04 15 12
 		Room 02: 04 -1 -1
-	Raise Flag:
+	Raise Story:
 		0896 TT_SCENARIO_7_START
-	Minigame: 73 71
+	Raise Menu:
+		73 CAMP_CMD_OPEN_JIMINYMEMO
+		71 CAMP_CMD_OPEN_PARTY
 	[END]
 
 0896 TT_SCENARIO_7_START:
-	Raise Flag:
+	Raise Story:
 		0895 TT_702_END_L
 	[END]
 
@@ -1003,12 +1055,12 @@
 	Unblock: World 02 Room 25
 	BGM Set: 2
 	World Map: 02 07
-	Raise Flag:
+	Raise Story:
 		08A0 TT_SCENARIO_7_END
 	[END]
 
 08A0 TT_SCENARIO_7_END:
-	Raise Flag:
+	Raise Story:
 		089F TT_711_END_L
 	[END]
 
@@ -1017,12 +1069,12 @@
 	World Map: 00 08
 	Spawn ID Change:
 		Room 19: 02 -1 01
-	Raise Flag:
+	Raise Story:
 		08A2 TT_SCENARIO_8_OPEN
 	[END]
 
 08A2 TT_SCENARIO_8_OPEN:
-	Raise Flag:
+	Raise Story:
 		08A1 TT_801_END_L
 	[END]
 
@@ -1086,7 +1138,7 @@
 	Spawn ID Change:
 		Room 1C: -1 -1 03
 		Room 1B: -1 -1 04
-	Raise Flag:
+	Raise Story:
 		08D1 TT_SORA_OLD_END
 	[END]
 
@@ -1121,12 +1173,12 @@
 	Spawn ID Change:
 		Room 1C: 01 -1 -1
 		Room 0E: 04 -1 -1
-	Raise Flag:
+	Raise Story:
 		08AD TT_SCENARIO_8_END
 	[END]
 
 08AD TT_SCENARIO_8_END:
-	Raise Flag:
+	Raise Story:
 		08AC TT_810_END_L
 	[END]
 
@@ -1135,7 +1187,7 @@
 	[END]
 
 08AF TT_SCENARIO_9_OPEN:
-	Raise Flag:
+	Raise Story:
 		08EC TT_START_01
 	[END]
 
@@ -1149,14 +1201,15 @@
 	World Map: 01 09
 	Spawn ID Change:
 		Room 07: -1 -1 10
-	Raise Flag:
+	Raise Story:
 		08B1 TT_SCENARIO_9_START
 		08E3 TT_MIX_SHOP_OPEN
-	Minigame: 07
+	Raise Menu:
+		07 TT_PART_MEMO_ON
 	[END]
 
 08B1 TT_SCENARIO_9_START:
-	Raise Flag:
+	Raise Story:
 		08B0 TT_902_END_L
 	[END]
 
@@ -1202,12 +1255,12 @@
 	Spawn ID Change:
 		Room 09: 07 -1 -1
 		Room 0E: -1 02 -1
-	Raise Flag:
+	Raise Story:
 		08B9 TT_SCENARIO_9_END
 	[END]
 
 08B9 TT_SCENARIO_9_END:
-	Raise Flag:
+	Raise Story:
 		08B8 TT_907_END_L
 	[END]
 
@@ -1222,12 +1275,12 @@
 		Room 24: -1 07 00
 		Room 25: -1 07 00
 		Room 02: -1 -1 00
-	Raise Flag:
+	Raise Story:
 		08EE TT_SCENARIO_10_START
 	[END]
 
 08BB TT_SCENARIO_10_OPEN:
-	Raise Flag:
+	Raise Story:
 		08ED TT_START_02
 	[END]
 
@@ -1361,18 +1414,18 @@
 		Room 07: 00 16 10
 		Room 02: -1 -1 12
 		Room 16: -1 07 -1
-	Raise Flag:
+	Raise Story:
 		08CB TT_SCENARIO_10_END
 	[END]
 
 08CB TT_SCENARIO_10_END:
-	Raise Flag:
+	Raise Story:
 		08CA TT_013_END
 	[END]
 
 08CC TT_tt20_ms603_end_l:
 	BGM Set: 3
-	Raise Flag:
+	Raise Story:
 		08CF TT_ROXAS2_END
 	[END]
 
@@ -1465,22 +1518,22 @@
 	[SKIP]
 
 08E4 TT_MISTERY_A_LOSE:
-	Lower Flag:
+	Lower Story:
 		086E TT_MISTERY_A_END
 	[END]
 
 08E5 TT_MISTERY_B_LOSE:
-	Lower Flag:
+	Lower Story:
 		086F TT_MISTERY_B_END
 	[END]
 
 08E6 TT_MISTERY_C_LOSE:
-	Lower Flag:
+	Lower Story:
 		0870 TT_MISTERY_C_END
 	[END]
 
 08E7 TT_MISTERY_D_LOSE:
-	Lower Flag:
+	Lower Story:
 		0871 TT_MISTERY_D_END
 	[END]
 
@@ -1516,7 +1569,7 @@
 		Room 08: -1 -1 10
 		Room 07: 00 16 16
 		Room 02: -1 -1 00
-	Raise Flag:
+	Raise Story:
 		08AF TT_SCENARIO_9_OPEN
 	[END]
 
@@ -1535,12 +1588,12 @@
 		Room 0E: -1 00 05
 		Room 07: 06 07 00
 		Room 02: -1 -1 00
-	Raise Flag:
+	Raise Story:
 		08BB TT_SCENARIO_10_OPEN
 	[END]
 
 08EE TT_SCENARIO_10_START:
-	Raise Flag:
+	Raise Story:
 		08BA TT_001_END_L
 	[END]
 
@@ -1559,7 +1612,7 @@
 	Spawn ID Change:
 		Room 15: 03 -1 0F
 		Room 13: 00 07 -1
-	Lower Flag:
+	Lower Story:
 		08F3 TT_TT21_FAKE
 	[END]
 
@@ -1569,7 +1622,7 @@
 	Spawn ID Change:
 		Room 15: 07 -1 10
 		Room 13: 02 00 -1
-	Lower Flag:
+	Lower Story:
 		08F2 TT_TT21_REAL
 	[END]
 
@@ -1610,7 +1663,7 @@
 		Room 15: 03 -1 0B
 		Room 13: 00 07 00
 		Room 02: -1 -1 00
-	Lower Flag:
+	Lower Story:
 		08FD TT_FAKE_TT_EVENT
 	[END]
 
@@ -1621,7 +1674,7 @@
 		Room 15: 06 -1 0E
 		Room 13: 00 07 00
 		Room 02: -1 -1 00
-	Lower Flag:
+	Lower Story:
 		08FE TT_FAKE_TT_FREE
 	[END]
 
@@ -1632,7 +1685,7 @@
 		Room 15: 04 -1 0C
 		Room 13: 02 00 03
 		Room 02: -1 -1 00
-	Lower Flag:
+	Lower Story:
 		08FB TT_REAL_TT_EVENT
 	[END]
 
@@ -1643,10 +1696,10 @@
 		Room 15: 05 -1 0D
 		Room 13: 02 00 00
 		Room 02: -1 -1 00
-	Lower Flag:
+	Lower Story:
 		08FC TT_REAL_TT_FREE
 		08FD TT_FAKE_TT_EVENT
-	Raise Flag:
+	Raise Story:
 		08C6 TT_009_END
 	[END]
 

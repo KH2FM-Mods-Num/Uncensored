@@ -1,8 +1,8 @@
 2400 PO_START:
 	World Map: 01 00
 	Spawn ID Change:
-		Room 00: 01 00 01
-	Raise Flag:
+		Room 00: 01 -1 01
+	Raise Story:
 		2439 PO_SCENARIO_0_START
 	[END]
 
@@ -11,7 +11,7 @@
 	Spawn ID Change:
 		Room 00: -1 -1 16
 		Room 02: -1 -1 01
-	Raise Flag:
+	Raise Story:
 		243A PO_SCENARIO_0_OPEN
 	[END]
 
@@ -24,13 +24,13 @@
 2403 PO_004_END:
 	Spawn ID Change:
 		Room 02: -1 -1 00
-	Raise Flag:
+	Raise Story:
 		1034 HB_po_004_END
 	[END]
 
 2404 PO_HB_BATTLE_END:
 	Spawn ID Change:
-		Room 00: 02 00 02
+		Room 00: 12 -1 02
 	[END]
 
 2405 PO_005_END:
@@ -47,8 +47,9 @@
 2407 PO_008_END:
 	World Map: 02 00
 	Spawn ID Change:
+		Room 00: 02 -1 -1
 		Room 02: -1 -1 16
-	Raise Flag:
+	Raise Story:
 		1039 HB_po_008_END
 		243B PO_SCENARIO_0_END
 	[END]
@@ -57,7 +58,7 @@
 	World Map: 00 01
 	Spawn ID Change:
 		Room 00: 03 -1 03
-	Raise Flag:
+	Raise Story:
 		243D PO_SCENARIO_1_OPEN
 	[END]
 
@@ -67,7 +68,7 @@
 		Room 04: -1 -1 01
 		Room 00: 04 -1 00
 		Room 02: -1 -1 15
-	Raise Flag:
+	Raise Story:
 		243C PO_SCENARIO_1_START
 	[END]
 
@@ -103,7 +104,7 @@
 	World Map: 00 02
 	Spawn ID Change:
 		Room 00: 06 -1 05
-	Raise Flag:
+	Raise Story:
 		2440 PO_SCENARIO_2_OPEN
 	[END]
 
@@ -114,7 +115,7 @@
 		Room 04: -1 -1 13
 		Room 00: 07 -1 00
 		Room 02: -1 -1 13
-	Raise Flag:
+	Raise Story:
 		243F PO_SCENARIO_2_START
 	[END]
 
@@ -151,7 +152,7 @@
 	World Map: 00 03
 	Spawn ID Change:
 		Room 00: 09 -1 07
-	Raise Flag:
+	Raise Story:
 		2443 PO_SCENARIO_3_OPEN
 	[END]
 
@@ -163,7 +164,7 @@
 		Room 05: -1 -1 01
 		Room 00: 0A -1 00
 		Room 02: -1 -1 11
-	Raise Flag:
+	Raise Story:
 		2442 PO_SCENARIO_3_START
 	[END]
 
@@ -200,7 +201,7 @@
 	World Map: 00 04
 	Spawn ID Change:
 		Room 00: 0C -1 09
-	Raise Flag:
+	Raise Story:
 		2445 PO_SCENARIO_4_OPEN
 	[END]
 
@@ -213,7 +214,7 @@
 		Room 00: 0D -1 00
 		Room 02: -1 -1 0F
 		Room 09: -1 -1 01
-	Raise Flag:
+	Raise Story:
 		2444 PO_SCENARIO_4_START
 	[END]
 
@@ -242,7 +243,7 @@
 	World Map: 00 05
 	Spawn ID Change:
 		Room 00: 0F -1 0B
-	Raise Flag:
+	Raise Story:
 		2448 PO_SCENARIO_5_OPEN
 	[END]
 
@@ -256,7 +257,7 @@
 		Room 01: -1 -1 01
 		Room 02: -1 -1 0D
 		Room 09: -1 -1 0D
-	Raise Flag:
+	Raise Story:
 		2447 PO_SCENARIO_5_START
 	[END]
 
@@ -287,7 +288,7 @@
 		Room 01: -1 -1 0C
 		Room 02: -1 -1 0C
 		Room 09: -1 -1 0C
-	Raise Flag:
+	Raise Story:
 		2449 PO_SCENARIO_5_END
 	[END]
 
@@ -314,7 +315,7 @@
 	Spawn ID Change:
 		Room 00: -1 -1 00
 		Room 02: -1 -1 14
-	Raise Flag:
+	Raise Story:
 		243E PO_SCENARIO_1_END
 	[END]
 
@@ -324,7 +325,7 @@
 		Room 04: -1 -1 12
 		Room 00: -1 -1 00
 		Room 02: -1 -1 12
-	Raise Flag:
+	Raise Story:
 		244A PO_SCENARIO_2_END
 	[END]
 
@@ -335,7 +336,7 @@
 		Room 04: -1 -1 10
 		Room 00: -1 -1 00
 		Room 02: -1 -1 10
-	Raise Flag:
+	Raise Story:
 		2441 PO_SCENARIO_3_END
 	[END]
 
@@ -349,111 +350,100 @@
 		Room 00: -1 -1 00
 		Room 02: -1 -1 0E
 		Room 09: -1 -1 0E
-	Raise Flag:
+	Raise Story:
 		2446 PO_SCENARIO_4_END
 	[END]
 
 2438 PO_INIT:
-	Spawn ID Change:
-		Room 03: 00 00 00
-		Room 04: 00 00 00
-		Room 05: 00 00 00
-		Room 06: 00 00 00
-		Room 00: 00 00 00
-		Room 01: 00 00 00
-		Room 08: 00 00 00
-		Room 07: 00 00 00
-		Room 02: 00 00 00
-		Room 09: 00 00 00
-	[END]
+	[SKIP]
 
 2439 PO_SCENARIO_0_START:
-	Raise Flag:
+	Raise Story:
 		2400 PO_START
 	[END]
 
 243A PO_SCENARIO_0_OPEN:
-	Raise Flag:
+	Raise Story:
 		2401 PO_001_END
 	[END]
 
 243B PO_SCENARIO_0_END:
-	Raise Flag:
+	Raise Story:
 		2407 PO_008_END
 	[END]
 
 243C PO_SCENARIO_1_START:
-	Raise Flag:
+	Raise Story:
 		2409 PO_101_END
 	[END]
 
 243D PO_SCENARIO_1_OPEN:
-	Raise Flag:
+	Raise Story:
 		2408 PO_PAGE_1
 	[END]
 
 243E PO_SCENARIO_1_END:
-	Raise Flag:
+	Raise Story:
 		2434 PO_106_END
 	[END]
 
 243F PO_SCENARIO_2_START:
-	Raise Flag:
+	Raise Story:
 		2411 PO_201_END
 	[END]
 
 2440 PO_SCENARIO_2_OPEN:
-	Raise Flag:
+	Raise Story:
 		2410 PO_PAGE_2
 	[END]
 
 2441 PO_SCENARIO_3_END:
-	Raise Flag:
+	Raise Story:
 		2436 PO_307_END
 	[END]
 
 2442 PO_SCENARIO_3_START:
-	Raise Flag:
+	Raise Story:
 		2419 PO_301_END
 	[END]
 
 2443 PO_SCENARIO_3_OPEN:
-	Raise Flag:
+	Raise Story:
 		2418 PO_PAGE_3
 	[END]
 
 2444 PO_SCENARIO_4_START:
-	Raise Flag:
+	Raise Story:
 		2421 PO_401_END
 	[END]
 
 2445 PO_SCENARIO_4_OPEN:
-	Raise Flag:
+	Raise Story:
 		2420 PO_PAGE_4
 	[END]
 
 2446 PO_SCENARIO_4_END:
-	Raise Flag:
+	Raise Story:
 		2437 PO_405_END
 	[END]
 
 2447 PO_SCENARIO_5_START:
-	Raise Flag:
+	Raise Story:
 		2428 PO_501_END
 	[END]
 
 2448 PO_SCENARIO_5_OPEN:
-	Raise Flag:
+	Raise Story:
 		2427 PO_PAGE_5
 	[END]
 
 2449 PO_SCENARIO_5_END:
-	Raise Flag:
+	Raise Story:
 		242D PO_504_END
 	[END]
 
 244A PO_SCENARIO_2_END:
-	Raise Flag:
+	Raise Story:
 		2435 PO_206_END
 	[END]
 
@@ -474,21 +464,25 @@
 
 2450 PO_402_END_L:
 	Unblock: World 09 Room 00
+	Lower Story:
+		2451 PO_402_END_ON
 	[END]
 
 2451 PO_402_END_ON:
 	Block: World 09 Room 00
+	Lower Story:
+		2450 PO_402_END_L
 	[END]
 
 2452 PO_FREE_ON:
 	Block: World 09 Room 00
-	Lower Flag:
+	Lower Story:
 		2453 PO_FREE_OFF
 	[END]
 
 2453 PO_FREE_OFF:
 	Unblock: World 09 Room 00
-	Lower Flag:
+	Lower Story:
 		2452 PO_FREE_ON
 	[END]
 
