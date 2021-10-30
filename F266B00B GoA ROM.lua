@@ -380,7 +380,7 @@ elseif World == 0x0B then --Atlantica
 	WriteShort(Save+0x1694,0x0C)
 end--]]
 --Battle Level
-if false then
+if true then
 	local Bitmask, Visit = false
 	if World == 0x02 then --Twilight Town & Simulated Twilight Town
 		Visit = ReadByte(Save+0x3FF5)
