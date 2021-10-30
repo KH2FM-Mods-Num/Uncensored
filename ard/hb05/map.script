@@ -1,4 +1,4 @@
-Program 0x0D
+Program 0x10
 Unk0e 1
 MapVisibility 0x000c1c8f 0x00000000
 Spawn "m_00"
@@ -11,11 +11,10 @@ Spawn "m_70"
 Spawn "m_71"
 Spawn "m_82"
 Spawn "m_84"
-Spawn "m_85"
 Spawn "m_90"
 Spawn "m_92"
 
-Program 0x0F
+Program 0x11
 Unk0e 1
 MapVisibility 0x000c1c8f 0x00000000
 Spawn "m_01"
@@ -29,23 +28,5 @@ Spawn "m_70"
 Spawn "m_71"
 Spawn "m_82"
 Spawn "m_84"
-Spawn "m_85"
 Spawn "m_90"
-Spawn "m_92"
-
-Program 0x08
-Unk0e 1
-MapVisibility 0x000c1c8f 0x00000000
-Spawn "m_00"
-Spawn "m_10"
-Spawn "m_11"
-Spawn "m_20"
-Spawn "m_22"
-Spawn "m_50"
-Spawn "m_70"
-Spawn "m_71"
-Spawn "m_82"
-Spawn "m_84"
-Spawn "m_85"
-Spawn "m_91"
 Spawn "m_92"

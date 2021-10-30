@@ -14,6 +14,7 @@ AreaSettings 1 46
 	SetPartyMenu 0
 
 AreaSettings 1 70
+	SetProgressFlag 0x4846
 	SetUnk05 0x1
 	SetJump Type 2 World EH Area 0 Entrance 0 LocalSet 103 FadeType -1
 	SetPartyMenu 0
@@ -86,6 +87,7 @@ AreaSettings 1 46
 	SetPartyMenu 0
 
 AreaSettings 1 70
+	SetProgressFlag 0x8F2
 	SetUnk05 0x1
 	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 211 FadeType -1
 	SetPartyMenu 0

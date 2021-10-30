@@ -1,16 +1,8 @@
 assets:
-- name: obj/F_HB130.mdlx
-  method: copy
-  source:
-  - name: obj/F_HB130.mdlx
-- name: 00battle.bin
-  method: binarc
-  source:
-  - name: btlv
-    type: list
-    method: copy
-    source:
-    - name: btlv.bin
+title: GoA ROM Edition
+description: GoA, but with a lot of stuff done through ROM editing to reduce workload on Lua.
+assets:
+#Jiminy Journal New Flag Requirements
 - name: menu/fm/jiminy.bar
   method: binarc
   source:
@@ -19,6 +11,236 @@ assets:
     method: copy
     source:
     - name: worl.bin
+#Detection Saber Model
+- name: obj/W_EX010_Y0.a.fm
+  method: copy
+  source:
+  - name: obj/W_EX010_Y0.a.fm
+- name: obj/W_EX010_Y0.mdlx
+  method: copy
+  source:
+  - name: obj/W_EX010_Y0.mdlx
+#Frontier of Ultima Model
+- name: obj/W_EX010_Z0.a.fm
+  method: copy
+  source:
+  - name: obj/W_EX010_Z0.a.fm
+- name: obj/W_EX010_Z0.mdlx
+  method: copy
+  source:
+  - name: obj/W_EX010_Z0.mdlx
+#FAKE (Kingdom Key D)
+- name: obj/W_EX010_WI.mdlx
+  method: copy
+  source:
+  - name: obj/W_EX010_WI.mdlx
+#GoA Data Portal New Flag Requirements
+- name: obj/F_HB130.mdlx
+  method: copy
+  source:
+  - name: obj/F_HB130.mdlx
+#Pictures
+- name: itempic/item-000.imd #Unused Items
+  method: imd
+  source:
+  - name: itempic/Unused.png
+- name: itempic/item-012.imd #Action Ability
+  method: imd
+  source:
+  - name: itempic/Action.png
+- name: itempic/item-013.imd #Growth Ability
+  method: imd
+  source:
+  - name: itempic/Growth.png
+- name: itempic/item-014.imd #Support Ability
+  method: imd
+  source:
+  - name: itempic/Support.png
+- name: itempic/item-015.imd #DUMMY 23 (HP Up)
+  method: imd
+  source:
+  - name: itempic/DUMMY 23 HP.png
+- name: itempic/item-016.imd #DUMMY 24 (MP Up)
+  method: imd
+  source:
+  - name: itempic/DUMMY 24 MP.png
+- name: itempic/item-017.imd #DUMMY 25 (Drive Up)
+  method: imd
+  source:
+  - name: itempic/DUMMY 25 Drive.png
+- name: itempic/item-018.imd #DUMMY 26 (Armor Up)
+  method: imd
+  source:
+  - name: itempic/DUMMY 26 Armor.png
+- name: itempic/item-019.imd #DUMMY 27 (Accessory Up)
+  method: imd
+  source:
+  - name: itempic/DUMMY 27 Accessory.png
+- name: itempic/item-020.imd #DUMMY 16 (Item Up)
+  method: imd
+  source:
+  - name: itempic/DUMMY 16 Item.png
+- name: itempic/item-221.imd #Lamp Charm
+  method: copy
+  source:
+  - name: itempic/Lamp Charm.imd
+- name: itempic/item-222.imd #Ukulele Charm
+  method: copy
+  source:
+  - name: itempic/Ukulele Charm.imd
+- name: itempic/item-223.imd #Feather Charm
+  method: copy
+  source:
+  - name: itempic/Feather Charm.imd
+- name: itempic/item-224.imd #Baseball Charm
+  method: copy
+  source:
+  - name: itempic/Baseball Charm.imd
+- name: itempic/item-266.imd #Valor Form
+  method: copy
+  source:
+  - name: itempic/Valor Form.imd
+- name: itempic/item-267.imd #Wisdom Form
+  method: copy
+  source:
+  - name: itempic/Wisdom Form.imd
+- name: itempic/item-268.imd #Master Form
+  method: copy
+  source:
+  - name: itempic/Master Form.imd
+- name: itempic/item-269.imd #Final Form
+  method: copy
+  source:
+  - name: itempic/Final Form.imd
+- name: itempic/item-271.imd #Anti Form
+  method: copy
+  source:
+  - name: itempic/Anti Form.imd
+- name: itempic/item-320.imd #Limit Form
+  method: copy
+  source:
+  - name: itempic/Limit Form.imd
+- name: itempic/item-297.imd #Detection Saber
+  method: imd
+  source:
+  - name: itempic/Detection Saber.png
+- name: itempic/item-298.imd #Frontier of Ultima
+  method: imd
+  source:
+  - name: itempic/Frontier of Ultima.png
+- name: itempic/item-299.imd #FAKE
+  method: copy
+  source:
+  - name: itempic/FAKE_new.imd
+- name: itempic/item-242.imd #Promise Charm
+  method: copy
+  source:
+  - name: itempic/Promise Charm.imd
+- name: itempic/item-321.imd #Proof of Connection
+  method: copy
+  source:
+  - name: itempic/Proof of Connection.imd
+- name: itempic/item-322.imd #Proof of Nonexistence
+  method: copy
+  source:
+  - name: itempic/Proof of Nonexistence.imd
+- name: itempic/item-323.imd #Proof of Peace
+  method: copy
+  source:
+  - name: itempic/Proof of Peace.imd
+- name: itempic/item-324.imd #Fire
+  method: imd
+  source:
+  - name: itempic/Fire.png
+- name: itempic/item-325.imd #Blizzard
+  method: imd
+  source:
+  - name: itempic/Blizzard.png
+- name: itempic/item-326.imd #Thunder
+  method: imd
+  source:
+  - name: itempic/Thunder.png
+- name: itempic/item-327.imd #Cure
+  method: imd
+  source:
+  - name: itempic/Cure.png
+- name: itempic/item-328.imd #Magnet
+  method: imd
+  source:
+  - name: itempic/Magnet.png
+- name: itempic/item-329.imd #Reflect
+  method: imd
+  source:
+  - name: itempic/Reflect.png
+#GoA World Icons
+- name: map/jp/hb26.map
+  multi:
+  - name: map/us/hb26.map
+  - name: map/uk/hb26.map
+  - name: map/it/hb26.map
+  - name: map/sp/hb26.map
+  - name: map/gr/hb26.map
+  - name: map/fr/hb26.map
+  - name: map/fm/hb26.map
+  method: copy
+  source:
+  - name: hb26.map
+#GoA Picture in SP Terminal
+- name: file/jp/tr_tm.2ld
+  multi:
+  - name: file/us/tr_tm.2ld
+  - name: file/uk/tr_tm.2ld
+  - name: file/it/tr_tm.2ld
+  - name: file/sp/tr_tm.2ld
+  - name: file/gr/tr_tm.2ld
+  - name: file/fr/tr_tm.2ld
+  - name: file/fm/tr_tm.2ld
+  method: copy
+  source:
+  - name: tr_tm.2ld
+#Implement New Pictures and Stats
+- name: 03system.bin
+  method: binarc
+  source:
+  - name: item
+    type: list
+    method: listpatch
+    source:
+    - name: 03system.bin/ItemList.yml
+      type: item
+  - name: went
+    type: list
+    method: copy
+    source:
+      - name: 03system.bin/went.bin
+#Relocate Twilight Thorn HP Bonus & Unequip Auto Limit
+- name: 00battle.bin
+  method: binarc
+  source:
+  - name: bons
+    type: list
+    method: listpatch
+    source:
+    - name: 00battle.bin/BonsList.yml
+      type: bons
+  - name: enmp
+    type: list
+    method: copy
+    source:
+    - name: 00battle.bin/Enmp.bin
+  - name: plrp
+    type: list
+    method: listpatch
+    source:
+    - name: 00battle.bin/PlrpList.yml
+      type: plrp
+#Big Chest -> Small Chest
+- name: 00objentry.bin
+  method: listpatch
+  type: List
+  source:
+  - name: ObjList.yml
+    type: objentry
 #Progress Flags
 - name: 00progress.bin
   method: binarc
@@ -301,6 +523,41 @@ assets:
     method: areadatascript
     source:
     - name: ard/al15/evt.script
+- name: ard/bb04.ard #Ballroom (Data Warp)
+  multi:
+  - name: ard/us/bb04.ard
+  method: binarc
+  source:
+  - name: map
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/bb04/map.script
+  - name: m_11 #Event Trigger to Station of Calling
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: ard/bb04/m_11.yml
+- name: ard/bb06.ard #Courtyard (GoA Warp)
+  multi:
+  - name: ard/us/bb06.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/bb06/evt.script
+- name: ard/bb14.ard #Ballroom (Post Dark Thorn) (GoA Warp)
+  multi:
+  - name: ard/us/bb14.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/bb14/evt.script
 - name: ard/ca05.ard #The Black Pearl (GoA Warp)
   multi:
   - name: ard/us/ca05.ard
@@ -446,6 +703,21 @@ assets:
     method: areadatascript
     source:
     - name: ard/hb00/evt.script
+- name: ard/hb01.ard #The Dark Depths (GoA Warp)
+  multi:
+  - name: ard/us/hb01.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/hb01/evt.script
+  - name: j52e #Sephiroth Spawn
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: ard/hb01/j52e.yml
 - name: ard/hb04.ard #Castle Gate (Checkpoint)
   multi:
   - name: ard/us/hb04.ard
@@ -456,16 +728,41 @@ assets:
     method: areadatascript
     source:
     - name: ard/hb04/evt.script
-- name: ard/hb05.ard #Ansem's Study (Remove Computer, Skip SP, Early Sleeping Lion, Skip HB)
+  - name: e_50 #Party Spawn
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: ard/hb04/e_50.yml
+- name: ard/hb05.ard #Ansem's Study (Remove Computer & Skip SP & Early Sleeping Lion)
   multi:
   - name: ard/us/hb05.ard
+  method: binarc
+  source:
+  - name: map
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/hb05/map.script
+  - name: m_50 #Computer to Space Paranoids Despawn
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: ard/hb05/m_50.yml
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/hb05/evt.script
+- name: ard/hb06.ard #Postern (Skip SP & GoA Warp)
+  multi:
+  - name: ard/us/hb06.ard
   method: binarc
   source:
   - name: evt
     type: areadatascript
     method: areadatascript
     source:
-    - name: ard/hb05/evt.script
+    - name: ard/hb06/evt.script
 - name: ard/hb08.ard #Bailey (Intact) (Early Chicken Little)
   multi:
   - name: ard/us/hb08.ard
@@ -476,7 +773,17 @@ assets:
     method: areadatascript
     source:
     - name: ard/hb08/evt.script
-- name: ard/hb13.ard #Merlin's House (GoA Warp & Remove Chicken Little)
+- name: ard/hb10.ard #Marketplace (Skip Cloud)
+  multi:
+  - name: ard/us/hb10.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/hb10/evt.script
+- name: ard/hb13.ard #Merlin's House (Remove Chicken Little & Skip SP & GoA Warp)
   multi:
   - name: ard/us/hb13.ard
   method: binarc
@@ -486,6 +793,21 @@ assets:
     method: areadatascript
     source:
     - name: ard/hb13/evt.script
+- name: ard/hb18.ard #Restoration Site (Destroyed) (Data Warp)
+  multi:
+  - name: ard/us/hb18.ard
+  method: binarc
+  source:
+  - name: map
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/hb18/map.script
+  - name: m_13 #Event Trigger to Station of Calling
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: ard/hb18/m_13.yml
 - name: ard/hb26.ard #Garden of Assemblage (Various Stuff)
   multi:
   - name: ard/us/hb26.ard
@@ -531,6 +853,56 @@ assets:
     method: areadatascript
     source:
     - name: ard/hb38/evt.script
+- name: ard/he08.ard #Well of Captivity (Skip Megara Escort)
+  multi:
+  - name: ard/us/he08.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/he08/evt.script
+- name: ard/he10.ard #Cave of the Dead: Inner Chamber (AS Warp)
+  multi:
+  - name: ard/us/he10.ard
+  method: binarc
+  source:
+  - name: btl
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/he10/btl.script
+  - name: b_82 #Data
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: ard/he10/b_82.yml
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/he10/evt.script
+- name: ard/he14.ard #Coliseum Gates (Night) (GoA Warp)
+  multi:
+  - name: ard/us/he14.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/he14/evt.script
+- name: ard/he18.ard #Coliseum Gates (Hydra) (GoA Warp)
+  multi:
+  - name: ard/us/he18.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/he18/evt.script
 - name: ard/lk00.ard #Pride Rock (GoA Warp)
   multi:
   - name: ard/us/lk00.ard
@@ -871,6 +1243,126 @@ assets:
     method: areadatascript
     source:
     - name: ard/tr10/map.script
+- name: ard/tt02.ard #The Usual Spot (Skip WM)
+  multi:
+  - name: ard/us/tt02.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt02/evt.script
+- name: ard/tt06.ard #Market Street: Station Heights (Short Day 2)
+  multi:
+  - name: ard/us/tt06.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt06/evt.script
+- name: ard/tt07.ard #Market Street: Tram Commons (Short Day 2)
+  multi:
+  - name: ard/us/tt07.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt07/evt.script
+- name: ard/tt08.ard #Station Plaza (Prevent Promise Charm Removal)
+  multi:
+  - name: ard/us/tt08.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt08/evt.script
+- name: ard/tt09.ard #Central Station (Drive Refill)
+  multi:
+  - name: ard/us/tt09.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt09/evt.script
+- name: ard/tt14.ard #The Old Mansion (BGM Change)
+  multi:
+  - name: ard/us/tt14.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt14/evt.script
+- name: ard/tt20.ard #Mansion: Basement Hall (Axel II) (Drive Refill)
+  multi:
+  - name: ard/us/tt20.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt20/evt.script
+- name: ard/tt23.ard #Mansion: Pod Room (GoA Warp & Data Warp)
+  multi:
+  - name: ard/us/tt23.ard
+  method: binarc
+  source:
+  - name: map
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt23/map.script
+  - name: m_11 #Event Trigger to Station of Calling
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: ard/tt23/m_11.yml
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt23/evt.script
+- name: ard/tt26.ard #Tower: Entryway (Drive Refill)
+  multi:
+  - name: ard/us/tt26.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt26/evt.script
+- name: ard/tt27.ard #Tower: Sorcerer's Loft (Drive Refill)
+  multi:
+  - name: ard/us/tt27.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt27/evt.script
+- name: ard/tt28.ard #Tower: Wardrobe (GoA Warp)
+  multi:
+  - name: ard/us/tt28.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt28/evt.script
 - name: ard/tt32.ard #Station of Serenity (GoA Warp)
   multi:
   - name: ard/us/tt32.ard
@@ -946,6 +1438,31 @@ assets:
     method: spawnpoint
     source:
     - name: ard/tt33/b_15.yml
+- name: ard/tt40.ard #Betwixt & Between (Data Warp)
+  multi:
+  - name: ard/us/tt40.ard
+  method: binarc
+  source:
+  - name: map
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt40/map.script
+  - name: m_12 #Event Trigger to Station of Calling
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: ard/tt40/m_12.yml
+- name: ard/tt41.ard #The Old Mansion (Nobodies) (BGM Change)
+  multi:
+  - name: ard/us/tt41.ard
+  method: binarc
+  source:
+  - name: evt
+    type: areadatascript
+    method: areadatascript
+    source:
+    - name: ard/tt41/evt.script
 - name: ard/wm00.ard #World Map (GoA Warp)
   multi:
   - name: ard/us/hb26.ard
