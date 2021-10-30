@@ -273,7 +273,7 @@ if Platform == 1 and ReadByte(Sys3+0x116DB) == 0x19 then --Change Form's Icons i
 	WriteByte(Sys3+0x1173B,0x3B) --Final
 	WriteByte(Sys3+0x11753,0x3B) --Anti
 end
---Start New Game 2
+--Start New Game
 if Place == 0x2002 and Events(0x01,Null,0x01) then --Station of Serenity Weapons
 	WriteByte(Pause,2) --Disable Pause
 	--Starting Stats
