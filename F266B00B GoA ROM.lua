@@ -804,7 +804,7 @@ elseif Place == 0x1412 then --Xemnas II
 	elseif ReadByte(Pause) == 2 then --Enable Pause
 		WriteByte(Pause,0)
 	end
-elseif Place == 0x0001 and not Events(0x39,0x39,0x39) then --Post Xemnas II Cutscenes (cond. for 
+elseif Place == 0x0001 and not Events(0x39,0x39,0x39) then --Post Xemnas II Cutscenes (cond. for STT)
 	if ReadByte(Pause) == 2 then --Enable Pause
 		WriteByte(Pause,0)
 	end
