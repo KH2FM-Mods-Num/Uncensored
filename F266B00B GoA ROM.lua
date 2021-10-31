@@ -961,21 +961,14 @@ elseif Place == 0x0E05 and Events(Null,Null,0x01) then --Things are Just Beginni
 	WriteByte(Save+0x1D3F,7)
 elseif ReadByte(Save+0x1D3F) == 7 and ReadShort(Save+0x07A0) == 0x0A then --2nd Visit
 	WriteByte(Save+0x1D3F,8)
-	--WriteShort(Save+0x0792,0x00) --Entrance Hall BTL
-	--WriteShort(Save+0x07A0,0x0A) --Belle's Room EVT
-	--WriteShort(Save+0x07CE,0x00) --Dungeon BTL
 elseif Place == 0x0205 and Events(Null,Null,0x0A) then --Dressing Up
 	WriteByte(Save+0x1D3F,9)
 elseif Place == 0x0305 and Events(Null,Null,0x0A) then --The Missing Rose
 	WriteByte(Save+0x1D3F,10)
 elseif Place == 0x0305 and Events(Null,Null,0x14) then --Don't Give Up
 	WriteByte(Save+0x1D3F,11)
-elseif Place == 0x0D05 and Events(Null,Null,0x0A) then --The Whirlwind Lancer: Xaldin
-	--BitNot(Save+0x1D35,0x01) --BB_216_END (Change Spawn ID in Next Cutscene Properly)
 elseif Place == 0x0605 and Events(Null,Null,0x0B) then --Stay With Me
-	--BitOr(Save+0x1D34,0x80)  --BB_FM_XAL_RE_CLEAR (Change Portal Color)
 	WriteByte(Save+0x1D3E,1) --Post-Story Save
-	--WriteShort(Save+0x07A8,0x0D) --Ballroom (Light) MAP (Data Door)
 end
 --Beast's Castle Post-Story Save
 if Place == 0x1A04 and ReadByte(Save+0x1D3E) > 0 then
