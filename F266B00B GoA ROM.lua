@@ -1001,11 +1001,6 @@ if Place == 0x0C05 and Events(Null,0x16,0x02) then
 else --Exited Minigame
 	PottsCoordinate = Null
 end--]]
---Marluxia's Absent Silhouette Removal
-if ReadShort(Save+0x07A4) == 0x01 then
-	--WriteShort(Save+0x07A4,0x00) --Beast's Room BTL
-	--WriteShort(Now+6,0x00)
-end
 end
 
 function HT() 
