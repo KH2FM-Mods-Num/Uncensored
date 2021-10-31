@@ -1378,13 +1378,10 @@ elseif Place == 0x000A and Events(Null,Null,0x05) then --A New King
 	WriteByte(Save+0x1DDF,7)
 elseif ReadByte(Save+0x1DDF) == 7 and ReadShort(Save+0x0F2C) == 0x0A then --2nd Visit
 	WriteByte(Save+0x1DDF,8)
-	--WriteShort(Save+0x0F2C,0x0A) --Savannah EVT
 elseif Place == 0x000A and Events(Null,Null,0x0A) then --Scar's Ghost
 	WriteByte(Save+0x1DDF,9)
 elseif Place == 0x000A and Events(Null,Null,0x0E) then --The Circle of Life
-	--BitOr(Save+0x1EDA,0x01) --EH_FM_SAI_RE_CLEAR (Change Portal Color)
 	WriteByte(Save+0x1DDE,3) --Post-Story Save
-	--WriteShort(Save+0x0F5E,0x0D) --Peak MAP (Data Door)
 end
 --Pride Lands Post-Story Save
 if Place == 0x1A04 and ReadByte(Save+0x1DDE) > 0 then
