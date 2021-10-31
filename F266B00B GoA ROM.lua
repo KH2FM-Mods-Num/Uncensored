@@ -1402,7 +1402,7 @@ if Place == 0x030A then --Remove Extra Dash
 		WriteByte(CutSkp,1)
 	end
 end--]]
---Fast Hyenas II
+--[[Fast Hyenas II
 if Place == 0x050A and Events(0x39,0x39,0x39) then
 	Spawn('Short',0x0D,0x120,0x000) --Shenzi -> Nothing
 	Spawn('Short',0x0D,0x160,0x000) --Ed -> Nothing
