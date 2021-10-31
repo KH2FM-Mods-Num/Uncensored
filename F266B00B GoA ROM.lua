@@ -1609,7 +1609,7 @@ elseif ReadByte(Save+0x1CFF) == 8 then --Save Events within TT
 	end
 end
 --Save Points -> World Points (1st Visit)
-if ReadByte(Save+0x1CFF) == 8 and true then
+if ReadByte(Save+0x1CFF) == 8 and false then
 	if Place == 0x0202 then --The Usual Spot
 		Spawn('Short',0x06,0x034,0x239)
 	elseif Place == 0x0902 then --Central Station
