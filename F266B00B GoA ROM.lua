@@ -1539,7 +1539,7 @@ if Place == 0x1A04 and ReadByte(Save+0x1CFD) > 0 and Door == 0x1C then
 	end
 end
 --Spawn IDs
-if Place == 0x1A04 then
+if ReadByte(Save+0x1CFF) == 8 and (Place == 0x1A04 or Place == 0x1402) then
 	WriteByte(Save+0x1CFF,0)
 elseif ReadShort(TxtBox) == 0x768 and PrevPlace == 0x1A04 and ReadByte(Save+0x1CFF) == 0 and (World == 0x02 or Place == 0x0112) then --Load Spawn ID upon Entering TT
 	WriteInt(Save+0x353C,0x12020100) --Full Party
@@ -2194,9 +2194,13 @@ if Place == 0x1A04 and ReadByte(Save+0x1CFE) > 0 and Door == 0x21 then
 	end
 end
 --Spawn IDs
-if Place == 0x1A04 then
+if ReadByte(Save+0x1CFF) == 13 and (Place == 0x1A04 or Place == 0x1512) then
 	WriteByte(Save+0x1CFF,0)
+	BitOr(Save+0x1CEA,0x01) --TT_ROXAS_END (Play as Sora)
+	BitOr(Save+0x239E,0x08) --Show Journal
 elseif ReadShort(TxtBox) == 0x76D and PrevPlace == 0x1A04 and ReadByte(Save+0x1CFF) == 0 and World == 0x02 then --Load Spawn ID upon Entering STT
+	BitNot(Save+0x1CEA,0x01) --TT_ROXAS_END (Play as Roxas)
+	BitNot(Save+0x239E,0x08) --Hide Journal
 	WriteInt(Save+0x353C,0x12121200) --Roxas Only
 	WriteByte(Save+0x1CFF,13) --STT Flag
 	for i = 0,143 do
@@ -2304,8 +2308,6 @@ if ReadByte(Save+0x1CFF) == 13 then
 end
 --Simulated Twilight Town Adjustments
 if ReadByte(Save+0x1CFF) == 13 then --STT Removals
-	BitNot(Save+0x1CEA,0x01) --TT_ROXAS_END (Play as Roxas)
-	BitNot(Save+0x239E,0x08) --Hide Journal
 	if ReadShort(Save+0x25D2)&0x8000 == 0x8000 then --Dodge Roll
 		BitNot(Save+0x25D3,0x80)
 		BitOr(Save+0x1CF1,0x01)
@@ -2382,8 +2384,6 @@ if ReadByte(Save+0x1CFF) == 13 then --STT Removals
 		end
 	end
 else --Restore Outside STT
-	BitOr(Save+0x1CEA,0x01) --TT_ROXAS_END (Play as Sora)
-	BitOr(Save+0x239E,0x08) --Show Journal
 	if ReadByte(Save+0x1CF1)&0x01 == 0x01 then --Dodge Roll
 		BitOr(Save+0x25D3,0x80)
 		BitNot(Save+0x1CF1,0x01)

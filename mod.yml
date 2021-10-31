@@ -668,7 +668,7 @@ assets:
     method: areadatascript
     source:
     - name: ard/eh10/map.script
-- name: ard/eh18.ard #The Altar of Naught (Data Warp & Final Warp)
+- name: ard/eh18.ard #The Altar of Naught (Data Warp)
   multi:
   - name: ard/us/eh18.ard
   method: binarc
