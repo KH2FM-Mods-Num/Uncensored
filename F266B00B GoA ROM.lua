@@ -2338,7 +2338,7 @@ if ReadByte(Save+0x1CFF) == 13 then --STT Removals
 		WriteByte(Save+0x1CF8,math.random(3))
 	end
 	if Place == 0x0402 and Events(0x4C,0x4C,0x4C) then --Sandlot Weapons
-		if Equip ~= 0x180 and Equip ~= 0x1F5 and Equip ~= 0x1F6 then
+		if not(Equip == 0x180 or Equip == 0x1F5 or Equip == 0x1F6) then
 			WriteByte(Save+0x1CF8,0) --Reset Struggle Weapon Flag
 		elseif ReadByte(Save+0x1CF8) == 0 then
 			if Equip == 0x180 then --Struggle Sword
