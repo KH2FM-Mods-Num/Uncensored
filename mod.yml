@@ -703,7 +703,7 @@ assets:
     method: areadatascript
     source:
     - name: ard/hb00/evt.script
-- name: ard/hb01.ard #The Dark Depths (GoA Warp)
+- name: ard/hb01.ard #The Dark Depths (GoA Warp & Skip Cloud)
   multi:
   - name: ard/us/hb01.ard
   method: binarc
