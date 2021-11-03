@@ -2150,19 +2150,8 @@ elseif Place == 0x1502 and Events(Null,Null,0x01) then --The Computer System
 	WriteByte(Save+0x1D0E,12)
 elseif Place == 0x1302 and Events(0x88,0x88,0x88) then --In the Next Life
 	WriteByte(Save+0x1D0E,13)
-	--WriteShort(Save+0x0346,0x02) --Central Station MAP (Spawn Sunset Station Train)
-	--WriteShort(Save+0x034A,0x13) --Central Station EVT
-	--WriteShort(Save+0x0366,0x01) --The Old Mansion BTL
-	--WriteShort(Save+0x036C,0x01) --Mansion Foyer BTL
-	--WriteShort(Save+0x0372,0x01) --Dining Room BTL
-	--WriteShort(Save+0x2114,0x0000) --Station Plaza Unblock
-	--WriteShort(Save+0x211C,0x0000) --The Old Mansion Unblock
 elseif Place == 0x1702 and Events(Null,Null,0x02) then --My Summer Vacation Is Over
-	--BitOr(Save+0x1ED9,0x40) --EH_FM_ROX_RE_CLEAR (Change Portal Color)
 	WriteByte(Save+0x1CFE,5) --Post-Story Save
-	--WriteByte(Save+0x1CFF,0)
-	--WriteShort(Save+0x02BA,0x0D) --Pod Room MAP (Data Door)
-	--WriteShort(Save+0x02BE,0x00) --Pod Room EVT
 end
 --Simulated Twilight Town Post-Story Save
 if Place == 0x1A04 and ReadByte(Save+0x1CFE) > 0 and Door == 0x21 then
