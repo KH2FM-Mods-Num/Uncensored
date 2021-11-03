@@ -2128,6 +2128,7 @@ if Place == 0x0102 and Events(0x39,0x39,0x39) then --Just Another Morning
 	WriteByte(Save+0x1D0E,1)
 elseif Place == 0x0602 and Events(Null,Null,0x01) then --It's a Promise
 	WriteByte(Save+0x1D0E,2)
+elseif Place == 0x1502 and Events(0x8B,0x8B,0x8B) then --Meanwhile, in the Darkness
 elseif Place == 0x0102 and Events(0x3A,0x3A,0x3A) then --Awakened by an Illusion
 	WriteByte(Save+0x1D0E,3)
 elseif Place == 0x2002 and Events(0x9C,0x9C,0x9C) then --Station of Awakening
