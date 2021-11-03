@@ -2049,7 +2049,7 @@ if Place == 0x1A04 and ReadByte(Save+0x1EBE) > 0 then
 	end
 end
 --Skip Light Cycle
-if ReadShort(Save+0x1994) == 0x04 and false then --Skip Light Cycle
+if ReadShort(Save+0x1994) == 0x04 then --Skip Light Cycle
 	WriteShort(Save+0x1990,0x03) --Pit Cell MAP (Despawn Party Members)
 	WriteShort(Save+0x1994,0x16) --Pit Cell EVT
 	WriteShort(Save+0x1998,0x01) --Canyon BTL
