@@ -2191,8 +2191,6 @@ elseif ReadShort(TxtBox) == 0x76D and PrevPlace == 0x1A04 and ReadByte(Save+0x1C
 	if PostSave == 0 then
 		if Progress == 0 then --1st Visit
 			Visit = 1
-			--WriteShort(Save+0x0366,0x00) --The Old Mansion BTL
-			--BitNot(Save+0x1CD6,0x02) --TT_203_END_L (Make Day 2 Work Properly)
 		elseif Progress == 1 then --Before Munny Collection
 			Visit = 2
 			WriteShort(Save+0x20EC,0xC449) --Sandlot Block
