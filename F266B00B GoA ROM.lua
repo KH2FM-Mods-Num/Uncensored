@@ -2403,7 +2403,7 @@ if Place == 0x2202 and Events(0x9D,0x9D,0x9D) then
 	end
 	if ReadByte(Save+0x1CF1)&0x10 == 0x10 then
 		Faster(true)
-	else--if ReadFloat(0x07151D4) > 1 then --Exclude death cutscene
+	else
 		Faster(false)
 	end
 end
