@@ -1739,13 +1739,13 @@ end
 --Heartless Manufactory Early Access with Membership Card
 if ReadByte(Save+0x3643) > 0 then
 	if ReadShort(Save+0x062E) == 0x08 then
-		WriteShort(Save+0x20D4,0x0000) --Heartless Manufactory Unblock
+		WriteShort(Save+0x20D4,0) --Heartless Manufactory Unblock
 		WriteShort(Save+0x062E,0x0E)
 	elseif ReadShort(Save+0x062E) == 0x0D then
-		WriteShort(Save+0x20D4,0x0000) --Heartless Manufactory Unblock
+		WriteShort(Save+0x20D4,0) --Heartless Manufactory Unblock
 		WriteShort(Save+0x062E,0x10)
 	elseif ReadShort(Save+0x062E) == 0x0F then
-		WriteShort(Save+0x20D4,0x0000) --Heartless Manufactory Unblock
+		WriteShort(Save+0x20D4,0) --Heartless Manufactory Unblock
 		WriteShort(Save+0x062E,0x11)
 	end
 end
@@ -1773,7 +1773,7 @@ if ReadShort(Save+0x0650) == 0x0A then
 	WriteShort(Save+0x067C,0x0D) --Restoration Site (Destroyed) MAP (Data Door)
 	WriteShort(Save+0x067E,0x0B) --Restoration Site (Destroyed) BTL
 	WriteShort(Save+0x0684,0x0B) --Bailey (Destroyed) BTL
-	WriteShort(Save+0x20D4,0x0000) --Heartless Manufactory Unblock
+	WriteShort(Save+0x20D4,0) --Heartless Manufactory Unblock
 	BitOr(Save+0x1D19,0x10) --HB_508_END
 	BitOr(Save+0x1D1C,0x10) --HB_509_END
 	BitOr(Save+0x1D1C,0x20) --HB_hb09_ms501
@@ -1823,7 +1823,7 @@ if Place == 0x0204 and Events(Null,0x02,0x03) and ReadByte(Save+0x36B4) > 0 then
 	WriteShort(Save+0x3EE8,1140)
 	WriteShort(Save+0x3EEC,3) --Mushroom XII
 	WriteShort(Save+0x3EF0,40)
-end--]]
+end
 end
 
 function PR()
@@ -2418,7 +2418,7 @@ if Place == 0x0B02 and Events(0x01,0x00,0x0C) then
 	WriteShort(Save+0x035C,0x01) --Sunset Hill EVT
 	WriteShort(Save+0x03E8,0x03) --Tunnelway MAP (Spawn Skateboard)
 	WriteShort(Save+0x03EC,0x00) --Tunnelway EVT
-	WriteShort(Save+0x2110,0x0000) --Tunnelway Unblock
+	WriteShort(Save+0x2110,0) --Tunnelway Unblock
 	BitOr(Save+0x2394,0x1E) --Minigame Finished Flags
 	BitOr(Save+0x1CDD,0x40) --TT_MISTERY_A_END (The Animated Bag)
 	BitOr(Save+0x1CDD,0x80) --TT_MISTERY_B_END (The Friend from Beyond the Wall)
