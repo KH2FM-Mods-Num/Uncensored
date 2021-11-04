@@ -2534,3 +2534,49 @@ if ReadShort(Save+0x03D6) == 15 then
 end
 end
 
+--[[Unused Bytes Repurposed:
+[Save+0x01A0,Save+0x022F] TT Spawn IDs
+[Save+0x0230,Save+0x02BF] STT Spawn IDs
+[Save+0x0664,Save+0x0669] Merlin's House Spawn IDs
+[Save+0x066A,Save+0x066F] Borough Spawn IDs
+Save+0x06B2 Genie Crash Fix
+[Save+0x07F0,Save+0x07FB] Mrs Potts' Minigame Location
+Save+0x1CF0 STT Computer Beam
+Save+0x1CF1 STT Dodge Roll, Trinity Limit, Twilight Thorn
+Save+0x1CF2 STT Fire
+Save+0x1CF3 STT Blizzard
+Save+0x1CF4 STT Thunder
+Save+0x1CF5 STT Cure
+Save+0x1CF6 STT Magnet
+Save+0x1CF7 STT Reflect
+Save+0x1CF8 STT Struggle Weapon
+[Save+0x1CF9,Save+0x1CFA] STT Keyblade
+Save+0x1CFD TT Post-Story Save
+Save+0x1CFE STT Post-Story Save
+Save+0x1CFF STT/TT Flag
+Save+0x1D0D TT Progress
+Save+0x1D0E STT Progress
+Save+0x1D2E HB Post-Story Save
+Save+0x1D2F HB Progress
+Save+0x1D3E BC Post-Story Save
+Save+0x1D3F BC Progress
+Save+0x1D6E OC Post-Story Save
+Save+0x1D6F OC Progress
+Save+0x1D7E Ag Post-Story Save
+Save+0x1D7F Ag Progress
+Save+0x1D9E LOD Post-Story Save
+Save+0x1D9F LOD Progress
+Save+0x1DDE PL Post-Story Save
+Save+0x1DDF PL Progress
+Save+0x1E1E DC Post-Story Save
+Save+0x1E1F DC Progress
+Save+0x1E5E HT Post-Story Save
+Save+0x1E5F HT Progress
+Save+0x1E9E PR Post-Story Save
+Save+0x1EBE SP Post-Story Save
+Save+0x1EBF SP Progress
+Save+0x1EDE TWtNW Post-Story Save
+Save+0x1EDF TWtNW Progress
+Save+0x35C4 Ollete's Munny Pouch
+Save+0x35C5 Mickey's Munny Pouch
+--]]
