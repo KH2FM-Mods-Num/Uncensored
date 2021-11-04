@@ -2428,16 +2428,18 @@ if Place == 0x0B02 and Events(0x01,0x00,0x0C) then
 	BitOr(Save+0x1CDE,0x04) --TT_506_END_L
 end--]]
 --Beam -> Garden of Assemblage
-if ReadShort(Save+0x0392) == 0x00 then --Beam Event Trigger Spawn
-	WriteShort(Save+0x0392,0x10) --Computer Room EVT
-elseif Place == 0x1502 and ReadByte(Save+0x1CFF) == 13 then
-	Spawn('Int',0x01,0x220,0x00099) --Show Beam
-	Spawn('String',0x01,0x254,'m_81') --Spawn Beam RC
-	Spawn('Short',0x10,0x55A,0x04) --Warp Pointer to Garden of Assemblage
-	Spawn('Short',0x10,0x55C,0x1A)
-	Spawn('Short',0x10,0x55E,0x21)
-	Spawn('Short',0x10,0x552,0xC00) --DI_START (use as dummy flag)
-	--Same as BitOr(Save+0x1CF0,0x01). Also stops the game from editing the spawn IDs.
+if ReadByte(Save+0x1CFF) == 13 then
+	if ReadShort(Save+0x0392) == 0x00 then --Beam Event Trigger Spawn
+		WriteShort(Save+0x0392,0x10) --Computer Room EVT
+	elseif Place == 0x1502 then
+		Spawn('Int',0x01,0x220,0x00099) --Show Beam
+		Spawn('String',0x01,0x254,'m_81') --Spawn Beam RC
+		Spawn('Short',0x10,0x55A,0x04) --Warp Pointer to Garden of Assemblage
+		Spawn('Short',0x10,0x55C,0x1A)
+		Spawn('Short',0x10,0x55E,0x21)
+		Spawn('Short',0x10,0x552,0xC00) --DI_START (use as dummy flag)
+		--Same as BitOr(Save+0x1CF0,0x01). Also stops the game from editing the spawn IDs.
+	end
 end
 end
 
