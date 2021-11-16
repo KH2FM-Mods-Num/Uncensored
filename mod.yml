@@ -202,17 +202,17 @@ assets:
 - name: 03system.bin
   method: binarc
   source:
+  - name: went
+    type: list
+    method: copy
+    source:
+      - name: 03system.bin/went.bin
   - name: item
     type: list
     method: listpatch
     source:
     - name: 03system.bin/ItemList.yml
       type: item
-  - name: went
-    type: list
-    method: copy
-    source:
-      - name: 03system.bin/went.bin
 #Relocate Twilight Thorn HP Bonus & Unequip Auto Limit
 - name: 00battle.bin
   method: binarc
