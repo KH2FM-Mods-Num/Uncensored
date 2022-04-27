@@ -1,7 +1,135 @@
 title: Uncensorship
 description: Revert the censorships.
 assets:
+#Limits
+- name: limit/us/donald2.bar
+  method: copy
+  source:
+  - name: limit/fm/donald2.bar
+    type: internal
+- name: limit/us/donald2_wi.bar
+  method: copy
+  source:
+  - name: limit/fm/donald2_wi.bar
+    type: internal
+- name: remastered/limit/us/donald2.bar/US_donald2_bar0.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2.bar/US_donald2_bar0.dds
+    type: internal
+- name: remastered/limit/us/donald2.bar/US_donald2_bar1.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2.bar/US_donald2_bar1.dds
+    type: internal
+- name: remastered/limit/us/donald2.bar/US_donald2_bar2.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2.bar/US_donald2_bar2.dds
+    type: internal
+- name: remastered/limit/us/donald2.bar/US_donald2_bar3.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2.bar/US_donald2_bar3.dds
+    type: internal
+- name: remastered/limit/us/donald2.bar/US_donald2_bar4.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2.bar/US_donald2_bar4.dds
+    type: internal
+- name: remastered/limit/us/donald2.bar/US_donald2_bar5.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2.bar/US_donald2_bar5.dds
+    type: internal
+- name: remastered/limit/us/donald2.bar/US_donald2_bar6.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2.bar/US_donald2_bar6.dds
+    type: internal
+- name: remastered/limit/us/donald2.bar/US_donald2_bar7.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2.bar/US_donald2_bar7.dds
+    type: internal
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar0.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar0.dds
+    type: internal
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar1.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar1.dds
+    type: internal
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar2.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar2.dds
+    type: internal
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar3.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar3.dds
+    type: internal
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar4.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar4.dds
+    type: internal
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar5.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar5.dds
+    type: internal
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar6.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar6.dds
+    type: internal
+- name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar7.dds
+  method: copy
+  source:
+  - name: remastered/limit/us/donald2_wi.bar/US_donald2_wi_bar7.dds
+    type: internal
 #Hydra's blood?
+- name: raw/obj/B_HE100.a.us #Duplicated -9.dds to -10 and shifted the rest
+  method: copy
+  source:
+  - name: raw/B_HE100.a.us
+- name: obj/B_HE110.a.us
+  method: binarc
+  source:
+  - name: b_he
+    type: pax
+    method: copy
+    source:
+    - name: obj/b_he110.pax
+- name: remastered/obj/B_HE110.a.us/-0.dds
+  method: copy
+  source:
+  - name: remastered/obj/B_HE110.a.us/-0.dds
+    type: internal
+- name: remastered/obj/B_HE110.a.us/-1.dds
+  method: copy
+  source:
+  - name: remastered/obj/B_HE110.a.us/-1.dds
+    type: internal
+- name: remastered/obj/B_HE110.a.us/-2.dds
+  method: copy
+  source:
+  - name: remastered/obj/B_HE110.a.us/-2.dds
+    type: internal
+- name: remastered/obj/B_HE110.a.us/-3.dds
+  method: copy
+  source:
+  - name: remastered/obj/B_HE110.a.us/-3.dds
+    type: internal
+- name: remastered/obj/B_HE110.a.us/-4.dds
+  method: copy
+  source:
+  - name: remastered/obj/B_HE110.a.us/-4.dds
+    type: internal
 #Daisy's spank?
 #Pirate C's gun
 - name: obj/us/B_CA040.mdlx
@@ -24,6 +152,19 @@ assets:
   source:
   - name: obj/B_CA040_SKL_OKA.mdlx
     type: internal
+#Pirates on fire
+- name: raw/obj/B_CA020.a.us #Added new -3.dds and shifted the rest
+  method: copy
+  source:
+  - name: raw/B_CA020.a.us
+- name: raw/obj/B_CA030.a.us #Added new -0.dds and shifted the rest
+  method: copy
+  source:
+  - name: raw/B_CA030.a.us
+- name: raw/obj/B_CA040.a.us #Added new -3.dds and shifted the rest
+  method: copy
+  source:
+  - name: raw/B_CA040.a.us
 #Will's gun
 - name: anm/us/ca/f_ca560/ECA12002E.anb
   method: copy
@@ -55,8 +196,13 @@ assets:
   source:
   - name: anm/fm/ca/n_ca020/ECA12004E.anb
     type: internal
-#Axel's death fires (didn't work)
+#Barbossa's sword inside Jack
 - name: ard/us/ca10.ard
+  multi:
+  - name: ard/fr/ca10.ard
+  - name: ard/gr/ca10.ard
+  - name: ard/sp/ca10.ard
+  - name: ard/it/ca10.ard
   method: binarc
   source:
   - name: 123
@@ -64,15 +210,7 @@ assets:
     method: copy
     source:
     - name: ard/ca10/123.bin
-#Axel's death fires (didn't work)
-#- name: ard/us/tt40.ard
-#  method: binarc
-#  source:
-#  - name: 012
-#    type: event
-#    method: copy
-#    source:
-#    - name: ard/tt40/012.bin
+#Axel's death fires?
 #Xigbar's crosshairs (4:3 graphics during new backdrop)
 - name: obj/B_EX140.a.us
   multi:
@@ -83,4 +221,214 @@ assets:
     type: barunknown
     method: copy
     source:
-    - name: obj/B_EX140.a.us/b_ex.bar
+    - name: obj/b_ex140.bar
+- name: remastered/obj/B_EX140.a.us/-0.dds
+  multi:
+  - name: remastered/obj/B_EX140_LV99.a.us/-0.dds
+  method: copy
+  source:
+  - name: remastered/obj/B_EX140.a.us/-0.dds
+    type: internal
+- name: remastered/obj/B_EX140.a.us/-1.dds
+  multi:
+  - name: remastered/obj/B_EX140_LV99.a.us/-1.dds
+  method: copy
+  source:
+  - name: remastered/obj/B_EX140.a.us/-1.dds
+    type: internal
+- name: remastered/obj/B_EX140.a.us/-2.dds
+  multi:
+  - name: remastered/obj/B_EX140_LV99.a.us/-2.dds
+  method: copy
+  source:
+  - name: remastered/obj/B_EX140.a.us/-2.dds
+    type: internal
+- name: remastered/obj/B_EX140.a.us/-3.dds
+  multi:
+  - name: remastered/obj/B_EX140_LV99.a.us/-3.dds
+  method: copy
+  source:
+  - name: remastered/obj/B_EX140.a.us/-3.dds
+    type: internal
+- name: remastered/obj/B_EX140.a.us/-4.dds
+  multi:
+  - name: remastered/obj/B_EX140_LV99.a.us/-4.dds
+  method: copy
+  source:
+  - name: remastered/obj/B_EX140.a.us/-4.dds
+    type: internal
+- name: remastered/obj/B_EX140.a.us/-5.dds
+  multi:
+  - name: remastered/obj/B_EX140_LV99.a.us/-5.dds
+  method: copy
+  source:
+  - name: remastered/obj/B_EX140.a.us/-5.dds
+    type: internal
+- name: remastered/obj/B_EX140.a.us/-6.dds
+  multi:
+  - name: remastered/obj/B_EX140_LV99.a.us/-6.dds
+  method: copy
+  source:
+  - name: remastered/obj/B_EX140.a.us/-6.dds
+    type: internal
+- name: remastered/obj/B_EX140.a.us/-7.dds
+  multi:
+  - name: remastered/obj/B_EX140_LV99.a.us/-7.dds
+  method: copy
+  source:
+  - name: remastered/obj/B_EX140.a.us/-7.dds
+    type: internal
+- name: remastered/obj/B_EX140.a.us/-8.dds
+  multi:
+  - name: remastered/obj/B_EX140_LV99.a.us/-8.dds
+  method: copy
+  source:
+  - name: remastered/obj/B_EX140.a.us/-8.dds
+    type: internal
+- name: remastered/obj/B_EX140.a.us/-9.dds
+  multi:
+  - name: remastered/obj/B_EX140_LV99.a.us/-9.dds
+  method: copy
+  source:
+  - name: remastered/obj/B_EX140.a.us/-9.dds
+    type: internal
+- name: remastered/obj/B_EX140.a.us/-10.dds
+  multi:
+  - name: remastered/obj/B_EX140_LV99.a.us/-10.dds
+  method: copy
+  source:
+  - name: remastered/obj/B_EX140.a.us/-10.dds
+    type: internal
+- name: remastered/obj/B_EX140.a.us/-11.dds
+  multi:
+  - name: remastered/obj/B_EX140_LV99.a.us/-11.dds
+  method: copy
+  source:
+  - name: remastered/obj/B_EX140.a.us/-11.dds
+    type: internal
+- name: remastered/obj/B_EX140.a.us/-12.dds
+  multi:
+  - name: remastered/obj/B_EX140_LV99.a.us/-12.dds
+  method: copy
+  source:
+  - name: remastered/obj/B_EX140.a.us/-12.dds
+    type: internal
+- name: remastered/obj/B_EX140.a.us/-13.dds
+  multi:
+  - name: remastered/obj/B_EX140_LV99.a.us/-13.dds
+  method: copy
+  source:
+  - name: remastered/obj/B_EX140.a.us/-13.dds
+    type: internal
+- name: remastered/obj/B_EX140.a.us/-14.dds
+  multi:
+  - name: remastered/obj/B_EX140_LV99.a.us/-14.dds
+  method: copy
+  source:
+  - name: remastered/obj/B_EX140.a.us/-14.dds
+    type: internal
+- name: remastered/obj/B_EX140.a.us/-15.dds
+  multi:
+  - name: remastered/obj/B_EX140_LV99.a.us/-15.dds
+  method: copy
+  source:
+  - name: remastered/obj/B_EX140.a.us/-15.dds
+    type: internal
+- name: remastered/obj/B_EX140.a.us/-16.dds
+  multi:
+  - name: remastered/obj/B_EX140_LV99.a.us/-16.dds
+  method: copy
+  source:
+  - name: remastered/obj/B_EX140.a.us/-16.dds
+    type: internal
+- name: remastered/obj/B_EX140.a.us/-17.dds
+  multi:
+  - name: remastered/obj/B_EX140_LV99.a.us/-17.dds
+  method: copy
+  source:
+  - name: remastered/obj/B_EX140.a.us/-17.dds
+    type: internal
+- name: remastered/obj/B_EX140.a.us/-18.dds
+  multi:
+  - name: remastered/obj/B_EX140_LV99.a.us/-18.dds
+  method: copy
+  source:
+  - name: remastered/obj/B_EX140.a.us/-18.dds
+    type: internal
+- name: remastered/obj/B_EX140.a.us/-19.dds
+  multi:
+  - name: remastered/obj/B_EX140_LV99.a.us/-19.dds
+  method: copy
+  source:
+  - name: remastered/B_EX140.a.us/-19.dds
+- name: remastered/obj/B_EX140.a.us/-20.dds
+  multi:
+  - name: remastered/obj/B_EX140_LV99.a.us/-20.dds
+  method: copy
+  source:
+  - name: remastered/obj/B_EX140.a.us/-20.dds
+    type: internal
+- name: remastered/obj/B_EX140.a.us/se/obj/se320
+  multi:
+  - name: remastered/obj/B_EX140_LV99.a.us/se/obj/se320
+  method: copy
+  source:
+  - name: remastered/obj/B_EX140.a.us/se/obj/se320
+    type: internal
+- name: remastered/obj/B_EX140.a.us/voice/battle/us/n_sniper
+  multi:
+  - name: remastered/obj/B_EX140_LV99.a.us/voice/battle/us/n_sniper
+  method: copy
+  source:
+  - name: remastered/obj/B_EX140.a.us/voice/battle/us/n_sniper
+    type: internal
+#Kairi's panties (remastered assets reordered since PC didn't order them correctly)
+- name: obj/N_EX560_RTN.mdlx
+  method: copy
+  source:
+  - name: obj/N_EX560_RTN.mdlx
+    type: internal
+- name: remastered/obj/N_EX560_RTN.mdlx/-0.dds
+  method: copy
+  source:
+  - name: remastered/obj/N_EX560_RTN.mdlx/-0.dds
+    type: internal
+- name: remastered/obj/N_EX560_RTN.mdlx/-7.dds
+  method: copy
+  source:
+  - name: remastered/obj/N_EX560_RTN.mdlx/-1.dds
+    type: internal
+- name: remastered/obj/N_EX560_RTN.mdlx/-8.dds
+  method: copy
+  source:
+  - name: remastered/obj/N_EX560_RTN.mdlx/-2.dds
+    type: internal
+- name: remastered/obj/N_EX560_RTN.mdlx/-1.dds
+  method: copy
+  source:
+  - name: remastered/obj/N_EX560_RTN.mdlx/-3.dds
+    type: internal
+- name: remastered/obj/N_EX560_RTN.mdlx/-2.dds
+  method: copy
+  source:
+  - name: remastered/obj/N_EX560_RTN.mdlx/-4.dds
+    type: internal
+- name: remastered/obj/N_EX560_RTN.mdlx/-3.dds
+  method: copy
+  source:
+  - name: remastered/N_EX560_RTN.mdlx/-5.dds
+- name: remastered/obj/N_EX560_RTN.mdlx/-4.dds
+  method: copy
+  source:
+  - name: remastered/obj/N_EX560_RTN.mdlx/-6.dds
+    type: internal
+- name: remastered/obj/N_EX560_RTN.mdlx/-5.dds
+  method: copy
+  source:
+  - name: remastered/obj/N_EX560_RTN.mdlx/-7.dds
+    type: internal
+- name: remastered/obj/N_EX560_RTN.mdlx/-6.dds
+  method: copy
+  source:
+  - name: remastered/obj/N_EX560_RTN.mdlx/-8.dds
+    type: internal
