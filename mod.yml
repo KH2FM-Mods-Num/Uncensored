@@ -185,11 +185,10 @@ assets:
   source:
   - name: anm/fm/ca/f_ca560/ECA12004E.anb
     type: internal
-- name: anm/us/ca/h_ca040/ECA12002E.anb
+- name: anm/us/ca/h_ca040/ECA12002E.anb #Lip sync too noticeably different
   method: copy
   source:
-  - name: anm/fm/ca/h_ca040/ECA12002E.anb
-    type: internal
+  - name: anm/h_ca040/ECA12002E.anb
 - name: anm/us/ca/n_ca020/ECA12003E.anb
   method: copy
   source:
