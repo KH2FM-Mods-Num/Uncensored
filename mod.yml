@@ -153,6 +153,10 @@ assets:
   - name: obj/B_CA040_SKL_OKA.mdlx
     type: internal
 #Pirates on fire
+- name: raw/obj/B_CA010.a.us #Added new -10.dds and shifted the rest
+  method: copy
+  source:
+  - name: raw/B_CA010.a.us
 - name: raw/obj/B_CA020.a.us #Added new -3.dds and shifted the rest
   method: copy
   source:
