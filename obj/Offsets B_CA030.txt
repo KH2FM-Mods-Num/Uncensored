@@ -1,0 +1,11 @@
+DPXOffset = 0x400
+DPDCount = 3
+DPDOffsets = 0x574
+
+d = 0;1
+DPDOffset = 0x1E0;0x12B80
+DPDTexCount = 3;4
+DPDTexOffsets = 0x604;0x12F98
+
+t = 1,2;2,3
+DPDTexOffset = 0xBA90,0xCEB0;0x4F60,0x6380

@@ -1,0 +1,61 @@
+PAX texture was found in DPD 0 as image 2! | Aprox. HD Texture name: -0.dds
+PAX texture was found in DPD 0 as image 0! | Aprox. HD Texture name: -1.dds
+PAX texture was found in DPD 0 as image 1! | Aprox. HD Texture name: -2.dds
+PAX texture was found in DPD 1 as image 0! | Aprox. HD Texture name: -3.dds
+PAX texture was found in DPD 2 as image 2! | Aprox. HD Texture name: -4.dds
+PAX texture was found in DPD 2 as image 1! | Aprox. HD Texture name: -5.dds
+PAX texture was found in DPD 2 as image 0! | Aprox. HD Texture name: -6.dds
+PAX texture was found in DPD 3 as image 0! | Aprox. HD Texture name: -7.dds
+PAX texture was found in DPD 3 as image 2! | Aprox. HD Texture name: -8.dds
+PAX texture was found in DPD 3 as image 1! | Aprox. HD Texture name: -9.dds
+PAX texture was found in DPD 4 as image 0! | Aprox. HD Texture name: -10.dds
+PAX texture was found in DPD 4 as image 2! | Aprox. HD Texture name: -11.dds
+PAX "combo" texture was found in DPD 4 as image 1! Combine it with HD Texture -11.dds for proper HD linking.
+PAX texture was found in DPD 5 as image 0! | Aprox. HD Texture name: -12.dds
+PAX texture was found in DPD 5 as image 1! | Aprox. HD Texture name: -13.dds
+PAX texture was found in DPD 5 as image 2! | Aprox. HD Texture name: -14.dds
+File: piratepax/b_ca010.pax | Asset Count: 15
+
+PAX texture was found in DPD 0 as image 0! | Aprox. HD Texture name: -0.dds
+PAX texture was found in DPD 0 as image 1! | Aprox. HD Texture name: -1.dds
+PAX texture was found in DPD 0 as image 2! | Aprox. HD Texture name: -2.dds
+PAX "combo" texture was found in DPD 0 as image 3! Combine it with HD Texture -2.dds for proper HD linking.
+PAX texture was found in DPD 1 as image 0! | Aprox. HD Texture name: -3.dds
+PAX texture was found in DPD 1 as image 2! | Aprox. HD Texture name: -4.dds
+PAX "combo" texture was found in DPD 1 as image 1! Combine it with HD Texture -4.dds for proper HD linking.
+PAX texture was found in DPD 2 as image 1! | Aprox. HD Texture name: -5.dds
+PAX texture was found in DPD 2 as image 0! | Aprox. HD Texture name: -6.dds
+PAX texture was found in DPD 3 as image 2! | Aprox. HD Texture name: -7.dds
+PAX texture was found in DPD 3 as image 0! | Aprox. HD Texture name: -8.dds
+PAX texture was found in DPD 3 as image 1! | Aprox. HD Texture name: -9.dds
+PAX texture was found in DPD 4 as image 0! | Aprox. HD Texture name: -10.dds
+File: piratepax/b_ca020.pax | Asset Count: 11
+
+PAX texture was found in DPD 0 as image 0! | Aprox. HD Texture name: -0.dds
+PAX texture was found in DPD 0 as image 2! | Aprox. HD Texture name: -1.dds
+PAX "combo" texture was found in DPD 0 as image 1! Combine it with HD Texture -1.dds for proper HD linking.
+PAX texture was found in DPD 1 as image 0! | Aprox. HD Texture name: -2.dds
+PAX "combo" texture was found in DPD 1 as image 1! Combine it with HD Texture -2.dds for proper HD linking.
+PAX texture was found in DPD 1 as image 3! | Aprox. HD Texture name: -3.dds
+PAX "combo" texture was found in DPD 1 as image 2! Combine it with HD Texture -3.dds for proper HD linking.
+PAX texture was found in DPD 2 as image 2! | Aprox. HD Texture name: -4.dds
+PAX texture was found in DPD 2 as image 1! | Aprox. HD Texture name: -5.dds
+PAX texture was found in DPD 2 as image 0! | Aprox. HD Texture name: -6.dds
+File: piratepax/b_ca030.pax | Asset Count: 7
+
+PAX texture was found in DPD 0 as image 0! | Aprox. HD Texture name: -0.dds
+PAX texture was found in DPD 0 as image 1! | Aprox. HD Texture name: -1.dds
+PAX texture was found in DPD 0 as image 2! | Aprox. HD Texture name: -2.dds
+PAX "combo" texture was found in DPD 0 as image 3! Combine it with HD Texture -2.dds for proper HD linking.
+PAX texture was found in DPD 1 as image 0! | Aprox. HD Texture name: -3.dds
+PAX texture was found in DPD 1 as image 2! | Aprox. HD Texture name: -4.dds
+PAX "combo" texture was found in DPD 1 as image 1! Combine it with HD Texture -4.dds for proper HD linking.
+PAX texture was found in DPD 2 as image 1! | Aprox. HD Texture name: -5.dds
+PAX "combo" texture was found in DPD 2 as image 3! Combine it with HD Texture -5.dds for proper HD linking.
+PAX texture was found in DPD 2 as image 2! | Aprox. HD Texture name: -6.dds
+PAX "combo" texture was found in DPD 2 as image 0! Combine it with HD Texture -6.dds for proper HD linking.
+PAX texture was found in DPD 3 as image 0! | Aprox. HD Texture name: -7.dds
+PAX texture was found in DPD 4 as image 0! | Aprox. HD Texture name: -8.dds
+PAX texture was found in DPD 4 as image 2! | Aprox. HD Texture name: -9.dds
+PAX texture was found in DPD 4 as image 1! | Aprox. HD Texture name: -10.dds
+File: piratepax/b_ca040.pax | Asset Count: 11
