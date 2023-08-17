@@ -136,7 +136,17 @@ assets:
   source:
   - name: remastered/obj/B_HE110.a.us/-4.dds
     type: internal
-#Daisy's spank?
+#Daisy's spank (missing the sound effect se/se2011)
+- name: anm/us/dc/n_dc020/EDC11115E.anb
+  platform: pc
+  method: copy
+  source:
+  - name: anm/n_dc020/EDC11115E.anb
+- name: anm/us/dc/p_ex020/EDC11115E.anb
+  platform: pc
+  method: copy
+  source:
+  - name: anm/p_ex020/EDC11115E.anb
 #Pirate C's gun
 - name: obj/us/B_CA040.mdlx
   platform: pc
