@@ -569,6 +569,84 @@ assets:
     source:
     - name: ard/ca10/123.bin
 #Axel's death fires?
+- name: event/effect/tt_event_012_2.pax
+  platform: pc
+  method: copy
+  source:
+  - name: event/effect/tt_event_012.pax
+    type: internal
+- name: remastered/event/effect/tt_event_012_2.pax/-0.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/event/effect/tt_event_012.pax/-0.dds
+    type: internal
+- name: remastered/event/effect/tt_event_012_2.pax/-1.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/event/effect/tt_event_012.pax/-1.dds
+    type: internal
+- name: remastered/event/effect/tt_event_012_2.pax/-2.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/event/effect/tt_event_012.pax/-2.dds
+    type: internal
+- name: remastered/event/effect/tt_event_012_2.pax/-3.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/event/effect/tt_event_012.pax/-3.dds
+    type: internal
+- name: remastered/event/effect/tt_event_012_2.pax/-4.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/event/effect/tt_event_012.pax/-4.dds
+    type: internal
+- name: remastered/event/effect/tt_event_012_2.pax/-5.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/event/effect/tt_event_012.pax/-5.dds
+    type: internal
+- name: remastered/event/effect/tt_event_012_2.pax/-6.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/event/effect/tt_event_012.pax/-6.dds
+    type: internal
+- name: remastered/event/effect/tt_event_012_2.pax/-7.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/event/effect/tt_event_012.pax/-7.dds
+    type: internal
+- name: remastered/event/effect/tt_event_012_2.pax/-8.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/event/effect/tt_event_012.pax/-8.dds
+    type: internal
+- name: remastered/event/effect/tt_event_012_2.pax/-9.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/event/effect/tt_event_012.pax/-9.dds
+    type: internal
+- name: remastered/event/effect/tt_event_012_2.pax/-10.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/event/effect/tt_event_012.pax/-10.dds
+    type: internal
+- name: remastered/event/effect/tt_event_012_2.pax/-11.dds
+  platform: pc
+  method: copy
+  source:
+  - name: remastered/event/effect/tt_event_012.pax/-11.dds
+    type: internal
 #Xigbar's crosshairs (4:3 graphics during new backdrop)
 - name: obj/B_EX140.a.us
   multi:
